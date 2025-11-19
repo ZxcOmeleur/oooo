@@ -1,0 +1,10 @@
+class NmFloatCurveCompressionSettings_t(size: 0xc bytes, project "animlib", binding @ animationsystem.dll + 0x792950, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3d0710"
+
+-----members of class NmFloatCurveCompressionSettings_t-----
+	NmCompressionSettings_t::QuantizationRange_t m_range(offset 0x0, size 0x8, align 0x4)
+	bool m_bIsStatic(offset 0x8, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x9)
+

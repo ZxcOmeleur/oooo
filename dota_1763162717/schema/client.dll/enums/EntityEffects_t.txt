@@ -1,0 +1,9 @@
+enum EntityEffects_t(size: 2 bytes, 7 values, project "client", binding @ client.dll + 0x4f7a720):
+	DEPRICATED_EF_NOINTERP = 8,
+	EF_NOSHADOW = 16,
+	EF_NODRAW = 32,
+	EF_NORECEIVESHADOW = 64,
+	EF_PARENT_ANIMATES = 512,
+	EF_NODRAW_BUT_TRANSMIT = 1024,
+	EF_MAX_BITS = 10,
+		^MEnumeratorIsNotAFlag

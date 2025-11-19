@@ -1,0 +1,18 @@
+class CCraftworksQuestDefinition(size: 0x50 bytes, project "client", binding @ client.dll + 0x5103b60, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1738510"
+
+-----members of class CCraftworksQuestDefinition-----
+	CraftworksQuestID_t m_unQuestID(offset 0x0, size 0x2, align 0x0)
+	uint8_t[2] unaccounted(offset 0x2)
+	CraftworksQuestType_t m_type(offset 0x4, size 0x4, align 0x4)
+	CUtlString m_strLocName(offset 0x8, size 0x8, align 0x8)
+	CUtlString m_strLocProgress(offset 0x10, size 0x8, align 0x8)
+	float32 m_flTurboMultiplier(offset 0x18, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x1c)
+	CUtlVector< CCraftworksQuestComponentReward > m_vecRewards(offset 0x20, size 0x18, align 0x8)
+	CUtlString m_strTrackedStatName(offset 0x38, size 0x8, align 0x8)
+	uint32 m_unStatMaximum(offset 0x40, size 0x4, align 0x4)
+	bool m_bShowInGameProgressToasts(offset 0x44, size 0x1, align 0x1)
+	uint8_t[11] unaccounted(offset 0x45)
+

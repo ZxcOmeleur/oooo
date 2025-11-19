@@ -1,0 +1,7 @@
+enum PulseBestOutflowRules_t(size: 4 bytes, 2 values, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd32ea0):
+	SORT_BY_NUMBER_OF_VALID_CRITERIA = 0,
+		^MPropertyFriendlyName "Choose Best"
+		^MPropertyDescription "Choose the best outflow with all rules passing, as determined by number of passing rules (specificity)."
+	SORT_BY_OUTFLOW_INDEX = 1,
+		^MPropertyFriendlyName "Choose First"
+		^MPropertyDescription "Choose the first outflow with all rules passing, from left to right"

@@ -1,0 +1,3 @@
+enum filter_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x50b2a00):
+	FILTER_AND = 0,
+	FILTER_OR = 1,

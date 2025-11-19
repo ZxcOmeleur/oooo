@@ -1,0 +1,19 @@
+class CRenderMesh(size: 0x1f0 bytes, project "modellib", binding @ physicsbuilder.dll + 0xac7ca0, scope "physicsbuilder.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x467070"
+
+-----members of class CRenderMesh-----
+	uint8_t[16] unaccounted(offset 0x0)
+	CUtlLeanVectorFixedGrowable< CSceneObjectData, 1 > m_sceneObjects(offset 0x10, size 0x98, align 0x8)
+	CUtlLeanVector< CBaseConstraint* > m_constraints(offset 0xa8, size 0x10, align 0x8)
+	CRenderSkeleton m_skeleton(offset 0xb8, size 0x50, align 0x8)
+	uint8_t[172] unaccounted(offset 0x108)
+	bool m_bUseUV2ForCharting(offset 0x1b4, size 0x1, align 0x1)
+	bool m_bEmbeddedMapMesh(offset 0x1b5, size 0x1, align 0x1)
+	uint8_t[34] unaccounted(offset 0x1b6)
+	DynamicMeshDeformParams_t m_meshDeformParams(offset 0x1d8, size 0xc, align 0x4)
+	uint8_t[4] unaccounted(offset 0x1e4)
+	CRenderGroom* m_pGroomData(offset 0x1e8, size 0x8, align 0x8)
+

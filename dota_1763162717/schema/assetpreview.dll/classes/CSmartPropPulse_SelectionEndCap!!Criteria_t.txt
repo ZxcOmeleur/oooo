@@ -1,0 +1,10 @@
+class CSmartPropPulse_SelectionEndCap::Criteria_t(size: 0x2 bytes, project "smartprops", binding @ assetpreview.dll + 0xd4c050, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class CSmartPropPulse_SelectionEndCap::Criteria_t-----
+	bool m_bStart(offset 0x0, size 0x1, align 0x1)
+		^MPropertyDescription "Is this an element which should be placed at the start of the line."
+	bool m_bEnd(offset 0x1, size 0x1, align 0x1)
+		^MPropertyDescription "Is this an element which should be placed at the end of the line."
+

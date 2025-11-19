@@ -1,0 +1,9 @@
+class CSurvivorsLootTable::CLootEntryCollection(size: 0x20 bytes, project "client", binding @ client.dll + 0x515f5f0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25df540"
+
+-----members of class CSurvivorsLootTable::CLootEntryCollection-----
+	float32 m_flChance(offset 0x0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlVector< CSurvivorsLootTable::CLootEntry > m_vecLootEntries(offset 0x8, size 0x18, align 0x8)
+

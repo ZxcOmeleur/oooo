@@ -1,0 +1,7 @@
+enum PulseApiFeature_t(size: 4 bytes, 6 values, project "pulse_runtime_lib", binding @ particles.dll + 0x50e770):
+	AF_NONE = 0,
+	AF_ENTITIES = 1,
+	AF_PANORAMA = 2,
+	AF_PARTICLES = 8,
+	AF_FAKE_ENTITIES = 16,
+	AF_SELECTORS_WITHOUT_REQUIREMENTS = 32,

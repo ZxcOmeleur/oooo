@@ -1,0 +1,51 @@
+class CTargetWarpUpdateNode(size: 0x98 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7588d0, scope "!GlobalTypes") extends CUnaryUpdateNode
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x1bb730"
+
+	base class CUnaryUpdateNode(size: 0x70 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x76cec0, scope "!GlobalTypes") extends CAnimUpdateNodeBase
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x293b70"
+	
+		base class CAnimUpdateNodeBase(size: 0x58 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7651c0, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+		
+		-----members of class CAnimUpdateNodeBase-----
+			uint8_t[24] unaccounted(offset 0x0)
+			CAnimNodePath m_nodePath(offset 0x18, size 0x30, align 0x4)
+			AnimNodeNetworkMode m_networkMode(offset 0x48, size 0x4, align 0x4)
+			uint8_t[4] unaccounted(offset 0x4c)
+			CUtlString m_name(offset 0x50, size 0x8, align 0x8)
+		
+	
+	-----members of class CUnaryUpdateNode-----
+		uint8_t[8] unaccounted(offset 0x58)
+		CAnimUpdateNodeRef m_pChildNode(offset 0x60, size 0x10, align 0x8)
+	
+
+-----members of class CTargetWarpUpdateNode-----
+	uint8_t[4] unaccounted(offset 0x70)
+	TargetWarpAngleMode_t m_eAngleMode(offset 0x74, size 0x4, align 0x4)
+	CAnimParamHandle m_hTargetPositionParameter(offset 0x78, size 0x2, align 0x1)
+	CAnimParamHandle m_hTargetUpVectorParameter(offset 0x7a, size 0x2, align 0x1)
+	CAnimParamHandle m_hTargetFacePositionParameter(offset 0x7c, size 0x2, align 0x1)
+	CAnimParamHandle m_hMoveHeadingParameter(offset 0x7e, size 0x2, align 0x1)
+	CAnimParamHandle m_hDesiredMoveHeadingParameter(offset 0x80, size 0x2, align 0x1)
+	uint8_t[2] unaccounted(offset 0x82)
+	TargetWarpCorrectionMethod m_eCorrectionMethod(offset 0x84, size 0x4, align 0x4)
+	TargetWarpTimingMethod m_eTargetWarpTimingMethod(offset 0x88, size 0x4, align 0x4)
+	bool m_bTargetFacePositionIsWorldSpace(offset 0x8c, size 0x1, align 0x1)
+	bool m_bTargetPositionIsWorldSpace(offset 0x8d, size 0x1, align 0x1)
+	bool m_bOnlyWarpWhenTagIsFound(offset 0x8e, size 0x1, align 0x1)
+	bool m_bWarpOrientationDuringTranslation(offset 0x8f, size 0x1, align 0x1)
+	bool m_bWarpAroundCenter(offset 0x90, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x91)
+	float32 m_flMaxAngle(offset 0x94, size 0x4, align 0x4)
+

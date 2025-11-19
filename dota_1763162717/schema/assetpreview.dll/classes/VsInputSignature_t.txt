@@ -1,0 +1,6 @@
+class VsInputSignature_t(size: 0x30 bytes, project "modellib", binding @ assetpreview.dll + 0xd23b30, scope "assetpreview.dll")
+
+-----members of class VsInputSignature_t-----
+	CUtlVector< VsInputSignatureElement_t > m_elems(offset 0x0, size 0x18, align 0x8)
+	CUtlVector< VsInputSignatureElement_t > m_depth_elems(offset 0x18, size 0x18, align 0x8)
+

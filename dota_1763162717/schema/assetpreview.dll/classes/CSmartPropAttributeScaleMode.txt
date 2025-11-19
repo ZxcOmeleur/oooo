@@ -1,0 +1,7 @@
+class CSmartPropAttributeScaleMode(size: 0x40 bytes, project "smartprops", binding @ assetpreview.dll + 0xd44900, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+^MPropertyCustomEditor "SmartPropAttributeEditor(enum:ScaleMode_t)"
+
+-----members of class CSmartPropAttributeScaleMode-----
+	uint8_t[64] unaccounted(offset 0x0)
+

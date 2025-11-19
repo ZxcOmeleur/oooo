@@ -1,0 +1,3 @@
+enum EPlayerInventorySnapshotFlags(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f66ef0):
+	EPlayerInventorySnapshotFlags_HasScepter = 1,
+	EPlayerInventorySnapshotFlags_HasShard = 2,

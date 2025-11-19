@@ -1,0 +1,3 @@
+enum EProceduralRagdollWeightIndexPropagationMethod(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f450e0):
+	Bone = 0,
+	BoneAndChildren = 1,

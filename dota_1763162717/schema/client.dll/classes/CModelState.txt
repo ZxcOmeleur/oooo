@@ -1,0 +1,34 @@
+class CModelState(size: 0x300 bytes, project "client", binding @ client.dll + 0x4f4fe10, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MNetworkVarNames "m_hModel HModelStrong"
+^MNetworkVarNames "m_bClientClothCreationSuppressed bool"
+^MNetworkVarNames "m_MeshGroupMask MeshGroupMask_t"
+^MNetworkVarNames "m_nBodyGroupChoices int32"
+^MNetworkVarNames "m_nIdealMotionType int8"
+
+-----members of class CModelState-----
+	uint8_t[208] unaccounted(offset 0x0)
+	CStrongHandle< InfoForResourceTypeCModel > m_hModel(offset 0xd0, size 0x8, align 0x8)
+		^MNetworkEnable
+		^MNetworkChangeCallback "skeletonModelChanged"
+	CUtlSymbolLarge m_ModelName(offset 0xd8, size 0x8, align 0x8)
+	uint8_t[201] unaccounted(offset 0xe0)
+	bool m_bClientClothCreationSuppressed(offset 0x1a9, size 0x1, align 0x1)
+		^MNetworkEnable
+	uint8_t[166] unaccounted(offset 0x1aa)
+	uint64 m_MeshGroupMask(offset 0x250, size 0x8, align 0x8)
+		^MNetworkEnable
+		^MNetworkChangeCallback "skeletonMeshGroupMaskChanged"
+	uint8_t[72] unaccounted(offset 0x258)
+	C_NetworkUtlVectorBase< int32 > m_nBodyGroupChoices(offset 0x2a0, size 0x18, align 0x8)
+		^MNetworkEnable
+		^MNetworkChangeCallback "bodyGroupChoiceChanged"
+	uint8_t[50] unaccounted(offset 0x2b8)
+	int8 m_nIdealMotionType(offset 0x2ea, size 0x1, align 0x1)
+		^MNetworkEnable
+		^MNetworkChangeCallback "skeletonMotionTypeChanged"
+	int8 m_nForceLOD(offset 0x2eb, size 0x1, align 0x1)
+	int8 m_nClothUpdateFlags(offset 0x2ec, size 0x1, align 0x1)
+	uint8_t[19] unaccounted(offset 0x2ed)
+

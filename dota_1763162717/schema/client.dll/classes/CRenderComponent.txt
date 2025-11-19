@@ -1,0 +1,27 @@
+class CRenderComponent(size: 0xd0 bytes, project "client", binding @ client.dll + 0x4f01bb0, scope "client.dll") extends CEntityComponent
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MClassHasEntityLimitedDataDesc
+
+	base class CEntityComponent(size: 0x8 bytes, project "entity2", binding @ client.dll + 0x5187f30, scope "client.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	
+	-----members of class CEntityComponent-----
+		uint8_t[8] unaccounted(offset 0x0)
+	
+
+-----members of class CRenderComponent-----
+	uint8_t[8] unaccounted(offset 0x8)
+	CNetworkVarChainer __m_pChainEntity(offset 0x10, size 0x28, align 0x0)
+	uint8_t[24] unaccounted(offset 0x38)
+	bool m_bIsRenderingWithViewModels(offset 0x50, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x51)
+	uint32 m_nSplitscreenFlags(offset 0x54, size 0x4, align 0x4)
+	bool m_bEnableRendering(offset 0x58, size 0x1, align 0x1)
+	uint8_t[79] unaccounted(offset 0x59)
+	bool m_bInterpolationReadyToDraw(offset 0xa8, size 0x1, align 0x1)
+	uint8_t[39] unaccounted(offset 0xa9)
+

@@ -1,0 +1,52 @@
+class CSmartPropOperation_SetMateraialGroupChoice(size: 0xf0 bytes, project "smartprops", binding @ assetpreview.dll + 0xd47d40, scope "!GlobalTypes") extends CSmartPropOperation
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x813a70"
+^MPropertyFriendlyName "Set Material Group Choice"
+^MPropertyDescription "Picks a material group from a set of choices and assigns that material group to a specified variable."
+^MVDataClassGroup "Material"
+
+	base class CSmartPropOperation(size: 0x50 bytes, project "smartprops", binding @ assetpreview.dll + 0xd43750, scope "!GlobalTypes") extends CSmartPropModifier
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: assetpreview.dll + 0x1b960"
+	
+		base class CSmartPropModifier(size: 0x50 bytes, project "smartprops", binding @ assetpreview.dll + 0xd436d0, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: assetpreview.dll + 0x1b960"
+		^MVDataBase
+		^MVDataNodeType "1"
+		^MVDataAnonymousNode
+		
+		-----members of class CSmartPropModifier-----
+			uint8_t[8] unaccounted(offset 0x0)
+			CSmartPropAttributeBool m_bEnabled(offset 0x8, size 0x40, align 0x8)
+				^MVDataEnableKey
+			uint8_t[8] unaccounted(offset 0x48)
+		
+	
+	-----members of class CSmartPropOperation-----
+		<no members>
+	
+
+-----members of class CSmartPropOperation_SetMateraialGroupChoice-----
+	CUtlString m_VariableName(offset 0x50, size 0x8, align 0x8)
+		^MPropertyDescription "Material group variable to set to the selected choice."
+		^MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:MaterialGroup )"
+		^MPropertyProvidesEditContextString "<unidentified non-null meta: assetpreview.dll + 0xb0a0a8>"
+	CSmartPropAttributeChoiceSelectionMode m_SelectionMode(offset 0x58, size 0x40, align 0x0)
+		^MPropertyFriendlyName "Selection Mode"
+		^MPropertyDescription "Specifies how the material group is to be selected from the authored set of choices"
+	CSmartPropAttributeInt m_ChoiceSelection(offset 0x98, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Choice Index"
+		^MPropertyDescription "Specifies the index of the material group choice to pick"
+		^MPropertySuppressExpr "( m_SelectionMode != SPECIFIC )"
+	CUtlVector< MaterialGroupChoice_t > m_MaterialGroupChoices(offset 0xd8, size 0x18, align 0x8)
+		^MPropertyAutoExpandSelf
+

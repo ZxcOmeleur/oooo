@@ -1,0 +1,21 @@
+class CToolSceneLightRig(size: 0x168 bytes, project "toolscene", binding @ assetpreview.dll + 0xd2d8b0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x64a010"
+^MVDataRoot
+^MVDataAssociatedFile "<unidentified non-null meta: assetpreview.dll + 0xad6ad8>"
+
+-----members of class CToolSceneLightRig-----
+	uint8_t[8] unaccounted(offset 0x0)
+	LightRigType_t m_nRigType(offset 0x8, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0xc)
+	CUtlVector< CLightRigSunLight > m_Suns(offset 0x10, size 0x18, align 0x8)
+	CUtlVector< CLightRigPointLight > m_PointLights(offset 0x28, size 0x18, align 0x8)
+	CUtlVector< CLightRigSpotLight > m_SpotLights(offset 0x40, size 0x18, align 0x8)
+	CLightRigBackground m_Background(offset 0x58, size 0x5, align 0x1)
+	CLightRigGrid m_Grid(offset 0x5d, size 0x5, align 0x1)
+	uint8_t[2] unaccounted(offset 0x62)
+	CLightRigExposure m_Exposure(offset 0x64, size 0xc, align 0x4)
+	CLightRigPostProcessing m_PostProcessing(offset 0x70, size 0x8, align 0x8)
+	CLightRigSky m_Sky(offset 0x78, size 0x8, align 0x8)
+	CLightRigVMap m_BackgroundMap(offset 0x80, size 0xe8, align 0x8)
+

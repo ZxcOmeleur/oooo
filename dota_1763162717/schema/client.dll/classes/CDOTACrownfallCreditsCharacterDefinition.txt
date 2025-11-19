@@ -1,0 +1,29 @@
+class CDOTACrownfallCreditsCharacterDefinition(size: 0xa0 bytes, project "client", binding @ client.dll + 0x51496c0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1e25560"
+
+-----members of class CDOTACrownfallCreditsCharacterDefinition-----
+	CPanoramaImageName m_strImage(offset 0x0, size 0x10, align 0x8)
+	CUtlString m_strLocCharacterName(offset 0x10, size 0x8, align 0x8)
+	CUtlString m_strLocCharacterTitle(offset 0x18, size 0x8, align 0x8)
+	int32 m_nUniqueClickKey(offset 0x20, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x24)
+	CPanoramaImageName m_strImageAlt(offset 0x28, size 0x10, align 0x8)
+	CUtlString m_strLocCharacterNameAlt(offset 0x38, size 0x8, align 0x8)
+	CUtlString m_strLocCharacterTitleAlt(offset 0x40, size 0x8, align 0x8)
+	bool m_bFlipFacing(offset 0x48, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x49)
+	CrownfallCreditsAABB_t m_bounds(offset 0x4c, size 0x10, align 0x4)
+	uint8_t[4] unaccounted(offset 0x5c)
+	CUtlString m_strLocCharacterTitleAlt2(offset 0x60, size 0x8, align 0x8)
+	CUtlString m_strLocCharacterTitleAlt3(offset 0x68, size 0x8, align 0x8)
+	CUtlString m_strLocCharacterTitleAlt4(offset 0x70, size 0x8, align 0x8)
+	CUtlString m_strLocCharacterTitleAlt5(offset 0x78, size 0x8, align 0x8)
+	CUtlString m_strLocCharacterTitleAlt6(offset 0x80, size 0x8, align 0x8)
+	int32 m_nAltImageW(offset 0x88, size 0x4, align 0x4)
+	int32 m_nAltImageH(offset 0x8c, size 0x4, align 0x4)
+	int32 m_nAltImageFrameTime(offset 0x90, size 0x4, align 0x4)
+	int32 m_nYOffset(offset 0x94, size 0x4, align 0x4)
+	uint16 m_unFrameTime(offset 0x98, size 0x2, align 0x2)
+	uint8_t[6] unaccounted(offset 0x9a)
+

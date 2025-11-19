@@ -1,0 +1,5 @@
+enum ParticleLightnintBranchBehavior_t(size: 4 bytes, 2 values, project "particles", binding @ particles.dll + 0x525160):
+	PARTICLE_LIGHTNING_BRANCH_CURRENT_DIR = 0,
+		^MPropertyFriendlyName "Branch Towards Current Direction"
+	PARTICLE_LIGHTNING_BRANCH_ENDPOINT_DIR = 1,
+		^MPropertyFriendlyName "Branch Towards Endpoint"

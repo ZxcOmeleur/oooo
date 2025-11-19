@@ -1,0 +1,2 @@
+enum EGCEconBaseMsg(size: 4 bytes, 1 values, project "client", binding @ client.dll + 0x4f6b090):
+	k_EMsgGCGenericResult = 2579,

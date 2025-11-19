@@ -1,0 +1,7 @@
+enum ECandyShopRewardOptionType(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x50fe8d0):
+	k_eCandyShopRewardOptionType_Invalid = -1,
+		^MPropertySuppressEnumerator
+	k_eCandyShopRewardOptionType_SingleItem = 0,
+	k_eCandyShopRewardOptionType_LootList = 1,
+	k_eCandyShopRewardOptionType_SingleEventAction = 2,
+	k_eCandyShopRewardOptionType_EventPoints = 3,

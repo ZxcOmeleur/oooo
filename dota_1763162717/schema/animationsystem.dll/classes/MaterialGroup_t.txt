@@ -1,0 +1,8 @@
+class MaterialGroup_t(size: 0x20 bytes, project "modellib", binding @ animationsystem.dll + 0x79de00, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x4a8e60"
+
+-----members of class MaterialGroup_t-----
+	CUtlString m_name(offset 0x0, size 0x8, align 0x8)
+	CUtlVector< CStrongHandle< InfoForResourceTypeIMaterial2 > > m_materials(offset 0x8, size 0x18, align 0x8)
+

@@ -1,0 +1,7 @@
+class CVariantDefaultAllocator(size: 0x1 bytes, project "entity2", binding @ client.dll + 0x5189040, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class CVariantDefaultAllocator-----
+	uint8_t[1] unaccounted(offset 0x0)
+

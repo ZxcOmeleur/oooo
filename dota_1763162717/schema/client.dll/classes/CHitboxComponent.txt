@@ -1,0 +1,18 @@
+class CHitboxComponent(size: 0x18 bytes, project "client", binding @ client.dll + 0x4f028b0, scope "client.dll") extends CEntityComponent
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+	base class CEntityComponent(size: 0x8 bytes, project "entity2", binding @ client.dll + 0x5187f30, scope "client.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	
+	-----members of class CEntityComponent-----
+		uint8_t[8] unaccounted(offset 0x0)
+	
+
+-----members of class CHitboxComponent-----
+	uint8_t[12] unaccounted(offset 0x8)
+	float32 m_flBoundsExpandRadius(offset 0x14, size 0x4, align 0x4)
+

@@ -1,0 +1,6 @@
+class CWorldCompositionChunkReferenceElement_t(size: 0x10 bytes, project "client", binding @ client.dll + 0x4f17960, scope "!GlobalTypes")
+
+-----members of class CWorldCompositionChunkReferenceElement_t-----
+	CUtlString m_strMapToLoad(offset 0x0, size 0x8, align 0x8)
+	CUtlString m_strLandmarkName(offset 0x8, size 0x8, align 0x8)
+

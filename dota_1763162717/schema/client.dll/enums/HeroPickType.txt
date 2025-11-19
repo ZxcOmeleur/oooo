@@ -1,0 +1,3 @@
+enum HeroPickType(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x508fc40):
+	HERO_PICK = 0,
+	HERO_BAN = 1,

@@ -1,0 +1,4 @@
+enum ETalentContentAssetType(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x4f66c90):
+	k_eTalentContentAssetType_Photo = 1,
+	k_eTalentContentAssetType_Autograph = 2,
+	k_eTalentContentAssetType_Voicelines = 3,

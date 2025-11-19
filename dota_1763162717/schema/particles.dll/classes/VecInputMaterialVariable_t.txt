@@ -1,0 +1,10 @@
+class VecInputMaterialVariable_t(size: 0x6c0 bytes, project "particles", binding @ particles.dll + 0x548ff0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0x2583a0"
+
+-----members of class VecInputMaterialVariable_t-----
+	CUtlString m_strVariable(offset 0x0, size 0x8, align 0x8)
+		^MPropertyFriendlyName "material variable"
+	CParticleCollectionVecInput m_vecInput(offset 0x8, size 0x6b8, align 0x8)
+		^MPropertyFriendlyName "input"
+

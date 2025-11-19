@@ -1,0 +1,6 @@
+enum EMonsterHunterMaterialRarity(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x510e3e0):
+	k_eMonsterHunterMaterialRarity_Invalid = 0,
+	k_eMonsterHunterMaterialRarity_Common = 1,
+	k_eMonsterHunterMaterialRarity_Uncommon = 2,
+	k_eMonsterHunterMaterialRarity_Rare = 3,
+	k_eMonsterHunterMaterialRarity_SuperRare = 4,

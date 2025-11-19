@@ -1,0 +1,82 @@
+class CSmartPropElement_Model(size: 0x310 bytes, project "smartprops", binding @ assetpreview.dll + 0xd44670, scope "!GlobalTypes") extends CSmartPropElement
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7efa60"
+^MPropertyFriendlyName "Model"
+^MPropertyDescription "Places a model as the child of an element."
+^MVDataOutlinerAssetNameExpr "m_sModelName"
+
+	base class CSmartPropElement(size: 0x88 bytes, project "smartprops", binding @ assetpreview.dll + 0xd43fe0, scope "!GlobalTypes")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7eefa0"
+	^MVDataBase
+	^MVDataNodeType "1"
+	^MVDataAnonymousNode
+	^MPropertyFriendlyName "Smart Prop Element"
+	^MVDataOutlinerLabelExpr "m_sLabel"
+	
+	-----members of class CSmartPropElement-----
+		uint8_t[8] unaccounted(offset 0x0)
+		int32 m_nElementID(offset 0x8, size 0x4, align 0x4)
+			^MPropertySuppressField
+			^MVDataUniqueMonotonicInt "_editor/next_element_id"
+		uint8_t[4] unaccounted(offset 0xc)
+		CSmartPropAttributeBool m_bEnabled(offset 0x10, size 0x40, align 0x8)
+			^MVDataEnableKey
+			^MPropertyDescription "Is this element enabled? If not enabled, this element will not be evaluted and will have no effect on the result."
+			^MPropertySortPriority "10"
+		CUtlString m_sLabel(offset 0x50, size 0x8, align 0x8)
+			^MPropertyFriendlyName "Label"
+			^MPropertyDescription "Optional text that will appear in the outliner to help organize Smart Prop elements and communicate their purpose to other users."
+		CUtlVector< CSmartPropSelectionCriteria* > m_SelectionCriteria(offset 0x58, size 0x18, align 0x8)
+			^MPropertyFriendlyName "Selection Criteria"
+			^MVDataPromoteField "2"
+		CUtlVector< CSmartPropModifier* > m_Modifiers(offset 0x70, size 0x18, align 0x8)
+			^MPropertyFriendlyName "Modifiers"
+			^MVDataPromoteField "2"
+	
+
+-----members of class CSmartPropElement_Model-----
+	CSmartPropAttributeModelName m_sModelName(offset 0x88, size 0x40, align 0x8)
+		^MPropertyDescription "Name of the model resource (.vmdl) to place."
+		^MPropertyProvidesEditContextString "<unidentified non-null meta: assetpreview.dll + 0xb03148>"
+	CSmartPropAttributeMaterialGroup m_MaterialGroupName(offset 0xc8, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Material Group"
+		^MPropertyDescription "Specifies the name of the material group (skin) to use when displaying the specified model."
+	CSmartPropAttributeBool m_bDetailObject(offset 0x108, size 0x40, align 0x8)
+		^MPropertyDescription "If enabled the model will be rendered as a detail object, which is faster for placing many small objects and has fade out functionality, but may have different lighting characteristics. Detail object models support only uniform scale and will use the largest component of the scale value."
+	CSmartPropAttributeVector m_vModelScale(offset 0x148, size 0x40, align 0x8)
+		^MPropertySuppressExpr "m_bDetailObject == true"
+		^MPropertyDescription "Scale factor (may be non-uniform) to be applied directly to the model (in the model's local space)."
+	CSmartPropAttributeFloat m_flUniformModelScale(offset 0x188, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Model Scale"
+		^MPropertySuppressExpr "m_bDetailObject == false"
+		^MPropertyDescription "Uniform scale to be applied to the model, certain properties like detail object mean only uniform scale may be applied to the model."
+	CSmartPropAttributeInt m_nLodLevel(offset 0x1c8, size 0x40, align 0x8)
+		^MPropertyAttributeEditor "SmartPropAttributeEditor( LODLevel )"
+		^MPropertySuppressExpr "m_bDetailObject == true"
+		^MPropertyDescription "Select model LOD level. The default Auto LOD means the lod will be picked based on the size of the model on screen. If a specific level is selected, then that lod level will always be used regardless of the size of the model on screen."
+	CSmartPropAttributeSurfaceProperty m_SurfacePropertyOverride(offset 0x208, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Override Surface Property"
+		^MPropertySuppressExpr "m_bDetailObject == true"
+		^MPropertyDescription "If non-empty, specifies the name of a surface property to use for all physics shapes of the specified model, overriding any surface properties specified within the model."
+	SmartPropDetailFadeLevel_t m_nDetailObjectFadeLevel(offset 0x248, size 0x4, align 0x4)
+		^MPropertyFriendlyName "Fade Level"
+		^MPropertySuppressExpr "m_bDetailObject == false"
+		^MPropertyDescription "Controls the size at which a model marked as a detail object will fade out."
+	uint8_t[4] unaccounted(offset 0x24c)
+	CSmartPropAttributeBool m_bCastShadows(offset 0x250, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Cast Shadows"
+		^MPropertyDescription "Should the model cast shadows."
+	CSmartPropAttributeBool m_bRigidDeformation(offset 0x290, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Rigid Deformation Only"
+		^MPropertySuppressExpr "m_bDetailObject == true"
+		^MPropertyDescription "If enabled, only the transform of the model will be modified by any active deformer, the vertices of the model will not be changed by the deformer."
+	CSmartPropAttributeBool m_bDisableDynamicDeformable(offset 0x2d0, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Disable Dynamic Deformable"
+		^MPropertySuppressExpr "m_bDetailObject == true"
+		^MPropertyDescription "If checked, this model will not deform in game when the smart prop is placed inside a dynamic deformable entity (such as func_deformable_brush)."
+

@@ -1,0 +1,3 @@
+enum FowBlockerShape_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x5107e90):
+	FOW_BLOCKER_SHAPE_RECTANGLE = 0,
+	FOW_BLOCKER_SHAPE_RECTANGLE_OUTLINE = 1,

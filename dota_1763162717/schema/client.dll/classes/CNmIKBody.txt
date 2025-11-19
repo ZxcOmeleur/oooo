@@ -1,0 +1,11 @@
+class CNmIKBody(size: 0x20 bytes, project "animlib", binding @ client.dll + 0x51837b0, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x2d52740"
+
+-----members of class CNmIKBody-----
+	float32 m_flMass(offset 0x0, size 0x4, align 0x4)
+	Vector m_vLocalMassCenter(offset 0x4, size 0xc, align 0x4)
+	Vector m_vRadius(offset 0x10, size 0xc, align 0x4)
+	float32 m_flResistance(offset 0x1c, size 0x4, align 0x4)
+

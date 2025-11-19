@@ -1,0 +1,39 @@
+class CNmVirtualParameterBoneMaskNode::CDefinition(size: 0x18 bytes, project "animlib", binding @ animationsystem.dll + 0x795b80, scope "!GlobalTypes") extends CNmBoneMaskValueNode::CDefinition
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3f0330"
+
+	base class CNmBoneMaskValueNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x7978b0, scope "!GlobalTypes") extends CNmValueNode::CDefinition
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	
+		base class CNmValueNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x7975b0, scope "!GlobalTypes") extends CNmGraphNode::CDefinition
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		
+			base class CNmGraphNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x7974b0, scope "!GlobalTypes")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_IS_ABSTRACT
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+			
+			-----members of class CNmGraphNode::CDefinition-----
+				uint8_t[8] unaccounted(offset 0x0)
+				int16 m_nNodeIdx(offset 0x8, size 0x2, align 0x2)
+				uint8_t[6] unaccounted(offset 0xa)
+			
+		
+		-----members of class CNmValueNode::CDefinition-----
+			<no members>
+		
+	
+	-----members of class CNmBoneMaskValueNode::CDefinition-----
+		<no members>
+	
+
+-----members of class CNmVirtualParameterBoneMaskNode::CDefinition-----
+	int16 m_nChildNodeIdx(offset 0x10, size 0x2, align 0x2)
+	uint8_t[6] unaccounted(offset 0x12)
+

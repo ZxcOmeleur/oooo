@@ -1,0 +1,3 @@
+enum ESourceEngine(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f6bd90):
+	k_ESE_Source1 = 0,
+	k_ESE_Source2 = 1,

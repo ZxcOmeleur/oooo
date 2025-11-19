@@ -1,0 +1,7 @@
+enum LifeState_t(size: 4 bytes, 6 values, project "client", binding @ client.dll + 0x4f1e280):
+	LIFE_ALIVE = 0,
+	LIFE_DYING = 1,
+	LIFE_DEAD = 2,
+	LIFE_RESPAWNABLE = 3,
+	LIFE_RESPAWNING = 4,
+	NUM_LIFESTATES = 5,

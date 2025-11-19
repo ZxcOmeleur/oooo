@@ -1,0 +1,16 @@
+class CCraftworksDefinition(size: 0x160 bytes, project "client", binding @ client.dll + 0x51003f0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x173b5e0"
+^MVDataRoot
+
+-----members of class CCraftworksDefinition-----
+	CUtlString m_sName(offset 0x0, size 0x8, align 0x8)
+	CraftworksID_t m_unCraftworksID(offset 0x8, size 0x1, align 0x0)
+	uint8_t[3] unaccounted(offset 0x9)
+	EEvent m_eAssociatedEvent(offset 0xc, size 0x4, align 0x4)
+	CUtlVector< CCraftworksComponentDefinition > m_vecComponents(offset 0x10, size 0x18, align 0x8)
+	CUtlVector< CCraftworksRecipeTierDefinition > m_vecRecipeTiers(offset 0x28, size 0x18, align 0x8)
+	CUtlVector< CCraftworksRecipeDefinition > m_vecRecipes(offset 0x40, size 0x18, align 0x8)
+	CUtlVector< CCraftworksQuestDefinition > m_vecQuests(offset 0x58, size 0x18, align 0x8)
+	uint8_t[240] unaccounted(offset 0x70)
+

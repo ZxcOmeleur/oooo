@@ -1,0 +1,8 @@
+class MovementGaitId_t(size: 0x8 bytes, project "modellib", binding @ meshsystem.dll + 0x13b170, scope "meshsystem.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: meshsystem.dll + 0x9aae0"
+
+-----members of class MovementGaitId_t-----
+	CGlobalSymbol m_sId(offset 0x0, size 0x8, align 0x8)
+

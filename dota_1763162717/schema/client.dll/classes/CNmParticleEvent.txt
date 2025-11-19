@@ -1,0 +1,40 @@
+class CNmParticleEvent(size: 0x70 bytes, project "animlib", binding @ client.dll + 0x517a2a0, scope "client.dll") extends CNmEvent
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: client.dll + 0x2cedc40"
+
+	base class CNmEvent(size: 0x20 bytes, project "animlib", binding @ client.dll + 0x5179a50, scope "client.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: client.dll + 0x2ceb380"
+	
+	-----members of class CNmEvent-----
+		uint8_t[8] unaccounted(offset 0x0)
+		float32 m_flStartTimeSeconds(offset 0x8, size 0x4, align 0x4)
+		float32 m_flDurationSeconds(offset 0xc, size 0x4, align 0x4)
+		CGlobalSymbol m_syncID(offset 0x10, size 0x8, align 0x8)
+		bool m_bClientOnly(offset 0x18, size 0x1, align 0x1)
+		uint8_t[7] unaccounted(offset 0x19)
+	
+
+-----members of class CNmParticleEvent-----
+	CNmEventRelevance_t m_relevance(offset 0x20, size 0x4, align 0x4)
+	CNmParticleEvent::Type_t m_type(offset 0x24, size 0x4, align 0x4)
+	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_hParticleSystem(offset 0x28, size 0x8, align 0x8)
+	CUtlString m_tags(offset 0x30, size 0x8, align 0x8)
+	bool m_bStopImmediately(offset 0x38, size 0x1, align 0x1)
+	bool m_bDetachFromOwner(offset 0x39, size 0x1, align 0x1)
+	bool m_bPlayEndCap(offset 0x3a, size 0x1, align 0x1)
+	uint8_t[5] unaccounted(offset 0x3b)
+	CUtlString m_attachmentPoint0(offset 0x40, size 0x8, align 0x8)
+	ParticleAttachment_t m_attachmentType0(offset 0x48, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x4c)
+	CUtlString m_attachmentPoint1(offset 0x50, size 0x8, align 0x8)
+	ParticleAttachment_t m_attachmentType1(offset 0x58, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x5c)
+	CUtlString m_config(offset 0x60, size 0x8, align 0x8)
+	CUtlString m_effectForConfig(offset 0x68, size 0x8, align 0x8)
+

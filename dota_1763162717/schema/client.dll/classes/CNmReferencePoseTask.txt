@@ -1,0 +1,15 @@
+class CNmReferencePoseTask(size: 0x58 bytes, project "animlib", binding @ client.dll + 0x517f670, scope "client.dll") extends CNmPoseTask
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+
+	base class CNmPoseTask(size: 0x58 bytes, project "animlib", binding @ client.dll + 0x517f9c0, scope "client.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	
+	-----members of class CNmPoseTask-----
+		uint8_t[88] unaccounted(offset 0x0)
+	
+
+-----members of class CNmReferencePoseTask-----
+	<no members>
+

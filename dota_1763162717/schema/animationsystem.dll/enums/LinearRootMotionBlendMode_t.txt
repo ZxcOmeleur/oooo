@@ -1,0 +1,7 @@
+enum LinearRootMotionBlendMode_t(size: 4 bytes, 3 values, project "animgraphlib", binding @ animationsystem.dll + 0x752590):
+	LERP = 0,
+		^MPropertyFriendlyName "LERP"
+	NLERP = 1,
+		^MPropertyFriendlyName "NLERP"
+	SLERP = 2,
+		^MPropertyFriendlyName "SLERP"

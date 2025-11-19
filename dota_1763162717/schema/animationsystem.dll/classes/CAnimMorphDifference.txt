@@ -1,0 +1,7 @@
+class CAnimMorphDifference(size: 0x10 bytes, project "animationsystem", binding @ animationsystem.dll + 0x7bdad0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x4ddc0"
+
+-----members of class CAnimMorphDifference-----
+	CBufferString m_name(offset 0x0, size 0x10, align 0x8)
+

@@ -1,0 +1,4 @@
+enum CNmTimeConditionNode::ComparisonType_t(size: 1 bytes, 3 values, project "animlib", binding @ animationsystem.dll + 0x791890):
+	PercentageThroughState = 0,
+	PercentageThroughSyncEvent = 1,
+	ElapsedTime = 2,

@@ -1,0 +1,6 @@
+enum EntityDisolveType_t(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x4f1de70):
+	ENTITY_DISSOLVE_INVALID = -1,
+	ENTITY_DISSOLVE_NORMAL = 0,
+	ENTITY_DISSOLVE_ELECTRICAL = 1,
+	ENTITY_DISSOLVE_ELECTRICAL_LIGHT = 2,
+	ENTITY_DISSOLVE_CORE = 3,

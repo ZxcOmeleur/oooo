@@ -1,0 +1,11 @@
+enum NPCPhysicsHullType_t(size: 4 bytes, 5 values, project "modellib", binding @ animationsystem.dll + 0x7a0030):
+	eInvalid = 0,
+		^MPropertyFriendlyName "None"
+	eGroundCapsule = 1,
+		^MPropertyFriendlyName "Capsule - Ground"
+	eCenteredCapsule = 2,
+		^MPropertyFriendlyName "Capsule - Centered"
+	eGenericCapsule = 3,
+		^MPropertyFriendlyName "Capsule - Generic"
+	eGroundBox = 4,
+		^MPropertyFriendlyName "Box - Ground"

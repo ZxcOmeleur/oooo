@@ -1,0 +1,5 @@
+enum TargetWarpTimingMethod(size: 4 bytes, 2 values, project "animgraphlib", binding @ animationsystem.dll + 0x7586b0):
+	ReachDestinationOnRootMotionEnd = 0,
+		^MPropertyFriendlyName "Reach destination when root motion ends"
+	ReachDestinationOnWarpTagEnd = 1,
+		^MPropertyFriendlyName "Reach destination when warp tag ends"

@@ -1,0 +1,67 @@
+class CPulseCell_CursorQueue(size: 0xa0 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51c4880, scope "client.dll") extends CPulseCell_WaitForCursorsWithTagBase
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: client.dll + 0x31ccc60"
+^MPropertyFriendlyName "Cursor Queue"
+^MPropertyDescription "Causes each execution cursor to wait for the completion of all prior cursors that have visited this node. Use this to safely support multiple triggers to areas of the graph that take time to complete."
+^MPulseEditorHeaderIcon "tools/images/pulse_editor/cursor_wait_zone.png"
+
+	base class CPulseCell_WaitForCursorsWithTagBase(size: 0x98 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51c4d70, scope "client.dll") extends CPulseCell_BaseYieldingInflow
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: client.dll + 0x31cc790"
+	^MPulseEditorCanvasItemSpecKV3 "<unidentified non-null meta: client.dll + 0x4727778>"
+	
+		base class CPulseCell_BaseYieldingInflow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b6e50, scope "client.dll") extends CPulseCell_BaseFlow
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: client.dll + 0x315b460"
+		
+			base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b7f60, scope "client.dll") extends CPulseCell_Base
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: client.dll + 0x315a370"
+			
+				base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b6af0, scope "client.dll")
+				| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+				| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+				| SCHEMA_CF1_CONSTRUCT_ALLOWED
+				| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+				^MGetKV3ClassDefaults "func: client.dll + 0x315a0f0"
+				
+				-----members of class CPulseCell_Base-----
+					uint8_t[8] unaccounted(offset 0x0)
+					PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+						^MFgdFromSchemaCompletelySkipField
+					uint8_t[60] unaccounted(offset 0xc)
+				
+			
+			-----members of class CPulseCell_BaseFlow-----
+				<no members>
+			
+		
+		-----members of class CPulseCell_BaseYieldingInflow-----
+			<no members>
+		
+	
+	-----members of class CPulseCell_WaitForCursorsWithTagBase-----
+		int32 m_nCursorsAllowedToWait(offset 0x48, size 0x4, align 0x4)
+			^MPropertyDescription "Any extra waiting cursors will be terminated. -1 for infinite cursors."
+		uint8_t[4] unaccounted(offset 0x4c)
+		CPulse_ResumePoint m_WaitComplete(offset 0x50, size 0x48, align 0x0)
+	
+
+-----members of class CPulseCell_CursorQueue-----
+	int32 m_nCursorsAllowedToRunParallel(offset 0x98, size 0x4, align 0x4)
+		^MPropertyDescription "Any cursors above this count will wait, up to the limit."
+	uint8_t[4] unaccounted(offset 0x9c)
+

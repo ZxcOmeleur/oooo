@@ -1,0 +1,6 @@
+enum ESurvivorsBossAbility(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x515d800):
+	INVALID = -1,
+	BURNING_GROUND = 0,
+	RADIATE_RAYS = 1,
+	DEMON_PORTALS = 2,
+	MAGIC_MISSILE = 3,

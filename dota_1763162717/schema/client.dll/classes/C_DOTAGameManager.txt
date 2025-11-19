@@ -1,0 +1,36 @@
+class C_DOTAGameManager(size: 0x3330 bytes, project "client", binding @ client.dll + 0x5091110, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MNetworkNoBase
+^MNetworkVarNames "m_CurrentHeroAvailable bool"
+
+-----members of class C_DOTAGameManager-----
+	uint8_t[48] unaccounted(offset 0x0)
+	CNetworkVarChainer __m_pChainEntity(offset 0x30, size 0x28, align 0x0)
+	uint8_t[5560] unaccounted(offset 0x58)
+	bool m_bCustomGame(offset 0x1610, size 0x1, align 0x1)
+	bool m_bEventGame(offset 0x1611, size 0x1, align 0x1)
+	bool m_bGameModeWantsDefaultNeutralItemSchema(offset 0x1612, size 0x1, align 0x1)
+	bool m_bGameModeFilteredAbilities(offset 0x1613, size 0x1, align 0x1)
+	char[128] m_szAddOnGame(offset 0x1614, size 0x80, align 0x1)
+	char[128] m_szAddOnMap(offset 0x1694, size 0x80, align 0x1)
+	uint8_t[5540] unaccounted(offset 0x1714)
+	KeyValues* m_pTutorialLessonKeyValues(offset 0x2cb8, size 0x8, align 0x8)
+	KeyValues* m_pDivisionKeyValues(offset 0x2cc0, size 0x8, align 0x8)
+	KeyValues* m_pMatchGroupsKeyValues(offset 0x2cc8, size 0x8, align 0x8)
+	KeyValues* m_pAnimationStatues(offset 0x2cd0, size 0x8, align 0x8)
+	KeyValues* m_pBotScriptsDedicatedServer(offset 0x2cd8, size 0x8, align 0x8)
+	KeyValues* m_pkvWardPlacementLocations(offset 0x2ce0, size 0x8, align 0x8)
+	KeyValues* m_pRegionKeyValues(offset 0x2ce8, size 0x8, align 0x8)
+	KeyValues* m_pSurveyQuestionData(offset 0x2cf0, size 0x8, align 0x8)
+	KeyValues3 m_AddonInfoKeyValues(offset 0x2cf8, size 0x10, align 0x8)
+	uint8_t[40] unaccounted(offset 0x2d08)
+	KeyValues* m_pCountryKeyValues(offset 0x2d30, size 0x8, align 0x8)
+	uint8_t[1240] unaccounted(offset 0x2d38)
+	bool[9] m_bLoadedPortraits(offset 0x3210, size 0x9, align 0x1)
+	uint8_t[7] unaccounted(offset 0x3219)
+	KeyValues* m_pControlGroupsKeyValues(offset 0x3220, size 0x8, align 0x8)
+	KeyValues3* m_pItemSuggestPreferenceKeyValues(offset 0x3228, size 0x8, align 0x8)
+	bool[256] m_CurrentHeroAvailable(offset 0x3230, size 0x100, align 0x1)
+		^MNetworkEnable
+

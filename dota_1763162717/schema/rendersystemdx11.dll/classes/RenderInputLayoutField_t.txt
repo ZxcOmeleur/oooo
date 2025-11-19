@@ -1,0 +1,12 @@
+class RenderInputLayoutField_t(size: 0x4c bytes, project "rendersystemdx11", binding @ rendersystemdx11.dll + 0x431660, scope "rendersystemdx11.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class RenderInputLayoutField_t-----
+	char[32] m_pSemanticName(offset 0x0, size 0x20, align 0x1)
+	int8 m_nSemanticIndex(offset 0x20, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x21)
+	int16 m_nOffset(offset 0x28, size 0x2, align 0x2)
+	int8 m_nSlot(offset 0x2a, size 0x1, align 0x1)
+	RenderSlotType_t m_nSlotType(offset 0x2b, size 0x1, align 0x1)
+	char[32] m_szShaderSemantic(offset 0x2c, size 0x20, align 0x1)
+

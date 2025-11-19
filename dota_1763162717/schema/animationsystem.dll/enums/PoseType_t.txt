@@ -1,0 +1,4 @@
+enum PoseType_t(size: 1 bytes, 3 values, project "animgraphlib", binding @ animationsystem.dll + 0x759300):
+	POSETYPE_STATIC = 0,
+	POSETYPE_DYNAMIC = 1,
+	POSETYPE_INVALID = -1,

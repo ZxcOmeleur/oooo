@@ -1,0 +1,5 @@
+enum OutOfPVSUpdates_t(size: 4 bytes, 4 values, project "networksystem", binding @ networksystem.dll + 0x261790):
+	OOPVSUpdates_OptOut = 0,
+	OOPVSUpdates_OptIn = 1,
+	OOPVSUpdates_Default = 2,
+	OOPVSUpdates_Count = 3,

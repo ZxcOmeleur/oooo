@@ -1,0 +1,9 @@
+class FootStepTrigger(size: 0x20 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7562b0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x1ac530"
+
+-----members of class FootStepTrigger-----
+	CUtlVector< int32 > m_tags(offset 0x0, size 0x18, align 0x8)
+	int32 m_nFootIndex(offset 0x18, size 0x4, align 0x4)
+	StepPhase m_triggerPhase(offset 0x1c, size 0x4, align 0x4)
+

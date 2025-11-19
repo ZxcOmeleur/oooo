@@ -1,0 +1,5 @@
+enum ParticleReplicationMode_t(size: 4 bytes, 2 values, project "particles", binding @ particles.dll + 0x5240b0):
+	PARTICLE_REPLICATIONMODE_NONE = 0,
+		^MPropertyFriendlyName "Off"
+	PARTICLE_REPLICATIONMODE_REPLICATE_FOR_EACH_PARENT_PARTICLE = 1,
+		^MPropertyFriendlyName "Replicate for each parent particle"

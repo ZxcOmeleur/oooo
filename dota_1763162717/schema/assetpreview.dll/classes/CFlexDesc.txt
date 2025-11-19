@@ -1,0 +1,7 @@
+class CFlexDesc(size: 0x8 bytes, project "modellib", binding @ assetpreview.dll + 0xd22e30, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x54da80"
+
+-----members of class CFlexDesc-----
+	CUtlString m_szFacs(offset 0x0, size 0x8, align 0x8)
+

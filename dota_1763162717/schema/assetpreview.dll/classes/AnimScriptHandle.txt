@@ -1,0 +1,8 @@
+class AnimScriptHandle(size: 0x4 bytes, project "modellib", binding @ assetpreview.dll + 0xd1e4e0, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x509dc0"
+
+-----members of class AnimScriptHandle-----
+	uint32 m_id(offset 0x0, size 0x4, align 0x4)
+

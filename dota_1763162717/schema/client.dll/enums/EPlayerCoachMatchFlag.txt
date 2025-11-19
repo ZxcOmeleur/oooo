@@ -1,0 +1,3 @@
+enum EPlayerCoachMatchFlag(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f5abd0):
+	k_EPlayerCoachMatchFlag_EligibleForRewards = 1,
+	k_EPlayerCoachMatchFlag_PrivateCoach = 2,

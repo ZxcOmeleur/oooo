@@ -1,0 +1,8 @@
+class DOTASpecialAbilityBonus_t(size: 0x10 bytes, project "client", binding @ client.dll + 0x507e440, scope "!GlobalTypes")
+
+-----members of class DOTASpecialAbilityBonus_t-----
+	char* m_pszName(offset 0x0, size 0x8, align 0x8)
+	float32 m_fValue(offset 0x8, size 0x4, align 0x4)
+	EDOTASpecialBonusOperation m_eOperation(offset 0xc, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0xd)
+

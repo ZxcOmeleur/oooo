@@ -1,0 +1,3 @@
+enum DOTA_WatchReplayType(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f52a00):
+	DOTA_WATCH_REPLAY_NORMAL = 0,
+	DOTA_WATCH_REPLAY_HIGHLIGHTS = 1,

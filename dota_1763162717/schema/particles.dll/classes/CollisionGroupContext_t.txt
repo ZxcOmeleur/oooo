@@ -1,0 +1,9 @@
+class CollisionGroupContext_t(size: 0x4 bytes, project "particles", binding @ particles.dll + 0x526a40, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0xafee0"
+
+-----members of class CollisionGroupContext_t-----
+	int32 m_nCollisionGroupNumber(offset 0x0, size 0x4, align 0x4)
+

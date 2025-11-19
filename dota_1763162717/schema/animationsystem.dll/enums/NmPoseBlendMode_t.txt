@@ -1,0 +1,4 @@
+enum NmPoseBlendMode_t(size: 1 bytes, 3 values, project "animlib", binding @ animationsystem.dll + 0x790de0):
+	Overlay = 0,
+	Additive = 1,
+	ModelSpace = 2,

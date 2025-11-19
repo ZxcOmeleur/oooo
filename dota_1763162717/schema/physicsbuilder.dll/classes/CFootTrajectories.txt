@@ -1,0 +1,7 @@
+class CFootTrajectories(size: 0x18 bytes, project "modellib", binding @ physicsbuilder.dll + 0xacc9a0, scope "physicsbuilder.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x4a55c0"
+
+-----members of class CFootTrajectories-----
+	CUtlVector< CFootTrajectory > m_trajectories(offset 0x0, size 0x18, align 0x8)
+

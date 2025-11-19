@@ -1,0 +1,7 @@
+enum EArtyGraphicsType(size: 1 bytes, 6 values, project "client", binding @ client.dll + 0x5144360):
+	k_eSprite = 0,
+	k_eAnimatedSprite = 1,
+	k_eProgressBar = 2,
+	k_eUnit = 3,
+	k_eHero = 4,
+	k_eParticle = 5,

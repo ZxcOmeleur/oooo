@@ -1,0 +1,26 @@
+class ArtyLevelInfo_t(size: 0x138 bytes, project "client", binding @ client.dll + 0x5144160, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1c28730"
+^MVDataRoot
+
+-----members of class ArtyLevelInfo_t-----
+	uint8_t[8] unaccounted(offset 0x0)
+	ArtyLevelID_t m_unID(offset 0x8, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0xc)
+	CUtlString m_sLocLevelName(offset 0x10, size 0x8, align 0x8)
+	ArtyLevelObjectInstance_t m_playerInfo(offset 0x18, size 0x88, align 0x8)
+	CUtlVector< ArtyLevelObjectInstance_t > m_vecGameObjects(offset 0xa0, size 0x18, align 0x8)
+	CUtlVector< ArtyLevelWeaponInstance_t > m_vecWeapons(offset 0xb8, size 0x18, align 0x8)
+	int32 m_nLevelCompletePoints(offset 0xd0, size 0x4, align 0x4)
+	int32 m_nTimeBonusBasePoints(offset 0xd4, size 0x4, align 0x4)
+	int32 m_nTimeBonusMaxPoints(offset 0xd8, size 0x4, align 0x4)
+	int32 m_nTimeBonusFastTime(offset 0xdc, size 0x4, align 0x4)
+	int32 m_nTimeBonusMaxTime(offset 0xe0, size 0x4, align 0x4)
+	float32 m_flBackgroundOffsetX(offset 0xe4, size 0x4, align 0x4)
+	int32[3] m_aryStarPointThresholds(offset 0xe8, size 0xc, align 0x4)
+	uint8_t[4] unaccounted(offset 0xf4)
+	CPanoramaImageName m_sBackgroundImage(offset 0xf8, size 0x10, align 0x8)
+	CPanoramaImageName m_sTerrainBackgroundImage(offset 0x108, size 0x10, align 0x8)
+	CPanoramaImageName m_sTerrainImage(offset 0x118, size 0x10, align 0x8)
+	CPanoramaImageName m_sTerrainForegroundImage(offset 0x128, size 0x10, align 0x8)
+

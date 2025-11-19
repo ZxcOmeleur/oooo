@@ -1,0 +1,22 @@
+class AimMatrixOpFixedSettings_t(size: 0xf0 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x753880, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x195730"
+
+-----members of class AimMatrixOpFixedSettings_t-----
+	CAnimAttachment m_attachment(offset 0x0, size 0x80, align 0x10)
+	CAnimInputDamping m_damping(offset 0x80, size 0x18, align 0x8)
+	CPoseHandle[10] m_poseCacheHandles(offset 0x98, size 0x28, align 0x2)
+	AimMatrixBlendMode m_eBlendMode(offset 0xc0, size 0x4, align 0x4)
+	float32 m_flMaxYawAngle(offset 0xc4, size 0x4, align 0x4)
+	float32 m_flMaxPitchAngle(offset 0xc8, size 0x4, align 0x4)
+	int32 m_nSequenceMaxFrame(offset 0xcc, size 0x4, align 0x4)
+	int32 m_nBoneMaskIndex(offset 0xd0, size 0x4, align 0x4)
+	bool m_bTargetIsPosition(offset 0xd4, size 0x1, align 0x1)
+	bool m_bUseBiasAndClamp(offset 0xd5, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0xd6)
+	float32 m_flBiasAndClampYawOffset(offset 0xd8, size 0x4, align 0x4)
+	float32 m_flBiasAndClampPitchOffset(offset 0xdc, size 0x4, align 0x4)
+	CBlendCurve m_biasAndClampBlendCurve(offset 0xe0, size 0x8, align 0x4)
+	uint8_t[8] unaccounted(offset 0xe8)
+

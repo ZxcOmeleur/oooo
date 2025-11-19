@@ -1,0 +1,29 @@
+class CBaseAnimGraphAnimGraphController(size: 0x268 bytes, project "client", binding @ client.dll + 0x4f45360, scope "!GlobalTypes") extends CAnimGraphControllerBase
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+
+	base class CAnimGraphControllerBase(size: 0x80 bytes, project "client", binding @ client.dll + 0x4f45070, scope "!GlobalTypes")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	
+	-----members of class CAnimGraphControllerBase-----
+		uint8_t[40] unaccounted(offset 0x0)
+		CUtlVectorFixedGrowable< CGlobalSymbol, 8 > m_vecParamsToResetInPostGraphUpdate(offset 0x28, size 0x58, align 0x8)
+	
+
+-----members of class CBaseAnimGraphAnimGraphController-----
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sDestructiblePartDestroyedHitGroup(offset 0x80, size 0x28, align 0x8)
+	CAnimGraphParamOptionalRef< int32 > m_nDestructiblePartDestroyedPartIndex(offset 0xa8, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_INVALID_Destroyed(offset 0xc8, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_GENERIC_Destroyed(offset 0xe8, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_HEAD_Destroyed(offset 0x108, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_CHEST_Destroyed(offset 0x128, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_STOMACH_Destroyed(offset 0x148, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_LEFTARM_Destroyed(offset 0x168, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_RIGHTARM_Destroyed(offset 0x188, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_LEFTLEG_Destroyed(offset 0x1a8, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_RIGHTLEG_Destroyed(offset 0x1c8, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_NECK_Destroyed(offset 0x1e8, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_UNUSED_Destroyed(offset 0x208, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_GEAR_Destroyed(offset 0x228, size 0x20, align 0x8)
+	CAnimGraphParamOptionalRef< bool > m_bHITGROUP_SPECIAL_Destroyed(offset 0x248, size 0x20, align 0x8)
+

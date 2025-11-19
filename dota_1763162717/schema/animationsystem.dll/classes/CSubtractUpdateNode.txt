@@ -1,0 +1,47 @@
+class CSubtractUpdateNode(size: 0xa0 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x76c7e0, scope "!GlobalTypes") extends CBinaryUpdateNode
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x292130"
+
+	base class CBinaryUpdateNode(size: 0x90 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x754360, scope "!GlobalTypes") extends CAnimUpdateNodeBase
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+	
+		base class CAnimUpdateNodeBase(size: 0x58 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7651c0, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+		
+		-----members of class CAnimUpdateNodeBase-----
+			uint8_t[24] unaccounted(offset 0x0)
+			CAnimNodePath m_nodePath(offset 0x18, size 0x30, align 0x4)
+			AnimNodeNetworkMode m_networkMode(offset 0x48, size 0x4, align 0x4)
+			uint8_t[4] unaccounted(offset 0x4c)
+			CUtlString m_name(offset 0x50, size 0x8, align 0x8)
+		
+	
+	-----members of class CBinaryUpdateNode-----
+		uint8_t[8] unaccounted(offset 0x58)
+		CAnimUpdateNodeRef m_pChild1(offset 0x60, size 0x10, align 0x8)
+		CAnimUpdateNodeRef m_pChild2(offset 0x70, size 0x10, align 0x8)
+		BinaryNodeTiming m_timingBehavior(offset 0x80, size 0x4, align 0x4)
+		float32 m_flTimingBlend(offset 0x84, size 0x4, align 0x4)
+		bool m_bResetChild1(offset 0x88, size 0x1, align 0x1)
+		bool m_bResetChild2(offset 0x89, size 0x1, align 0x1)
+		uint8_t[6] unaccounted(offset 0x8a)
+	
+
+-----members of class CSubtractUpdateNode-----
+	uint8_t[4] unaccounted(offset 0x90)
+	BinaryNodeChildOption m_footMotionTiming(offset 0x94, size 0x4, align 0x4)
+	bool m_bApplyToFootMotion(offset 0x98, size 0x1, align 0x1)
+	bool m_bApplyChannelsSeparately(offset 0x99, size 0x1, align 0x1)
+	bool m_bUseModelSpace(offset 0x9a, size 0x1, align 0x1)
+	uint8_t[5] unaccounted(offset 0x9b)
+

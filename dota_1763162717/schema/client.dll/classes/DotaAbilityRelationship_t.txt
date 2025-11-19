@@ -1,0 +1,8 @@
+class DotaAbilityRelationship_t(size: 0x20 bytes, project "client", binding @ client.dll + 0x507ebb0, scope "!GlobalTypes")
+
+-----members of class DotaAbilityRelationship_t-----
+	CUtlVector< DOTAAbilityDefinition_t* > m_vecTalents(offset 0x0, size 0x18, align 0x8)
+	bool m_bHasScepter(offset 0x18, size 0x1, align 0x1)
+	bool m_bHasShard(offset 0x19, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0x1a)
+

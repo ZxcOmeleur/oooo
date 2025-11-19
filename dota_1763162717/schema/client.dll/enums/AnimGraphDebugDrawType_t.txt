@@ -1,0 +1,6 @@
+enum AnimGraphDebugDrawType_t(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x4f45130):
+	None = 0,
+	WsPosition = 1,
+	MsPosition = 2,
+	WsDirection = 3,
+	MsDirection = 4,

@@ -1,0 +1,9 @@
+class CNmBoneWeightList(size: 0x110 bytes, project "animlib", binding @ client.dll + 0x517dd30, scope "client.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x2d17890"
+
+-----members of class CNmBoneWeightList-----
+	CResourceName m_skeletonName(offset 0x0, size 0xe0, align 0x8)
+	CUtlVector< CGlobalSymbol > m_boneIDs(offset 0xe0, size 0x18, align 0x8)
+	CUtlVector< float32 > m_weights(offset 0xf8, size 0x18, align 0x8)
+

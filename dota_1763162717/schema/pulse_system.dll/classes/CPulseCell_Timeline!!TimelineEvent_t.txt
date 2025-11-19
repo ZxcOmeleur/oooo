@@ -1,0 +1,10 @@
+class CPulseCell_Timeline::TimelineEvent_t(size: 0x50 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x1927f0, scope "pulse_system.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: pulse_system.dll + 0xb5da0"
+
+-----members of class CPulseCell_Timeline::TimelineEvent_t-----
+	float32 m_flTimeFromPrevious(offset 0x0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x4)
+	CPulse_OutflowConnection m_EventOutflow(offset 0x8, size 0x48, align 0x0)
+

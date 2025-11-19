@@ -1,0 +1,3 @@
+enum ERoadToTIQuestType(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x51106b0):
+	k_RoadToTIQuestType_Match = 0,
+	k_RoadToTIQuestType_Player = 1,

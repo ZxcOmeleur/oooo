@@ -1,0 +1,5 @@
+enum EMatch3LevelFlags(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x5156520):
+	k_eMatch3LevelFlag_None = 0,
+		^MEnumeratorIsNotAFlag
+	k_eMatch3LevelFlag_Boss = 1,
+	k_eMatch3LevelFlag_Friendly = 2,

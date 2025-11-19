@@ -1,0 +1,8 @@
+class CNmSkeleton::SecondarySkeleton_t(size: 0x10 bytes, project "animlib", binding @ client.dll + 0x517e760, scope "client.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x2d1ec60"
+
+-----members of class CNmSkeleton::SecondarySkeleton_t-----
+	CGlobalSymbol m_attachToBoneID(offset 0x0, size 0x8, align 0x8)
+	CStrongHandle< InfoForResourceTypeCNmSkeleton > m_skeleton(offset 0x8, size 0x8, align 0x8)
+

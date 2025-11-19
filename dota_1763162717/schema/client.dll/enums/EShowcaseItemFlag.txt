@@ -1,0 +1,3 @@
+enum EShowcaseItemFlag(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f5aed0):
+	k_eShowcaseItemFlag_None = 0,
+	k_eShowcaseItemFlag_FlipHorizontally = 1,

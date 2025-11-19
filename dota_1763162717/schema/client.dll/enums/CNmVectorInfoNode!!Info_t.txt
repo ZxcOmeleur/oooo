@@ -1,0 +1,7 @@
+enum CNmVectorInfoNode::Info_t(size: 1 bytes, 6 values, project "animlib", binding @ client.dll + 0x517d930):
+	X = 0,
+	Y = 1,
+	Z = 2,
+	Length = 3,
+	AngleHorizontal = 4,
+	AngleVertical = 5,

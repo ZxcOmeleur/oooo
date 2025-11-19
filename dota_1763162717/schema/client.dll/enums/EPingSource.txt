@@ -1,0 +1,5 @@
+enum EPingSource(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f52de0):
+	k_ePingSource_Default = 0,
+	k_ePingSource_Warning = 1,
+	k_ePingSource_Wheel = 2,
+	k_ePingSource_System = 3,

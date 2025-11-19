@@ -1,0 +1,6 @@
+enum EProtoDebugVisiblity(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x4f731b0):
+	k_EProtoDebugVisibility_Always = 0,
+	k_EProtoDebugVisibility_Server = 70,
+	k_EProtoDebugVisibility_ValveServer = 80,
+	k_EProtoDebugVisibility_GC = 90,
+	k_EProtoDebugVisibility_Never = 100,

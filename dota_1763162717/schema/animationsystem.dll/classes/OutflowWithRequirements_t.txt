@@ -1,0 +1,12 @@
+class OutflowWithRequirements_t(size: 0x80 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a8af0, scope "animationsystem.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x52ba00"
+
+-----members of class OutflowWithRequirements_t-----
+	CPulse_OutflowConnection m_Connection(offset 0x0, size 0x48, align 0x0)
+	PulseDocNodeID_t m_DestinationFlowNodeID(offset 0x48, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x4c)
+	CUtlVector< PulseDocNodeID_t > m_RequirementNodeIDs(offset 0x50, size 0x18, align 0x8)
+	CUtlVector< int32 > m_nCursorStateBlockIndex(offset 0x68, size 0x18, align 0x8)
+

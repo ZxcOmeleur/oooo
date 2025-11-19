@@ -1,0 +1,8 @@
+enum EDevEventRequestResult(size: 4 bytes, 7 values, project "client", binding @ client.dll + 0x4f52bf0):
+	k_EDevEventRequestResult_Success = 0,
+	k_EDevEventRequestResult_NotAllowed = 1,
+	k_EDevEventRequestResult_InvalidEvent = 2,
+	k_EDevEventRequestResult_SqlFailure = 3,
+	k_EDevEventRequestResult_Timeout = 4,
+	k_EDevEventRequestResult_LockFailure = 5,
+	k_EDevEventRequestResult_SDOLoadFailure = 6,

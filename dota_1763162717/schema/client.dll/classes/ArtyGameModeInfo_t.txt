@@ -1,0 +1,9 @@
+class ArtyGameModeInfo_t(size: 0x20 bytes, project "client", binding @ client.dll + 0x51442a0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1c29610"
+^MVDataRoot
+
+-----members of class ArtyGameModeInfo_t-----
+	uint8_t[8] unaccounted(offset 0x0)
+	CUtlVector< ArtyGameModeLevelInfo_t > m_vecLevels(offset 0x8, size 0x18, align 0x8)
+

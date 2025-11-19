@@ -1,0 +1,17 @@
+class ModelEmbeddedMesh_t(size: 0x70 bytes, project "modellib", binding @ assetpreview.dll + 0xd22ae0, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x54b8f0"
+
+-----members of class ModelEmbeddedMesh_t-----
+	CUtlString m_Name(offset 0x0, size 0x8, align 0x8)
+	uint8_t[8] unaccounted(offset 0x8)
+	int32 m_nMeshIndex(offset 0x10, size 0x4, align 0x4)
+	int32 m_nDataBlock(offset 0x14, size 0x4, align 0x4)
+	int32 m_nMorphBlock(offset 0x18, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x1c)
+	CUtlVector< ModelMeshBufferData_t > m_vertexBuffers(offset 0x20, size 0x18, align 0x8)
+	CUtlVector< ModelMeshBufferData_t > m_indexBuffers(offset 0x38, size 0x18, align 0x8)
+	CUtlVector< ModelMeshBufferData_t > m_toolsBuffers(offset 0x50, size 0x18, align 0x8)
+	int32 m_nVBIBBlock(offset 0x68, size 0x4, align 0x4)
+	int32 m_nToolsVBBlock(offset 0x6c, size 0x4, align 0x4)
+

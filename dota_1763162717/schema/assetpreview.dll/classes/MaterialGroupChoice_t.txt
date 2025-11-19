@@ -1,0 +1,12 @@
+class MaterialGroupChoice_t(size: 0x80 bytes, project "smartprops", binding @ assetpreview.dll + 0xd478f0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x813840"
+
+-----members of class MaterialGroupChoice_t-----
+	CSmartPropAttributeMaterialGroup m_MaterialGroupName(offset 0x0, size 0x40, align 0x8)
+		^MPropertyAttributeEditor "SmartPropAttributeEditor( MaterialGroupFromVariable )"
+		^MPropertyFriendlyName "Material Group"
+		^MPropertyDescription "Specifies the name of the material group (skin) to use when displaying the specified model."
+	CSmartPropAttributeFloat m_flWeight(offset 0x40, size 0x40, align 0x8)
+		^MPropertyDescription "Relative weight of this choice, higher weighted choices are more likely to be selected."
+

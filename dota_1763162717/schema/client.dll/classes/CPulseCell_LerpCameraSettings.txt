@@ -1,0 +1,62 @@
+class CPulseCell_LerpCameraSettings(size: 0xb8 bytes, project "client", binding @ client.dll + 0x4f10650, scope "client.dll") extends CPulseCell_BaseLerp
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: client.dll + 0x50efe0"
+
+	base class CPulseCell_BaseLerp(size: 0x90 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b6ef0, scope "client.dll") extends CPulseCell_BaseYieldingInflow
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: client.dll + 0x315b530"
+	
+		base class CPulseCell_BaseYieldingInflow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b6e50, scope "client.dll") extends CPulseCell_BaseFlow
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: client.dll + 0x315b460"
+		
+			base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b7f60, scope "client.dll") extends CPulseCell_Base
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: client.dll + 0x315a370"
+			
+				base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b6af0, scope "client.dll")
+				| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+				| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+				| SCHEMA_CF1_CONSTRUCT_ALLOWED
+				| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+				^MGetKV3ClassDefaults "func: client.dll + 0x315a0f0"
+				
+				-----members of class CPulseCell_Base-----
+					uint8_t[8] unaccounted(offset 0x0)
+					PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+						^MFgdFromSchemaCompletelySkipField
+					uint8_t[60] unaccounted(offset 0xc)
+				
+			
+			-----members of class CPulseCell_BaseFlow-----
+				<no members>
+			
+		
+		-----members of class CPulseCell_BaseYieldingInflow-----
+			<no members>
+		
+	
+	-----members of class CPulseCell_BaseLerp-----
+		CPulse_ResumePoint m_WakeResume(offset 0x48, size 0x48, align 0x0)
+	
+
+-----members of class CPulseCell_LerpCameraSettings-----
+	float32 m_flSeconds(offset 0x90, size 0x4, align 0x4)
+	PointCameraSettings_t m_Start(offset 0x94, size 0x10, align 0x4)
+	PointCameraSettings_t m_End(offset 0xa4, size 0x10, align 0x4)
+	uint8_t[4] unaccounted(offset 0xb4)
+

@@ -1,0 +1,67 @@
+class CPulseCell_BooleanSwitchState(size: 0x198 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x192ae0, scope "pulse_system.dll") extends CPulseCell_BaseState
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: pulse_system.dll + 0xb7a40"
+^MPropertyFriendlyName "Boolean Switch State"
+^MPropertyDescription "While active, activate a child state based on the results of a boolean condition. Any referenced variables must be marked as observable."
+^MPulseEditorCanvasItemSpecKV3 "<unidentified non-null meta: pulse_system.dll + 0x1160b0>"
+
+	base class CPulseCell_BaseState(size: 0x48 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x1929c0, scope "pulse_system.dll") extends CPulseCell_BaseYieldingInflow
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: pulse_system.dll + 0x7e40"
+	^MPulseEditorHeaderIcon "tools/images/pulse_editor/inflow_statecell.png"
+	
+		base class CPulseCell_BaseYieldingInflow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x1857b0, scope "pulse_system.dll") extends CPulseCell_BaseFlow
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: pulse_system.dll + 0x7e40"
+		
+			base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x1868c0, scope "pulse_system.dll") extends CPulseCell_Base
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: pulse_system.dll + 0x71d60"
+			
+				base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x185450, scope "pulse_system.dll")
+				| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+				| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+				| SCHEMA_CF1_CONSTRUCT_ALLOWED
+				| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+				^MGetKV3ClassDefaults "func: pulse_system.dll + 0x71b40"
+				
+				-----members of class CPulseCell_Base-----
+					uint8_t[8] unaccounted(offset 0x0)
+					PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+						^MFgdFromSchemaCompletelySkipField
+					uint8_t[60] unaccounted(offset 0xc)
+				
+			
+			-----members of class CPulseCell_BaseFlow-----
+				<no members>
+			
+		
+		-----members of class CPulseCell_BaseYieldingInflow-----
+			<no members>
+		
+	
+	-----members of class CPulseCell_BaseState-----
+		<no members>
+	
+
+-----members of class CPulseCell_BooleanSwitchState-----
+	PulseObservableBoolExpression_t m_Condition(offset 0x48, size 0x78, align 0x8)
+		^MPropertyDescription "Condition to evaluate when any of its dependent values change."
+	CPulse_OutflowConnection m_SubGraph(offset 0xc0, size 0x48, align 0x0)
+	CPulse_OutflowConnection m_WhenTrue(offset 0x108, size 0x48, align 0x0)
+	CPulse_OutflowConnection m_WhenFalse(offset 0x150, size 0x48, align 0x0)
+

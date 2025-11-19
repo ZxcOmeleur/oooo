@@ -1,0 +1,6 @@
+enum modifierpriority(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x5076d90):
+	MODIFIER_PRIORITY_LOW = 0,
+	MODIFIER_PRIORITY_NORMAL = 1,
+	MODIFIER_PRIORITY_HIGH = 2,
+	MODIFIER_PRIORITY_ULTRA = 3,
+	MODIFIER_PRIORITY_SUPER_ULTRA = 4,

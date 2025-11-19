@@ -1,0 +1,9 @@
+class TraceSettings_t(size: 0x8 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7556a0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x1a7950"
+
+-----members of class TraceSettings_t-----
+	float32 m_flTraceHeight(offset 0x0, size 0x4, align 0x4)
+	float32 m_flTraceRadius(offset 0x4, size 0x4, align 0x4)
+

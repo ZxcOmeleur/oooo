@@ -1,0 +1,9 @@
+enum EArtyGameObjectType(size: 1 bytes, 8 values, project "client", binding @ client.dll + 0x51443b0):
+	k_eTypeObject = 0,
+	k_eTypeShot = 1,
+	k_eTypeTrail = 2,
+	k_eTypeCannon = 3,
+	k_eTypePlayer = 4,
+	k_eTypeEnemy = 5,
+	k_eTypeFX = 6,
+	k_eTypeUI = 7,

@@ -1,0 +1,19 @@
+class CBuoyancyHelper(size: 0x118 bytes, project "client", binding @ client.dll + 0x4f05d60, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class CBuoyancyHelper-----
+	uint8_t[24] unaccounted(offset 0x0)
+	CUtlStringToken m_nFluidType(offset 0x18, size 0x4, align 0x4)
+	float32 m_flFluidDensity(offset 0x1c, size 0x4, align 0x4)
+	float32 m_flNeutrallyBuoyantGravity(offset 0x20, size 0x4, align 0x4)
+	float32 m_flNeutrallyBuoyantLinearDamping(offset 0x24, size 0x4, align 0x4)
+	float32 m_flNeutrallyBuoyantAngularDamping(offset 0x28, size 0x4, align 0x4)
+	bool m_bNeutrallyBuoyant(offset 0x2c, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x2d)
+	CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelFriction(offset 0x30, size 0x18, align 0x8)
+	CUtlVector< float32 > m_vecWheelFrictionScales(offset 0x48, size 0x18, align 0x8)
+	CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelDrag(offset 0x60, size 0x18, align 0x8)
+	CUtlVector< float32 > m_vecWheelDrag(offset 0x78, size 0x18, align 0x8)
+	uint8_t[136] unaccounted(offset 0x90)
+

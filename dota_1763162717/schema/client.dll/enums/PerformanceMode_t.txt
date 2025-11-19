@@ -1,0 +1,3 @@
+enum PerformanceMode_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f16aa0):
+	PM_NORMAL = 0,
+	PM_NO_GIBS = 1,

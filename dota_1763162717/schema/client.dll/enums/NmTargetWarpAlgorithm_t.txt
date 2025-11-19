@@ -1,0 +1,5 @@
+enum NmTargetWarpAlgorithm_t(size: 1 bytes, 4 values, project "animlib", binding @ client.dll + 0x517a6a0):
+	Lerp = 0,
+	Hermite = 1,
+	HermiteFeaturePreserving = 2,
+	Bezier = 3,

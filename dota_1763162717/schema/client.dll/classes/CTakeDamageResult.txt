@@ -1,0 +1,14 @@
+class CTakeDamageResult(size: 0x28 bytes, project "client", binding @ client.dll + 0x4f1e530, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class CTakeDamageResult-----
+	CTakeDamageInfo* m_pOriginatingInfo(offset 0x0, size 0x8, align 0x8)
+	int32 m_nHealthLost(offset 0x8, size 0x4, align 0x4)
+	int32 m_nHealthBefore(offset 0xc, size 0x4, align 0x4)
+	int32 m_nDamageDealt(offset 0x10, size 0x4, align 0x4)
+	float32 m_flPreModifiedDamage(offset 0x14, size 0x4, align 0x4)
+	int32 m_nTotalledHealthLost(offset 0x18, size 0x4, align 0x4)
+	int32 m_nTotalledDamageDealt(offset 0x1c, size 0x4, align 0x4)
+	bool m_bWasDamageSuppressed(offset 0x20, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x21)
+

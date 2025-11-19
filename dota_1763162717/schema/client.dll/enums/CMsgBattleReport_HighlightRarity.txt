@@ -1,0 +1,7 @@
+enum CMsgBattleReport_HighlightRarity(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x4f60260):
+	k_eHighlightCommon = 0,
+		^MPropertyFriendlyName "Common"
+	k_eHighlightUncommon = 1,
+		^MPropertyFriendlyName "Uncommon"
+	k_eHighlightRare = 2,
+		^MPropertyFriendlyName "Rare"

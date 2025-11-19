@@ -1,0 +1,9 @@
+class CFlexRule(size: 0x20 bytes, project "modellib", binding @ meshsystem.dll + 0x135330, scope "meshsystem.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: meshsystem.dll + 0x45dd0"
+
+-----members of class CFlexRule-----
+	int32 m_nFlex(offset 0x0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlVector< CFlexOp > m_FlexOps(offset 0x8, size 0x18, align 0x8)
+

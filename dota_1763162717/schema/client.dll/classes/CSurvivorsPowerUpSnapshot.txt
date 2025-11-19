@@ -1,0 +1,13 @@
+class CSurvivorsPowerUpSnapshot(size: 0x28 bytes, project "client", binding @ client.dll + 0x515a910, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x24fb5e0"
+^MVDataRoot
+
+-----members of class CSurvivorsPowerUpSnapshot-----
+	SurvivorsPowerUpID_t m_unPowerUpID(offset 0x0, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlVector< SurvivorsUpgradeID_t > m_vecUpgradeIDs(offset 0x8, size 0x18, align 0x8)
+	bool m_bShardUpgraded(offset 0x20, size 0x1, align 0x1)
+	bool m_bScepterUpgraded(offset 0x21, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0x22)
+

@@ -1,0 +1,10 @@
+class CDOTAMinesweeperPlayerDefinition(size: 0x8 bytes, project "client", binding @ client.dll + 0x51576f0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x246d940"
+^MVDataRoot
+
+-----members of class CDOTAMinesweeperPlayerDefinition-----
+	int32 m_nInitialHealth(offset 0x0, size 0x4, align 0x4)
+	int32 m_nInitialMana(offset 0x4, size 0x4, align 0x4)
+

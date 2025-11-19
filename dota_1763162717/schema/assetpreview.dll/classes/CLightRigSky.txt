@@ -1,0 +1,7 @@
+class CLightRigSky(size: 0x8 bytes, project "toolscene", binding @ assetpreview.dll + 0xd2d620, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x649930"
+
+-----members of class CLightRigSky-----
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterial(offset 0x0, size 0x8, align 0x8)
+

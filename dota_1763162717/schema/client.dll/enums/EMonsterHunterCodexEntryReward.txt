@@ -1,0 +1,3 @@
+enum EMonsterHunterCodexEntryReward(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x510e4d0):
+	k_eCodex_Reward_StandardSticker = 1,
+	k_eCodex_Reward_HeroMaterials = 2,

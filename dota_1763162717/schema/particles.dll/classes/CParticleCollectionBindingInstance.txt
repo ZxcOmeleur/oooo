@@ -1,0 +1,16 @@
+class CParticleCollectionBindingInstance(size: 0x138 bytes, project "particleslib", binding @ particles.dll + 0x50cbd0, scope "particles.dll") extends CBasePulseGraphInstance
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+	base class CBasePulseGraphInstance(size: 0x118 bytes, project "pulse_runtime_lib", binding @ particles.dll + 0x50d650, scope "particles.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	
+	-----members of class CBasePulseGraphInstance-----
+		uint8_t[280] unaccounted(offset 0x0)
+	
+
+-----members of class CParticleCollectionBindingInstance-----
+	uint8_t[32] unaccounted(offset 0x118)
+

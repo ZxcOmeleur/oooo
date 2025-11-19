@@ -1,0 +1,10 @@
+class CCraftworksRecipeComponentQuantity(size: 0x8 bytes, project "client", binding @ client.dll + 0x51034d0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1737f10"
+
+-----members of class CCraftworksRecipeComponentQuantity-----
+	CraftworksComponentID_t m_unComponentID(offset 0x0, size 0x1, align 0x0)
+	uint8_t[3] unaccounted(offset 0x1)
+	uint32 m_unQuantity(offset 0x4, size 0x4, align 0x4)
+

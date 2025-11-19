@@ -1,0 +1,4 @@
+enum BrushSolidities_e(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x4f7a6d0):
+	BRUSHSOLID_TOGGLE = 0,
+	BRUSHSOLID_NEVER = 1,
+	BRUSHSOLID_ALWAYS = 2,

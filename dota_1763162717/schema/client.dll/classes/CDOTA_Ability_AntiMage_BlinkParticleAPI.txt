@@ -1,0 +1,8 @@
+class CDOTA_Ability_AntiMage_BlinkParticleAPI(size: 0x8 bytes, project "client", binding @ client.dll + 0x4f89b60, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MCustomFGDMetadata "{ particle_domain_ui_name = 'Antimage Blink Ability' particle_domain_internal_name = 'CDOTA_Ability_AntiMage_BlinkParticleAPI'  }"
+
+-----members of class CDOTA_Ability_AntiMage_BlinkParticleAPI-----
+	uint8_t[8] unaccounted(offset 0x0)
+

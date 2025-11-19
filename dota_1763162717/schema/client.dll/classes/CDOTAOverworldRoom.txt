@@ -1,0 +1,19 @@
+class CDOTAOverworldRoom(size: 0x50 bytes, project "client", binding @ client.dll + 0x510ca10, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1910170"
+^MVDataRoot
+
+-----members of class CDOTAOverworldRoom-----
+	OverworldRoomID_t m_unRoomID(offset 0x0, size 0x2, align 0x0)
+	uint8_t[2] unaccounted(offset 0x2)
+	Vector2D m_vPos(offset 0x4, size 0x8, align 0x4)
+		^MPropertyDescription "The left top of the Room, in 2d panel space."
+	Vector2D m_vSize(offset 0xc, size 0x8, align 0x4)
+		^MPropertyDescription "The width and height of the Room, in 2d panel space"
+	uint8_t[4] unaccounted(offset 0x14)
+	CUtlVector< OverworldNodeID_t > m_vecNodes(offset 0x18, size 0x18, align 0x8)
+		^MPropertyDescription "The Node IDs that belong to this room."
+	OverworldNodeID_t m_unUnlockedByNodeID(offset 0x30, size 0x2, align 0x0)
+		^MPropertyDescription "This room becomes accessible when the given node is unlocked. If invalid, this room starts off accessible."
+	uint8_t[30] unaccounted(offset 0x32)
+

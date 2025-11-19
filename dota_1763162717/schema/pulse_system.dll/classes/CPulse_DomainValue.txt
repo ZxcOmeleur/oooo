@@ -1,0 +1,11 @@
+class CPulse_DomainValue(size: 0x30 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x1887d0, scope "pulse_system.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: pulse_system.dll + 0x89400"
+
+-----members of class CPulse_DomainValue-----
+	PulseDomainValueType_t m_nType(offset 0x0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x4)
+	CGlobalSymbolCaseSensitive m_Value(offset 0x8, size 0x8, align 0x8)
+	CPulseValueFullType m_RequiredRuntimeType(offset 0x10, size 0x18, align 0x8)
+	uint8_t[8] unaccounted(offset 0x28)
+

@@ -1,0 +1,3 @@
+enum ETormentorLocation(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x5093fd0):
+	TORMENTOR_LOCATION_TOP = 0,
+	TORMENTOR_LOCATION_BOTTOM = 1,

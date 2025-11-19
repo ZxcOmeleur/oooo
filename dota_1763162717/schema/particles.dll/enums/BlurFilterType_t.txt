@@ -1,0 +1,5 @@
+enum BlurFilterType_t(size: 4 bytes, 2 values, project "particles", binding @ particles.dll + 0x550a90):
+	BLURFILTER_GAUSSIAN = 0,
+		^MPropertyFriendlyName "Gaussian"
+	BLURFILTER_BOX = 1,
+		^MPropertyFriendlyName "Box"

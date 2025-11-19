@@ -1,0 +1,5 @@
+enum PortraitSoundMode_t(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x5094080):
+	PORTRAIT_SOUND_MODE_INVALID = -1,
+	PORTRAIT_SOUND_MODE_NO_SOUNDS = 0,
+	PORTRAIT_SOUND_MODE_ONLY_TAUNT_SOUNDS = 1,
+	PORTRAIT_SOUND_MODE_ALL_SOUNDS = 2,

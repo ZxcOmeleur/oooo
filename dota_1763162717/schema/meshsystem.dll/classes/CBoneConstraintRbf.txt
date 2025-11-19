@@ -1,0 +1,22 @@
+class CBoneConstraintRbf(size: 0xc8 bytes, project "modellib", binding @ meshsystem.dll + 0x1373c0, scope "meshsystem.dll") extends CBoneConstraintBase
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: meshsystem.dll + 0x60d60"
+
+	base class CBoneConstraintBase(size: 0x20 bytes, project "modellib", binding @ meshsystem.dll + 0x136900, scope "meshsystem.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: meshsystem.dll + 0x9550"
+	
+	-----members of class CBoneConstraintBase-----
+		uint8_t[32] unaccounted(offset 0x0)
+	
+
+-----members of class CBoneConstraintRbf-----
+	CUtlVector< std::pair< CUtlString, uint32 > > m_inputBones(offset 0x20, size 0x18, align 0x8)
+	CUtlVector< std::pair< CUtlString, uint32 > > m_outputBones(offset 0x38, size 0x18, align 0x8)
+	uint8_t[120] unaccounted(offset 0x50)
+

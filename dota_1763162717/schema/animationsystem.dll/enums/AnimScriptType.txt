@@ -1,0 +1,4 @@
+enum AnimScriptType(size: 2 bytes, 3 values, project "animgraphlib", binding @ animationsystem.dll + 0x753fe0):
+	ANIMSCRIPT_TYPE_INVALID = -1,
+	ANIMSCRIPT_FUSE_GENERAL = 0,
+	ANIMSCRIPT_FUSE_STATEMACHINE = 1,

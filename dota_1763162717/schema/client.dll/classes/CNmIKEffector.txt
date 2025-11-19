@@ -1,0 +1,15 @@
+class CNmIKEffector(size: 0x40 bytes, project "animlib", binding @ client.dll + 0x51836c0, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x2d525d0"
+
+-----members of class CNmIKEffector-----
+	int32 m_nBodyIndex(offset 0x0, size 0x4, align 0x4)
+	bool m_bEnabled(offset 0x4, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x5)
+	Vector m_vTargetPosition(offset 0x8, size 0xc, align 0x4)
+	uint8_t[12] unaccounted(offset 0x14)
+	Quaternion m_qTargetOrientation(offset 0x20, size 0x10, align 0x10)
+	float32 m_flWeight(offset 0x30, size 0x4, align 0x4)
+	uint8_t[12] unaccounted(offset 0x34)
+

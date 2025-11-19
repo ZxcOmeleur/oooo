@@ -1,0 +1,12 @@
+class CPulse_BlackboardReference(size: 0x28 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b93d0, scope "client.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x31874f0"
+
+-----members of class CPulse_BlackboardReference-----
+	CStrongHandle< InfoForResourceTypeIPulseGraphDef > m_hBlackboardResource(offset 0x0, size 0x8, align 0x8)
+	PulseSymbol_t m_BlackboardResource(offset 0x8, size 0x10, align 0x8)
+	PulseDocNodeID_t m_nNodeID(offset 0x18, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x1c)
+	CGlobalSymbol m_NodeName(offset 0x20, size 0x8, align 0x8)
+

@@ -1,0 +1,3 @@
+enum EPartyMatchmakingFlags(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f670a0):
+	k_EPartyMatchmakingFlags_None = 0,
+	k_EPartyMatchmakingFlags_LargeRankSpread = 1,

@@ -1,0 +1,6 @@
+enum ETalentContentStatus(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x4f66c40):
+	TALENT_CONTENT_STATUS_INVALID = 0,
+	TALENT_CONTENT_STATUS_PENDING = 1,
+	TALENT_CONTENT_STATUS_EVALUATED = 2,
+	TALENT_CONTENT_STATUS_REJECTED = 3,
+	TALENT_CONTENT_STATUS_APPROVED = 4,

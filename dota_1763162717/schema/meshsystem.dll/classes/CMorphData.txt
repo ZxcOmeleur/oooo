@@ -1,0 +1,8 @@
+class CMorphData(size: 0x20 bytes, project "modellib", binding @ meshsystem.dll + 0x135760, scope "meshsystem.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: meshsystem.dll + 0x46780"
+
+-----members of class CMorphData-----
+	CUtlString m_name(offset 0x0, size 0x8, align 0x8)
+	CUtlVector< CMorphRectData > m_morphRectDatas(offset 0x8, size 0x18, align 0x8)
+

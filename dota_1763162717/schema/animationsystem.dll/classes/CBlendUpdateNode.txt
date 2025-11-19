@@ -1,0 +1,40 @@
+class CBlendUpdateNode(size: 0xe0 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x754660, scope "!GlobalTypes") extends CAnimUpdateNodeBase
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x19f160"
+
+	base class CAnimUpdateNodeBase(size: 0x58 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7651c0, scope "!GlobalTypes")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+	
+	-----members of class CAnimUpdateNodeBase-----
+		uint8_t[24] unaccounted(offset 0x0)
+		CAnimNodePath m_nodePath(offset 0x18, size 0x30, align 0x4)
+		AnimNodeNetworkMode m_networkMode(offset 0x48, size 0x4, align 0x4)
+		uint8_t[4] unaccounted(offset 0x4c)
+		CUtlString m_name(offset 0x50, size 0x8, align 0x8)
+	
+
+-----members of class CBlendUpdateNode-----
+	uint8_t[8] unaccounted(offset 0x58)
+	CUtlVector< CAnimUpdateNodeRef > m_children(offset 0x60, size 0x18, align 0x8)
+	CUtlVector< uint8 > m_sortedOrder(offset 0x78, size 0x18, align 0x8)
+	CUtlVector< float32 > m_targetValues(offset 0x90, size 0x18, align 0x8)
+	uint8_t[4] unaccounted(offset 0xa8)
+	AnimValueSource m_blendValueSource(offset 0xac, size 0x4, align 0x4)
+	LinearRootMotionBlendMode_t m_eLinearRootMotionBlendMode(offset 0xb0, size 0x4, align 0x4)
+	CAnimParamHandle m_paramIndex(offset 0xb4, size 0x2, align 0x1)
+	uint8_t[2] unaccounted(offset 0xb6)
+	CAnimInputDamping m_damping(offset 0xb8, size 0x18, align 0x8)
+	BlendKeyType m_blendKeyType(offset 0xd0, size 0x4, align 0x4)
+	bool m_bLockBlendOnReset(offset 0xd4, size 0x1, align 0x1)
+	bool m_bSyncCycles(offset 0xd5, size 0x1, align 0x1)
+	bool m_bLoop(offset 0xd6, size 0x1, align 0x1)
+	bool m_bLockWhenWaning(offset 0xd7, size 0x1, align 0x1)
+	bool m_bIsAngle(offset 0xd8, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0xd9)
+

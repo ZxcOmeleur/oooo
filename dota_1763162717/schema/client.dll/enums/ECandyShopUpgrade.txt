@@ -1,0 +1,5 @@
+enum ECandyShopUpgrade(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f6a990):
+	k_ECandyShopUpgradeInvalid = -1,
+	k_ECandyShopUpgrade_InventorySize = 0,
+	k_ECandyShopUpgrade_RewardShelf = 1,
+	k_ECandyShopUpgrade_ExtraExchangeRecipe = 2,

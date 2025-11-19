@@ -1,0 +1,10 @@
+class CDrawCullingData(size: 0x4 bytes, project "modellib", binding @ assetpreview.dll + 0xd25980, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x559a30"
+
+-----members of class CDrawCullingData-----
+	int8[3] m_ConeAxis(offset 0x0, size 0x3, align 0x1)
+	int8 m_ConeCutoff(offset 0x3, size 0x1, align 0x1)
+

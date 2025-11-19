@@ -1,0 +1,45 @@
+class CDOTACourierController(size: 0x28 bytes, project "client", binding @ client.dll + 0x5082900, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MNetworkNoBase
+^MNetworkVarNames "m_bAutoCourierAutoBurst bool"
+^MNetworkVarNames "m_bAutoCourierAutoDeliver bool"
+^MNetworkVarNames "m_bDeliverWhileVisibleOnly bool"
+^MNetworkVarNames "m_hCourier DOTACourierHandle_t"
+^MNetworkVarNames "m_nPlayerID PlayerID_t"
+^MNetworkVarNames "m_bUseNewLogic bool"
+^MNetworkVarNames "m_eFSMShop DOTA_SHOP_TYPE"
+^MNetworkVarNames "m_hFSMUnit EHANDLE"
+^MNetworkVarNames "m_eFSMState ECourierState"
+^MNetworkVarNames "m_bFSMStashAfter bool"
+^MNetworkVarNames "m_bManualRequest bool"
+
+-----members of class CDOTACourierController-----
+	uint8_t[8] unaccounted(offset 0x0)
+	bool m_bAutoCourierAutoBurst(offset 0x8, size 0x1, align 0x1)
+		^MNetworkEnable
+	bool m_bAutoCourierAutoDeliver(offset 0x9, size 0x1, align 0x1)
+		^MNetworkEnable
+	bool m_bDeliverWhileVisibleOnly(offset 0xa, size 0x1, align 0x1)
+		^MNetworkEnable
+	uint8_t[1] unaccounted(offset 0xb)
+	CHandle< C_DOTA_Unit_Courier > m_hCourier(offset 0xc, size 0x4, align 0x4)
+		^MNetworkEnable
+	PlayerID_t m_nPlayerID(offset 0x10, size 0x4, align 0x0)
+		^MNetworkEnable
+	bool m_bUseNewLogic(offset 0x14, size 0x1, align 0x1)
+		^MNetworkEnable
+	uint8_t[3] unaccounted(offset 0x15)
+	DOTA_SHOP_TYPE m_eFSMShop(offset 0x18, size 0x4, align 0x4)
+		^MNetworkEnable
+	CHandle< C_BaseEntity > m_hFSMUnit(offset 0x1c, size 0x4, align 0x4)
+		^MNetworkEnable
+	ECourierState m_eFSMState(offset 0x20, size 0x4, align 0x4)
+		^MNetworkEnable
+	bool m_bFSMStashAfter(offset 0x24, size 0x1, align 0x1)
+		^MNetworkEnable
+	bool m_bManualRequest(offset 0x25, size 0x1, align 0x1)
+		^MNetworkEnable
+	uint8_t[2] unaccounted(offset 0x26)
+

@@ -1,0 +1,13 @@
+class MaterialVariable_t(size: 0x10 bytes, project "particles", binding @ particles.dll + 0x54f2c0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0x2a3ba0"
+
+-----members of class MaterialVariable_t-----
+	CUtlString m_strVariable(offset 0x0, size 0x8, align 0x8)
+		^MPropertyFriendlyName "material variable"
+	ParticleAttributeIndex_t m_nVariableField(offset 0x8, size 0x4, align 0x0)
+		^MPropertyFriendlyName "particle field"
+		^MPropertyAttributeChoiceName "particlefield"
+	float32 m_flScale(offset 0xc, size 0x4, align 0x4)
+		^MPropertyFriendlyName "scale"
+

@@ -1,0 +1,4 @@
+enum CMsgClientToGCUpdateComicBookStat_Type(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x4f52d30):
+	CMsgClientToGCUpdateComicBookStat_Type_HighestPageRead = 1,
+	CMsgClientToGCUpdateComicBookStat_Type_SecondsSpentReading = 2,
+	CMsgClientToGCUpdateComicBookStat_Type_HighestPercentRead = 3,

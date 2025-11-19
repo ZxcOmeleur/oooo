@@ -1,0 +1,53 @@
+class ArtyGameObjectDef_t(size: 0xb0 bytes, project "client", binding @ client.dll + 0x5145b90, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: client.dll + 0x1c277e0"
+^MVDataRoot
+^MVDataNodeType "1"
+
+-----members of class ArtyGameObjectDef_t-----
+	uint8_t[16] unaccounted(offset 0x0)
+	ArtyGameObjectID_t m_unID(offset 0x10, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x14)
+	CUtlString m_szGraphicsDef(offset 0x18, size 0x8, align 0x8)
+		^MPropertyCustomFGDType "vdata_choice:scripts/events/crownfall/artillery_graphics.vdata"
+	uint8_t[8] unaccounted(offset 0x20)
+	CUtlString m_szDeathSound(offset 0x28, size 0x8, align 0x8)
+	EArtyHitboxType m_eHitboxType(offset 0x30, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x31)
+	Vector2D m_vHitboxMin(offset 0x34, size 0x8, align 0x4)
+	Vector2D m_vHitboxMax(offset 0x3c, size 0x8, align 0x4)
+	float32 m_flHitboxRadius(offset 0x44, size 0x4, align 0x4)
+	float32 m_flHitboxExtents(offset 0x48, size 0x4, align 0x4)
+	bool m_bInheritTransform(offset 0x4c, size 0x1, align 0x1)
+	bool m_bInheritRotation(offset 0x4d, size 0x1, align 0x1)
+	bool m_bInheritVisibility(offset 0x4e, size 0x1, align 0x1)
+	bool m_bInheritState(offset 0x4f, size 0x1, align 0x1)
+	bool m_bDestroyOnFallThrough(offset 0x50, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x51)
+	float32 m_flFallDamagePerVelocity(offset 0x54, size 0x4, align 0x4)
+	bool m_bDeathCausesExplosion(offset 0x58, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x59)
+	float32 m_flExplosionDamage(offset 0x5c, size 0x4, align 0x4)
+	float32 m_flExplosionRadius(offset 0x60, size 0x4, align 0x4)
+	float32 m_flExplosionTerrainRadius(offset 0x64, size 0x4, align 0x4)
+	float32 m_flGravityMult(offset 0x68, size 0x4, align 0x4)
+	float32 m_flDragMult(offset 0x6c, size 0x4, align 0x4)
+	float32 m_flWindMult(offset 0x70, size 0x4, align 0x4)
+	float32 m_flDeathMaxScaleFactor(offset 0x74, size 0x4, align 0x4)
+	bool m_bAllowPhysicsInDying(offset 0x78, size 0x1, align 0x1)
+	EArtyGameObjectType m_eType(offset 0x79, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x7a)
+	EArtyLayer m_eLayer(offset 0x7c, size 0x4, align 0x4)
+	float32 m_flMaxHealth(offset 0x80, size 0x4, align 0x4)
+	float32 m_flHealth(offset 0x84, size 0x4, align 0x4)
+	bool m_bVisible(offset 0x88, size 0x1, align 0x1)
+	bool m_bCanCollide(offset 0x89, size 0x1, align 0x1)
+	bool m_bDoPhysics(offset 0x8a, size 0x1, align 0x1)
+	uint8_t[1] unaccounted(offset 0x8b)
+	float32 m_flLifetime(offset 0x8c, size 0x4, align 0x4)
+	float32 m_flDieTime(offset 0x90, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x94)
+	CUtlVector< ArtyGameObjectInstance_t > m_vecChildren(offset 0x98, size 0x18, align 0x8)
+

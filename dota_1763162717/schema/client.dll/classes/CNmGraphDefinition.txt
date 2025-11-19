@@ -1,0 +1,20 @@
+class CNmGraphDefinition(size: 0x180 bytes, project "animlib", binding @ client.dll + 0x5183450, scope "client.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x2d4f7d0"
+
+-----members of class CNmGraphDefinition-----
+	CGlobalSymbol m_variationID(offset 0x0, size 0x8, align 0x8)
+	CStrongHandle< InfoForResourceTypeCNmSkeleton > m_skeleton(offset 0x8, size 0x8, align 0x8)
+	CUtlVector< int16 > m_persistentNodeIndices(offset 0x10, size 0x18, align 0x8)
+	int16 m_nRootNodeIdx(offset 0x28, size 0x2, align 0x2)
+	uint8_t[6] unaccounted(offset 0x2a)
+	CUtlVector< CGlobalSymbol > m_controlParameterIDs(offset 0x30, size 0x18, align 0x8)
+	CUtlVector< CGlobalSymbol > m_virtualParameterIDs(offset 0x48, size 0x18, align 0x8)
+	CUtlVector< int16 > m_virtualParameterNodeIndices(offset 0x60, size 0x18, align 0x8)
+	CUtlVector< CNmGraphDefinition::ReferencedGraphSlot_t > m_referencedGraphSlots(offset 0x78, size 0x18, align 0x8)
+	CUtlVector< CNmGraphDefinition::ExternalGraphSlot_t > m_externalGraphSlots(offset 0x90, size 0x18, align 0x8)
+	uint8_t[112] unaccounted(offset 0xa8)
+	CUtlVector< CUtlString > m_nodePaths(offset 0x118, size 0x18, align 0x8)
+	CUtlVector< CStrongHandleVoid > m_resources(offset 0x130, size 0x18, align 0x8)
+	uint8_t[56] unaccounted(offset 0x148)
+

@@ -1,0 +1,4 @@
+enum EntityPlatformTypes_t(size: 1 bytes, 3 values, project "client", binding @ client.dll + 0x4f1e4d0):
+	ENTITY_NOT_PLATFORM = 0,
+	ENTITY_PLATFORM_PLAYER_FOLLOWS_YAW = 1,
+	ENTITY_PLATFORM_PLAYER_IGNORES_YAW = 2,

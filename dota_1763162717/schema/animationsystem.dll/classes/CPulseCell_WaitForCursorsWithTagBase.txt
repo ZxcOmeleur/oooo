@@ -1,0 +1,51 @@
+class CPulseCell_WaitForCursorsWithTagBase(size: 0x98 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b59b0, scope "animationsystem.dll") extends CPulseCell_BaseYieldingInflow
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x559ad0"
+^MPulseEditorCanvasItemSpecKV3 "<unidentified non-null meta: animationsystem.dll + 0x694c58>"
+
+	base class CPulseCell_BaseYieldingInflow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b1c60, scope "animationsystem.dll") extends CPulseCell_BaseFlow
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+	
+		base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b2d70, scope "animationsystem.dll") extends CPulseCell_Base
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: animationsystem.dll + 0x53ec90"
+		
+			base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b1900, scope "animationsystem.dll")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: animationsystem.dll + 0x53ea70"
+			
+			-----members of class CPulseCell_Base-----
+				uint8_t[8] unaccounted(offset 0x0)
+				PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+					^MFgdFromSchemaCompletelySkipField
+				uint8_t[60] unaccounted(offset 0xc)
+			
+		
+		-----members of class CPulseCell_BaseFlow-----
+			<no members>
+		
+	
+	-----members of class CPulseCell_BaseYieldingInflow-----
+		<no members>
+	
+
+-----members of class CPulseCell_WaitForCursorsWithTagBase-----
+	int32 m_nCursorsAllowedToWait(offset 0x48, size 0x4, align 0x4)
+		^MPropertyDescription "Any extra waiting cursors will be terminated. -1 for infinite cursors."
+	uint8_t[4] unaccounted(offset 0x4c)
+	CPulse_ResumePoint m_WaitComplete(offset 0x50, size 0x48, align 0x0)
+

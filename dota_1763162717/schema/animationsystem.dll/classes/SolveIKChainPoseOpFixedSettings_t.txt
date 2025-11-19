@@ -1,0 +1,7 @@
+class SolveIKChainPoseOpFixedSettings_t(size: 0x18 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x753f70, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x199160"
+
+-----members of class SolveIKChainPoseOpFixedSettings_t-----
+	CUtlVector< ChainToSolveData_t > m_ChainsToSolveData(offset 0x0, size 0x18, align 0x8)
+

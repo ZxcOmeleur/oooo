@@ -1,0 +1,24 @@
+class ArtyGraphicInfo_t(size: 0x218 bytes, project "client", binding @ client.dll + 0x5144b80, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1c2a740"
+^MVDataRoot
+
+-----members of class ArtyGraphicInfo_t-----
+	uint8_t[8] unaccounted(offset 0x0)
+	ArtyGraphicID_t m_unID(offset 0x8, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0xc)
+	CUtlString m_szSnippet(offset 0x10, size 0x8, align 0x8)
+	CUtlString m_szUnit(offset 0x18, size 0x8, align 0x8)
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_szModel(offset 0x20, size 0xe0, align 0x8)
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szParticle(offset 0x100, size 0xe0, align 0x8)
+	EArtyGraphicsType m_eType(offset 0x1e0, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x1e1)
+	QAngle m_vAngles(offset 0x1e4, size 0xc, align 0x4)
+	Vector m_vPosition(offset 0x1f0, size 0xc, align 0x4)
+	Vector m_vCameraOffset(offset 0x1fc, size 0xc, align 0x4)
+	int32 m_nWidth(offset 0x208, size 0x4, align 0x4)
+	int32 m_nHeight(offset 0x20c, size 0x4, align 0x4)
+	bool m_bPlayEndcap(offset 0x210, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x211)
+	float32 m_flDefaultScale(offset 0x214, size 0x4, align 0x4)
+

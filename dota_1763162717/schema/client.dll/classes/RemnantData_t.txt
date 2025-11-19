@@ -1,0 +1,7 @@
+class RemnantData_t(size: 0x8 bytes, project "client", binding @ client.dll + 0x5000520, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class RemnantData_t-----
+	CHandle< C_BaseEntity > m_hRemnant(offset 0x0, size 0x4, align 0x4)
+	int32 m_nProjectileHandle(offset 0x4, size 0x4, align 0x4)
+

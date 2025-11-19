@@ -1,0 +1,14 @@
+class CDOTACrownfallCreditsDefinition(size: 0x40 bytes, project "client", binding @ client.dll + 0x5149cb0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1e25f10"
+
+-----members of class CDOTACrownfallCreditsDefinition-----
+	CUtlVector< CDOTACrownfallCreditsBlockDefinition > m_vecCreditsBlocks(offset 0x0, size 0x18, align 0x8)
+	int32 m_nPixelScale(offset 0x18, size 0x4, align 0x4)
+	int32 m_nWidth(offset 0x1c, size 0x4, align 0x4)
+	int32 m_nHeight(offset 0x20, size 0x4, align 0x4)
+	int32 m_nDefaultBlockMarginTop(offset 0x24, size 0x4, align 0x4)
+	float32 m_flFinalLogoTimeAfterStop(offset 0x28, size 0x4, align 0x4)
+	float32 m_flDelayBeforeValveHead(offset 0x2c, size 0x4, align 0x4)
+	uint8_t[16] unaccounted(offset 0x30)
+

@@ -1,0 +1,4 @@
+enum SequenceFinishNotifyState_t(size: 1 bytes, 3 values, project "client", binding @ client.dll + 0x4f06b90):
+	eDoNotNotify = 0,
+	eNotifyWhenFinished = 1,
+	eNotifyTriggered = 2,

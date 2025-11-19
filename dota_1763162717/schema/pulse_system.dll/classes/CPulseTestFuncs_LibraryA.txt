@@ -1,0 +1,9 @@
+class CPulseTestFuncs_LibraryA(size: 0x1 bytes, project "pulse_system", binding @ pulse_system.dll + 0x19a0b0, scope "pulse_system.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MPropertyDescription "Library for interacting with a few global test values."
+
+-----members of class CPulseTestFuncs_LibraryA-----
+	uint8_t[1] unaccounted(offset 0x0)
+

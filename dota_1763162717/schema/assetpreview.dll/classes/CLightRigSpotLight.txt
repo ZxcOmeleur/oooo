@@ -1,0 +1,31 @@
+class CLightRigSpotLight(size: 0x4c bytes, project "toolscene", binding @ assetpreview.dll + 0xd2d470, scope "!GlobalTypes") extends CLightRigLight
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x6495a0"
+
+	base class CLightRigLight(size: 0x40 bytes, project "toolscene", binding @ assetpreview.dll + 0xd2d310, scope "!GlobalTypes")
+	| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	^MGetKV3ClassDefaults "func: assetpreview.dll + 0x6491c0"
+	
+	-----members of class CLightRigLight-----
+		Vector m_vPosition(offset 0x0, size 0xc, align 0x4)
+		Vector m_vDirection(offset 0xc, size 0xc, align 0x4)
+		Vector m_vLookAt(offset 0x18, size 0xc, align 0x4)
+		Color m_Color(offset 0x24, size 0x4, align 0x1)
+		float32 m_flAxisScale(offset 0x28, size 0x4, align 0x4)
+		float32 m_flRadius(offset 0x2c, size 0x4, align 0x4)
+		float32 m_flBrightness(offset 0x30, size 0x4, align 0x4)
+		float32 m_flLightSourceRadius(offset 0x34, size 0x4, align 0x4)
+		float32 m_flDistance(offset 0x38, size 0x4, align 0x4)
+		bool m_bRelativePositioning(offset 0x3c, size 0x1, align 0x1)
+		bool m_bParentToCamera(offset 0x3d, size 0x1, align 0x1)
+		uint8_t[2] unaccounted(offset 0x3e)
+	
+
+-----members of class CLightRigSpotLight-----
+	float32 m_flOuterConeAngle(offset 0x40, size 0x4, align 0x4)
+	float32 m_flInnerConeAngle(offset 0x44, size 0x4, align 0x4)
+	bool m_bCastShadows(offset 0x48, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x49)
+

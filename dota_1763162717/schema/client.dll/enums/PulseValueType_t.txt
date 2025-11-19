@@ -1,0 +1,70 @@
+enum PulseValueType_t(size: 4 bytes, 33 values, project "pulse_runtime_lib", binding @ client.dll + 0x51b55f0):
+	PVAL_VOID = -1,
+		^MPropertyFriendlyName "Void"
+	PVAL_BOOL = 0,
+		^MPropertyFriendlyName "Boolean"
+	PVAL_INT = 1,
+		^MPropertyFriendlyName "Integer"
+	PVAL_FLOAT = 2,
+		^MPropertyFriendlyName "Float"
+	PVAL_STRING = 3,
+		^MPropertyFriendlyName "String"
+	PVAL_VEC2 = 4,
+		^MPropertyFriendlyName "Vector2D"
+	PVAL_VEC3 = 5,
+		^MPropertyFriendlyName "Vector"
+	PVAL_QANGLE = 6,
+		^MPropertyFriendlyName "Angle"
+	PVAL_VEC3_WORLDSPACE = 7,
+		^MPropertyFriendlyName "World Vector"
+	PVAL_VEC4 = 8,
+		^MPropertyFriendlyName "Vector4D"
+	PVAL_TRANSFORM = 9,
+		^MPropertyFriendlyName "Transform"
+	PVAL_TRANSFORM_WORLDSPACE = 10,
+		^MPropertyFriendlyName "World Transform"
+	PVAL_COLOR_RGB = 11,
+		^MPropertyFriendlyName "Color"
+	PVAL_GAMETIME = 12,
+		^MPropertyFriendlyName "Game Time"
+	PVAL_EHANDLE = 13,
+		^MPropertyFriendlyName "Entity Handle"
+	PVAL_RESOURCE = 14,
+		^MPropertyFriendlyName "Resource"
+	PVAL_RESOURCE_NAME = 15,
+		^MPropertyFriendlyName "Resource Name"
+	PVAL_SNDEVT_GUID = 16,
+		^MPropertyFriendlyName "SoundEvent Instance Handle"
+	PVAL_SNDEVT_NAME = 17,
+		^MPropertyFriendlyName "SoundEvent"
+	PVAL_ENTITY_NAME = 18,
+		^MPropertyFriendlyName "Entity Name"
+	PVAL_OPAQUE_HANDLE = 19,
+		^MPropertyFriendlyName "Opaque Handle"
+	PVAL_TYPESAFE_INT = 20,
+		^MPropertyFriendlyName "Typesafe Int"
+	PVAL_MODEL_MATERIAL_GROUP = 21,
+		^MPropertyFriendlyName "Material Group"
+	PVAL_CURSOR_FLOW = 22,
+		^MPropertySuppressEnumerator
+	PVAL_VARIANT = 23,
+		^MPropertyFriendlyName "Variant"
+		^MPropertySuppressEnumerator
+	PVAL_UNKNOWN = 24,
+		^MPropertyFriendlyName "Unknown"
+		^MPropertySuppressEnumerator
+	PVAL_SCHEMA_ENUM = 25,
+		^MPropertyFriendlyName "Schema Enum"
+	PVAL_PANORAMA_PANEL_HANDLE = 26,
+		^MPropertyFriendlyName "Panorama Panel Handle"
+	PVAL_TEST_HANDLE = 27,
+		^MPropertyFriendlyName "Test Handle"
+	PVAL_ARRAY = 28,
+		^MPropertyFriendlyName "Array"
+	PVAL_TYPESAFE_INT64 = 29,
+		^MPropertyFriendlyName "Typesafe Int64"
+	PVAL_PARTICLE_EHANDLE = 30,
+		^MPropertySuppressEnumerator
+		^MPropertyFriendlyName "Particle Object"
+	PVAL_COUNT = 31,
+		^MPropertySuppressEnumerator

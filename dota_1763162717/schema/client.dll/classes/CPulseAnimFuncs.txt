@@ -1,0 +1,7 @@
+class CPulseAnimFuncs(size: 0x8 bytes, project "client", binding @ client.dll + 0x4f7c990, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class CPulseAnimFuncs-----
+	uint8_t[8] unaccounted(offset 0x0)
+

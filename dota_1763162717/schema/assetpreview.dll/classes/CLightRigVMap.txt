@@ -1,0 +1,10 @@
+class CLightRigVMap(size: 0xe8 bytes, project "toolscene", binding @ assetpreview.dll + 0xd2d6f0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x649b60"
+
+-----members of class CLightRigVMap-----
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeVMapResourceData_t > > m_MapName(offset 0x0, size 0xe0, align 0x8)
+	bool m_bRender3DSkybox(offset 0xe0, size 0x1, align 0x1)
+	bool m_bParticlesTraceAgainstMap(offset 0xe1, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0xe2)
+

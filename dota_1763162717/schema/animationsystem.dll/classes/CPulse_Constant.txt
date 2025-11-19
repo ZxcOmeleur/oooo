@@ -1,0 +1,9 @@
+class CPulse_Constant(size: 0x30 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a66f0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x516820"
+
+-----members of class CPulse_Constant-----
+	CPulseValueFullType m_Type(offset 0x0, size 0x18, align 0x8)
+	KeyValues3 m_Value(offset 0x18, size 0x10, align 0x8)
+	uint8_t[8] unaccounted(offset 0x28)
+

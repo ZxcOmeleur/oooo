@@ -1,0 +1,7 @@
+class C_BaseEntityAPI(size: 0x8 bytes, project "client", binding @ client.dll + 0x50c64b0, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class C_BaseEntityAPI-----
+	uint8_t[8] unaccounted(offset 0x0)
+

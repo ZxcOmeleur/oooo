@@ -1,0 +1,5 @@
+enum Blend2DMode(size: 4 bytes, 2 values, project "animgraphlib", binding @ animationsystem.dll + 0x754d50):
+	Blend2DMode_General = 0,
+		^MPropertyFriendlyName "General"
+	Blend2DMode_Directional = 1,
+		^MPropertyFriendlyName "Directional"

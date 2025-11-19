@@ -1,0 +1,9 @@
+class NmBoneMaskSetDefinition_t(size: 0x128 bytes, project "animlib", binding @ animationsystem.dll + 0x792430, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3c9ac0"
+
+-----members of class NmBoneMaskSetDefinition_t-----
+	CGlobalSymbol m_ID(offset 0x0, size 0x8, align 0x8)
+	CNmBoneWeightList m_primaryWeightList(offset 0x8, size 0x110, align 0x8)
+	CUtlLeanVector< CNmBoneWeightList > m_secondaryWeightLists(offset 0x118, size 0x10, align 0x8)
+

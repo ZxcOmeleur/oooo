@@ -1,0 +1,11 @@
+class CMaterialDrawDescriptor::RigidMeshPart_t(size: 0xc bytes, project "modellib", binding @ physicsbuilder.dll + 0xac6f60, scope "physicsbuilder.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x467750"
+
+-----members of class CMaterialDrawDescriptor::RigidMeshPart_t-----
+	uint16 m_nRigidBLASIndex(offset 0x0, size 0x2, align 0x2)
+	int16 m_nBoneIndex(offset 0x2, size 0x2, align 0x2)
+	uint32 m_nStartIndexOffset(offset 0x4, size 0x4, align 0x4)
+	uint32 m_nPrimitiveCount(offset 0x8, size 0x4, align 0x4)
+

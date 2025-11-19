@@ -1,0 +1,35 @@
+class CPointConstraint(size: 0x60 bytes, project "modellib", binding @ animationsystem.dll + 0x7a2730, scope "!GlobalTypes") extends CBaseConstraint
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x4dba80"
+
+	base class CBaseConstraint(size: 0x60 bytes, project "modellib", binding @ animationsystem.dll + 0x7a26b0, scope "!GlobalTypes") extends CBoneConstraintBase
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+	
+		base class CBoneConstraintBase(size: 0x20 bytes, project "modellib", binding @ animationsystem.dll + 0x7a25b0, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+		
+		-----members of class CBoneConstraintBase-----
+			uint8_t[32] unaccounted(offset 0x0)
+		
+	
+	-----members of class CBaseConstraint-----
+		CUtlString m_name(offset 0x20, size 0x8, align 0x8)
+		Vector m_vUpVector(offset 0x28, size 0xc, align 0x4)
+		uint8_t[4] unaccounted(offset 0x34)
+		CUtlLeanVector< CConstraintSlave > m_slaves(offset 0x38, size 0x10, align 0x8)
+		CUtlVector< CConstraintTarget > m_targets(offset 0x48, size 0x18, align 0x8)
+	
+
+-----members of class CPointConstraint-----
+	<no members>
+

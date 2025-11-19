@@ -1,0 +1,13 @@
+enum ParticleLightingQuality_t(size: 4 bytes, 6 values, project "particles", binding @ particles.dll + 0x524fc0):
+	PARTICLE_LIGHTING_PER_PARTICLE = 0,
+		^MPropertyFriendlyName "Per-Particle Lighting"
+	PARTICLE_LIGHTING_PER_VERTEX = 1,
+		^MPropertyFriendlyName "Per-Vertex Lighting"
+	PARTICLE_LIGHTING_PER_PIXEL = -1,
+		^MPropertyFriendlyName "Per-Pixel Lighting"
+	PARTICLE_LIGHTING_OVERRIDE_POSITION = 2,
+		^MPropertyFriendlyName "Override Position"
+	PARTICLE_LIGHTING_OVERRIDE_COLOR = 3,
+		^MPropertyFriendlyName "Override Color"
+	PARTICLE_LIGHTING_ADD_EXTRA_LIGHT = 4,
+		^MPropertyFriendlyName "Add Extra Lighting Color"

@@ -1,0 +1,9 @@
+class PermModelDataAnimatedMaterialAttribute_t(size: 0x10 bytes, project "modellib", binding @ animationsystem.dll + 0x79e480, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x4a9d20"
+
+-----members of class PermModelDataAnimatedMaterialAttribute_t-----
+	CUtlString m_AttributeName(offset 0x0, size 0x8, align 0x8)
+	int32 m_nNumChannels(offset 0x8, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0xc)
+

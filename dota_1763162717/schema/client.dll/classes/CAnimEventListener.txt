@@ -1,0 +1,16 @@
+class CAnimEventListener(size: 0x20 bytes, project "client", binding @ client.dll + 0x4f06c60, scope "!GlobalTypes") extends CAnimEventListenerBase
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+	base class CAnimEventListenerBase(size: 0x20 bytes, project "client", binding @ client.dll + 0x4f06be0, scope "!GlobalTypes")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+	
+	-----members of class CAnimEventListenerBase-----
+		uint8_t[32] unaccounted(offset 0x0)
+	
+
+-----members of class CAnimEventListener-----
+	<no members>
+

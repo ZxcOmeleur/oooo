@@ -1,0 +1,9 @@
+class CPulseCursorFuncs(size: 0x1 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51c46d0, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MPropertyDescription "Library for interacting with pulse cursors."
+
+-----members of class CPulseCursorFuncs-----
+	uint8_t[1] unaccounted(offset 0x0)
+

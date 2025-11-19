@@ -1,0 +1,18 @@
+class CNmSkeleton(size: 0xc0 bytes, project "animlib", binding @ animationsystem.dll + 0x792ce0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3d2800"
+
+-----members of class CNmSkeleton-----
+	CGlobalSymbol m_ID(offset 0x0, size 0x8, align 0x8)
+	CUtlLeanVector< CGlobalSymbol > m_boneIDs(offset 0x8, size 0x10, align 0x8)
+	CUtlVector< int32 > m_parentIndices(offset 0x18, size 0x18, align 0x8)
+	CUtlVector< CTransform > m_parentSpaceReferencePose(offset 0x30, size 0x18, align 0x8)
+	CUtlVector< CTransform > m_modelSpaceReferencePose(offset 0x48, size 0x18, align 0x8)
+	int32 m_numBonesToSampleAtLowLOD(offset 0x60, size 0x4, align 0x4)
+	uint8_t[36] unaccounted(offset 0x64)
+	CUtlLeanVector< NmBoneMaskSetDefinition_t > m_maskDefinitions(offset 0x88, size 0x10, align 0x8)
+	uint8_t[16] unaccounted(offset 0x98)
+	CUtlLeanVector< CNmSkeleton::SecondarySkeleton_t > m_secondarySkeletons(offset 0xa8, size 0x10, align 0x8)
+	bool m_bIsPropSkeleton(offset 0xb8, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0xb9)
+

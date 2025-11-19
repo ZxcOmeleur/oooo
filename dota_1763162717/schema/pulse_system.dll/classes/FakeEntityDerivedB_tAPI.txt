@@ -1,0 +1,7 @@
+class FakeEntityDerivedB_tAPI(size: 0x8 bytes, project "pulse_system", binding @ pulse_system.dll + 0x196e50, scope "pulse_system.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class FakeEntityDerivedB_tAPI-----
+	uint8_t[8] unaccounted(offset 0x0)
+

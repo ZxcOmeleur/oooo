@@ -1,0 +1,11 @@
+enum FacingMode(size: 1 bytes, 5 values, project "animgraphlib", binding @ animationsystem.dll + 0x759a20):
+	FacingMode_Invalid = 0,
+		^MPropertyFriendlyName "None"
+	FacingMode_Manual = 1,
+		^MPropertyFriendlyName "Manual Direction"
+	FacingMode_Path = 2,
+		^MPropertyFriendlyName "Path"
+	FacingMode_LookTarget = 3,
+		^MPropertyFriendlyName "Look Target"
+	FacingMode_ManualPosition = 4,
+		^MPropertyFriendlyName "Manual Position"

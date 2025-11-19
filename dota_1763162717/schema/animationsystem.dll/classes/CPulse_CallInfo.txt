@@ -1,0 +1,15 @@
+class CPulse_CallInfo(size: 0x58 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a6d80, scope "animationsystem.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x517870"
+
+-----members of class CPulse_CallInfo-----
+	PulseSymbol_t m_PortName(offset 0x0, size 0x10, align 0x8)
+	PulseDocNodeID_t m_nEditorNodeID(offset 0x10, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x14)
+	PulseRegisterMap_t m_RegisterMap(offset 0x18, size 0x30, align 0x0)
+	PulseDocNodeID_t m_CallMethodID(offset 0x48, size 0x4, align 0x0)
+	PulseRuntimeChunkIndex_t m_nSrcChunk(offset 0x4c, size 0x4, align 0x0)
+	int32 m_nSrcInstruction(offset 0x50, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x54)
+

@@ -1,0 +1,12 @@
+class CPulse_RegisterInfo(size: 0x60 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a6400, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x5180b0"
+
+-----members of class CPulse_RegisterInfo-----
+	PulseRuntimeRegisterIndex_t m_nReg(offset 0x0, size 0x2, align 0x0)
+	uint8_t[6] unaccounted(offset 0x2)
+	CPulseValueFullType m_Type(offset 0x8, size 0x18, align 0x8)
+	CKV3MemberNameWithStorage m_OriginName(offset 0x20, size 0x38, align 0x8)
+	int32 m_nWrittenByInstruction(offset 0x58, size 0x4, align 0x4)
+	int32 m_nLastReadByInstruction(offset 0x5c, size 0x4, align 0x4)
+

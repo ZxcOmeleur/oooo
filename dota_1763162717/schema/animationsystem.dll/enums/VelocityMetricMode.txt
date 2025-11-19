@@ -1,0 +1,7 @@
+enum VelocityMetricMode(size: 1 bytes, 3 values, project "animgraphlib", binding @ animationsystem.dll + 0x7530b0):
+	DirectionOnly = 0,
+		^MPropertyFriendlyName "Direction Only"
+	MagnitudeOnly = 1,
+		^MPropertyFriendlyName "Magnitude Only"
+	DirectionAndMagnitude = 2,
+		^MPropertyFriendlyName "Direction and Magnitude"

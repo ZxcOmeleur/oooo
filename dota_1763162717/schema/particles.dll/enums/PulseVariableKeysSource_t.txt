@@ -1,0 +1,13 @@
+enum PulseVariableKeysSource_t(size: 4 bytes, 6 values, project "pulse_runtime_lib", binding @ particles.dll + 0x50e720):
+	PRIVATE = 0,
+		^MPropertyFriendlyName "Private"
+	CPP = 1,
+		^MPropertyFriendlyName "Code"
+	VMAP = 2,
+		^MPropertyFriendlyName "Parent Map"
+	VMDL = 3,
+		^MPropertyFriendlyName "Parent VMDL"
+	XML = 4,
+		^MPropertyFriendlyName "Parent XML"
+	COUNT = 5,
+		^MPropertySuppressEnumerator

@@ -1,0 +1,5 @@
+enum HorizJustification_e(size: 4 bytes, 4 values, project "materialsystem2", binding @ materialsystem2.dll + 0x14a970):
+	HORIZ_JUSTIFICATION_LEFT = 0,
+	HORIZ_JUSTIFICATION_CENTER = 1,
+	HORIZ_JUSTIFICATION_RIGHT = 2,
+	HORIZ_JUSTIFICATION_NONE = 3,

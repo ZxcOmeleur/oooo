@@ -1,0 +1,28 @@
+class CSurvivorsPickupDefinition(size: 0x2f8 bytes, project "client", binding @ client.dll + 0x515f4b0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25e2d10"
+^MVDataRoot
+
+-----members of class CSurvivorsPickupDefinition-----
+	SurvivorsPickupID_t m_unPickupID(offset 0x0, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlString m_sPowerUpName(offset 0x8, size 0x8, align 0x8)
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sParticleEffect(offset 0x10, size 0xe0, align 0x8)
+	int32 m_nModelIndex(offset 0xf0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0xf4)
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sDirectionalHelperParticle(offset 0xf8, size 0xe0, align 0x8)
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sOnPickupOverheadEffect(offset 0x1d8, size 0xe0, align 0x8)
+	int32 m_nHealAmount(offset 0x2b8, size 0x4, align 0x4)
+	int32 m_nGoldAmount(offset 0x2bc, size 0x4, align 0x4)
+	bool m_bRewardsTreasure(offset 0x2c0, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x2c1)
+	int32 m_nTreasureVariant(offset 0x2c4, size 0x4, align 0x4)
+	bool m_bShowInMinimap(offset 0x2c8, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x2c9)
+	CUtlString m_sMinimapIconSnippet(offset 0x2d0, size 0x8, align 0x8)
+	bool m_bCanSpawnWithVelocity(offset 0x2d8, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x2d9)
+	float32 m_flMaxSpawnVelocity(offset 0x2dc, size 0x4, align 0x4)
+	CUtlString m_sDropSoundEvent(offset 0x2e0, size 0x8, align 0x8)
+	uint8_t[16] unaccounted(offset 0x2e8)
+

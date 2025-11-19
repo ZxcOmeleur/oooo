@@ -1,0 +1,17 @@
+class CFootCycle(size: 0x4 bytes, project "modellib", binding @ physicsbuilder.dll + 0xacc620, scope "physicsbuilder.dll") extends CCycleBase
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x4a4ff0"
+
+	base class CCycleBase(size: 0x4 bytes, project "modellib", binding @ physicsbuilder.dll + 0xacc910, scope "physicsbuilder.dll")
+	| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x4a4df0"
+	
+	-----members of class CCycleBase-----
+		float32 m_flCycle(offset 0x0, size 0x4, align 0x4)
+	
+
+-----members of class CFootCycle-----
+	<no members>
+

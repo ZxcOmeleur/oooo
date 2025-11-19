@@ -1,0 +1,5 @@
+enum EntityAttachmentType_t(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f1dba0):
+	eAbsOrigin = 0,
+	eCenter = 1,
+	eEyes = 2,
+	eAttachment = 3,

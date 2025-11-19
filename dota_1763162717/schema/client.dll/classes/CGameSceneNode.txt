@@ -1,0 +1,76 @@
+class CGameSceneNode(size: 0x180 bytes, project "client", binding @ client.dll + 0x4f4d270, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MNetworkVarNames "m_hParent CGameSceneNodeHandle"
+^MNetworkVarNames "m_vecOrigin CNetworkOriginCellCoordQuantizedVector"
+^MNetworkVarNames "m_angRotation QAngle"
+^MNetworkVarNames "m_flScale float"
+^MNetworkVarNames "m_name CUtlStringToken"
+^MNetworkVarNames "m_hierarchyAttachName CUtlStringToken"
+
+-----members of class CGameSceneNode-----
+	uint8_t[16] unaccounted(offset 0x0)
+	CTransformWS m_nodeToWorld(offset 0x10, size 0x20, align 0x10)
+	CEntityInstance* m_pOwner(offset 0x30, size 0x8, align 0x8)
+	CGameSceneNode* m_pParent(offset 0x38, size 0x8, align 0x8)
+	CGameSceneNode* m_pChild(offset 0x40, size 0x8, align 0x8)
+	CGameSceneNode* m_pNextSibling(offset 0x48, size 0x8, align 0x8)
+	uint8_t[40] unaccounted(offset 0x50)
+	CGameSceneNodeHandle m_hParent(offset 0x78, size 0x10, align 0x0)
+		^MNetworkEnable
+		^MNetworkSerializer "gameSceneNode"
+		^MNetworkChangeCallback "gameSceneNodeHierarchyParentChanged"
+		^MNetworkPriority "32"
+		^MNetworkVarEmbeddedFieldOffsetDelta "8"
+	CNetworkOriginCellCoordQuantizedVector m_vecOrigin(offset 0x88, size 0x30, align 0x0)
+		^MNetworkEnable
+		^MNetworkPriority "32"
+		^MNetworkUserGroup "Origin"
+		^MNetworkChangeCallback "gameSceneNodeLocalOriginChanged"
+	uint8_t[8] unaccounted(offset 0xb8)
+	QAngle m_angRotation(offset 0xc0, size 0xc, align 0x4)
+		^MNetworkEnable
+		^MNetworkPriority "32"
+		^MNetworkSerializer "gameSceneNodeStepSimulationAnglesSerializer"
+		^MNetworkChangeCallback "gameSceneNodeLocalAnglesChanged"
+	float32 m_flScale(offset 0xcc, size 0x4, align 0x4)
+		^MNetworkEnable
+		^MNetworkChangeCallback "gameSceneNodeLocalScaleChanged"
+		^MNetworkPriority "32"
+	VectorWS m_vecAbsOrigin(offset 0xd0, size 0xc, align 0x4)
+	QAngle m_angAbsRotation(offset 0xdc, size 0xc, align 0x4)
+	float32 m_flAbsScale(offset 0xe8, size 0x4, align 0x4)
+	Vector m_vecWrappedLocalOrigin(offset 0xec, size 0xc, align 0x4)
+	QAngle m_angWrappedLocalRotation(offset 0xf8, size 0xc, align 0x4)
+	float32 m_flWrappedScale(offset 0x104, size 0x4, align 0x4)
+	int16 m_nParentAttachmentOrBone(offset 0x108, size 0x2, align 0x2)
+	bool m_bDebugAbsOriginChanges(offset 0x10a, size 0x1, align 0x1)
+	bool m_bDormant(offset 0x10b, size 0x1, align 0x1)
+	bool m_bForceParentToBeNetworked(offset 0x10c, size 0x1, align 0x1)
+	bitfield {
+		uint8_t m_bDirtyHierarchy : 1(offset 0x10d, mask = 0x1)
+		uint8_t m_bDirtyBoneMergeInfo : 1(offset 0x10d, mask = 0x2)
+		uint8_t m_bNetworkedPositionChanged : 1(offset 0x10d, mask = 0x4)
+		uint8_t m_bNetworkedAnglesChanged : 1(offset 0x10d, mask = 0x8)
+		uint8_t m_bNetworkedScaleChanged : 1(offset 0x10d, mask = 0x10)
+		uint8_t m_bWillBeCallingPostDataUpdate : 1(offset 0x10d, mask = 0x20)
+		uint8_t m_bBoneMergeFlex : 1(offset 0x10d, mask = 0x40)
+		uint8_t unaccounted : 1(offset 0x10d, mask = 0x80)
+		uint8_t m_nLatchAbsOrigin : 2(offset 0x10e, mask = 0x3)
+		uint8_t m_bDirtyBoneMergeBoneToRoot : 1(offset 0x10e, mask = 0x4)
+	}
+	uint8 m_nHierarchicalDepth(offset 0x10f, size 0x1, align 0x1)
+	uint8 m_nHierarchyType(offset 0x110, size 0x1, align 0x1)
+	uint8 m_nDoNotSetAnimTimeInInvalidatePhysicsCount(offset 0x111, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x112)
+	CUtlStringToken m_name(offset 0x114, size 0x4, align 0x4)
+		^MNetworkEnable
+	uint8_t[64] unaccounted(offset 0x118)
+	CUtlStringToken m_hierarchyAttachName(offset 0x158, size 0x4, align 0x4)
+		^MNetworkEnable
+		^MNetworkChangeCallback "gameSceneNodeHierarchyAttachmentChanged"
+	float32 m_flZOffset(offset 0x15c, size 0x4, align 0x4)
+	float32 m_flClientLocalScale(offset 0x160, size 0x4, align 0x4)
+	Vector m_vRenderOrigin(offset 0x164, size 0xc, align 0x4)
+	uint8_t[16] unaccounted(offset 0x170)
+

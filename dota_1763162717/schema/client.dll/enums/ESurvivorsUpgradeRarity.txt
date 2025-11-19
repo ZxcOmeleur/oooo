@@ -1,0 +1,4 @@
+enum ESurvivorsUpgradeRarity(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x5164210):
+	RARITY_INVALID = -1,
+	RARITY_COMMON = 0,
+	RARITY_COUNT = 1,

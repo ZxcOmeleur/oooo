@@ -1,0 +1,7 @@
+enum EPrivateCoachingSessionState(size: 4 bytes, 6 values, project "client", binding @ client.dll + 0x4f5ab30):
+	k_ePrivateCoachingSessionState_Invalid = 0,
+	k_ePrivateCoachingSessionState_SearchingForCoach = 1,
+	k_ePrivateCoachingSessionState_CoachAssigned = 2,
+	k_ePrivateCoachingSessionState_Finished = 3,
+	k_ePrivateCoachingSessionState_Expired = 4,
+	k_ePrivateCoachingSessionState_Abandoned = 5,

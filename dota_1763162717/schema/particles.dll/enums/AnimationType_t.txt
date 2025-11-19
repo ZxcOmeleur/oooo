@@ -1,0 +1,7 @@
+enum AnimationType_t(size: 4 bytes, 3 values, project "particles", binding @ particles.dll + 0x525c80):
+	ANIMATION_TYPE_FIXED_RATE = 0,
+		^MPropertyFriendlyName "Fixed Rate"
+	ANIMATION_TYPE_FIT_LIFETIME = 1,
+		^MPropertyFriendlyName "Fit Lifetime"
+	ANIMATION_TYPE_MANUAL_FRAMES = 2,
+		^MPropertyFriendlyName "Set Frames Manually"

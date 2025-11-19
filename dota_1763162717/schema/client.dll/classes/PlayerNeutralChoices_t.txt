@@ -1,0 +1,25 @@
+class PlayerNeutralChoices_t(size: 0x110 bytes, project "client", binding @ client.dll + 0x510fd90, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MNetworkNoBase
+^MNetworkVarNames "m_vecTrinketChoices AbilityID_t"
+^MNetworkVarNames "m_vecEnhancementChoices AbilityID_t"
+^MNetworkVarNames "m_vecSelectedTrinkets int"
+^MNetworkVarNames "m_vecSelectedEnhancements int"
+^MNetworkVarNames "m_vecTimesCrafted int"
+
+-----members of class PlayerNeutralChoices_t-----
+	uint8_t[8] unaccounted(offset 0x0)
+	AbilityID_t[25] m_vecTrinketChoices(offset 0x8, size 0x64, align 0x4)
+		^MNetworkEnable
+	AbilityID_t[25] m_vecEnhancementChoices(offset 0x6c, size 0x64, align 0x4)
+		^MNetworkEnable
+	int32[5] m_vecSelectedTrinkets(offset 0xd0, size 0x14, align 0x4)
+		^MNetworkEnable
+	int32[5] m_vecSelectedEnhancements(offset 0xe4, size 0x14, align 0x4)
+		^MNetworkEnable
+	int32[5] m_vecTimesCrafted(offset 0xf8, size 0x14, align 0x4)
+		^MNetworkEnable
+	uint8_t[4] unaccounted(offset 0x10c)
+

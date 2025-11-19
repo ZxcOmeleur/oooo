@@ -1,0 +1,10 @@
+class CModelConfigList(size: 0x20 bytes, project "modellib", binding @ assetpreview.dll + 0xd1ea70, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x511be0"
+
+-----members of class CModelConfigList-----
+	bool m_bHideMaterialGroupInTools(offset 0x0, size 0x1, align 0x1)
+	bool m_bHideRenderColorInTools(offset 0x1, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0x2)
+	CUtlVector< CModelConfig* > m_Configs(offset 0x8, size 0x18, align 0x8)
+

@@ -1,0 +1,10 @@
+class CPulseCell_WaitForPanelClass::CursorState_t(size: 0x10 bytes, project "client", binding @ client.dll + 0x516ca20, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x291a4e0"
+
+-----members of class CPulseCell_WaitForPanelClass::CursorState_t-----
+	panorama::CPanelPtr m_hPanel(offset 0x0, size 0x8, align 0x4)
+	CGlobalSymbol m_Class(offset 0x8, size 0x8, align 0x8)
+

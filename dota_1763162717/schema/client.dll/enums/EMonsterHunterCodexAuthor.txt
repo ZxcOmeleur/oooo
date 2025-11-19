@@ -1,0 +1,8 @@
+enum EMonsterHunterCodexAuthor(size: 4 bytes, 7 values, project "client", binding @ client.dll + 0x510ba40):
+	k_eInvalid = 0,
+	k_eGoodkind = 1,
+	k_eMossgrave = 2,
+	k_eQuibbins = 3,
+	k_eQuibbinsDrunk = 4,
+	k_eKerrick = 5,
+	k_eNoAuthor = 6,

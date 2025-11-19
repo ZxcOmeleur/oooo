@@ -1,0 +1,9 @@
+enum ScriptedMoveTo_t(size: 4 bytes, 6 values, project "modellib", binding @ animationsystem.dll + 0x79c3f0):
+	eWait = 0,
+	eMoveWithGait = 3,
+	eTeleport = 4,
+	eWaitFacing = 5,
+	eObsoleteBackCompat1 = 1,
+		^MPropertySuppressEnumerator
+	eObsoleteBackCompat2 = 2,
+		^MPropertySuppressEnumerator

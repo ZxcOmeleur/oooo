@@ -1,0 +1,7 @@
+enum OrientationWarpRootMotionSource_t(size: 4 bytes, 3 values, project "animgraphlib", binding @ animationsystem.dll + 0x756f20):
+	eAnimationOrProcedural = 0,
+		^MPropertyFriendlyName "Animation Or Procedural"
+	eAnimationOnly = 1,
+		^MPropertyFriendlyName "Animation Only"
+	eProceduralOnly = 2,
+		^MPropertyFriendlyName "Procedural Only"

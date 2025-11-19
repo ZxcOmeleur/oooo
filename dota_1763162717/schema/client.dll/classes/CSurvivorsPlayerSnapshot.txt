@@ -1,0 +1,14 @@
+class CSurvivorsPlayerSnapshot(size: 0x38 bytes, project "client", binding @ client.dll + 0x515adc0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x24fbf00"
+^MVDataRoot
+
+-----members of class CSurvivorsPlayerSnapshot-----
+	SurvivorsHeroID_t m_heroID(offset 0x0, size 0x4, align 0x0)
+	int32 m_nCurrentLevel(offset 0x4, size 0x4, align 0x4)
+	float32 m_flCurrentExp(offset 0x8, size 0x4, align 0x4)
+	int32 m_nRerollsRemaining(offset 0xc, size 0x4, align 0x4)
+	CUtlVector< CSurvivorsPowerUpSnapshot > m_vecPowerUps(offset 0x10, size 0x18, align 0x8)
+	Vector m_vOrigin(offset 0x28, size 0xc, align 0x4)
+	uint8_t[4] unaccounted(offset 0x34)
+

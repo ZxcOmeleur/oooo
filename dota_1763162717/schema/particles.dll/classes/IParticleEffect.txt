@@ -1,0 +1,7 @@
+class IParticleEffect(size: 0x8 bytes, project "particleslib", binding @ particles.dll + 0x50cad0, scope "particles.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_IS_ABSTRACT
+
+-----members of class IParticleEffect-----
+	uint8_t[8] unaccounted(offset 0x0)
+

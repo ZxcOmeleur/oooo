@@ -1,0 +1,34 @@
+class CQuickBuyController(size: 0x148 bytes, project "client", binding @ client.dll + 0x5095d60, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MNetworkNoBase
+^MNetworkVarNames "m_nPlayerID PlayerID_t"
+^MNetworkVarNames "m_quickBuyState InventoryQuickBuyState_t"
+^MNetworkVarNames "m_bBuybackProtectionEnabled bool"
+^MNetworkVarNames "m_bAutoMarkForBuy bool"
+^MNetworkVarNames "m_vecControlledUnits EHANDLE"
+
+-----members of class CQuickBuyController-----
+	uint8_t[8] unaccounted(offset 0x0)
+	PlayerID_t m_nPlayerID(offset 0x8, size 0x4, align 0x0)
+		^MNetworkEnable
+		^MNetworkChangeCallback "OnPlayerIDUpdated"
+	uint8_t[4] unaccounted(offset 0xc)
+	InventoryQuickBuyState_t m_quickBuyState(offset 0x10, size 0xd8, align 0x0)
+		^MNetworkEnable
+		^MNetworkChangeCallback "OnQuickBuyItemsChanged"
+	bool m_bBuybackProtectionEnabled(offset 0xe8, size 0x1, align 0x1)
+		^MNetworkEnable
+	bool m_bAutoMarkForBuy(offset 0xe9, size 0x1, align 0x1)
+		^MNetworkEnable
+	uint8_t[6] unaccounted(offset 0xea)
+	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_vecControlledUnits(offset 0xf0, size 0x18, align 0x8)
+		^MNetworkEnable
+	uint8_t[24] unaccounted(offset 0x108)
+	bool m_bQuickBuyIgnoredStateDirty(offset 0x120, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x121)
+	int32 m_nSuggestItemIdx(offset 0x124, size 0x4, align 0x4)
+	uint8_t[24] unaccounted(offset 0x128)
+	bool m_bIsLocalPlayer(offset 0x140, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x141)
+

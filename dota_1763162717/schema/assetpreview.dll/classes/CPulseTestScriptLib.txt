@@ -1,0 +1,9 @@
+class CPulseTestScriptLib(size: 0x1 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd3c360, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MPropertyDescription "Testing script helpers."
+
+-----members of class CPulseTestScriptLib-----
+	uint8_t[1] unaccounted(offset 0x0)
+

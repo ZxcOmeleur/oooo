@@ -1,0 +1,4 @@
+enum ETeamFanContentAssetStatus(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x4f66bf0):
+	k_eFanContentAssetStatus_None = 0,
+	k_eFanContentAssetStatus_Approved = 1,
+	k_eFanContentAssetStatus_Rejected = 2,

@@ -1,0 +1,5 @@
+enum PulseCursorExecResult_t(size: 4 bytes, 4 values, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd31500):
+	Succeeded = 0,
+	Canceled = 1,
+	Failed = 2,
+	OngoingNotify = 3,

@@ -1,0 +1,13 @@
+class CFootTrajectory(size: 0x20 bytes, project "modellib", binding @ animationsystem.dll + 0x79b2d0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x46fcb0"
+
+-----members of class CFootTrajectory-----
+	uint8_t[8] unaccounted(offset 0x0)
+	Vector m_vOffset(offset 0x8, size 0xc, align 0x4)
+	float32 m_flRotationOffset(offset 0x14, size 0x4, align 0x4)
+	float32 m_flProgression(offset 0x18, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x1c)
+

@@ -1,0 +1,10 @@
+class PulseNodeDynamicOutflows_t::DynamicOutflow_t(size: 0x50 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a82b0, scope "animationsystem.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x526770"
+
+-----members of class PulseNodeDynamicOutflows_t::DynamicOutflow_t-----
+	CGlobalSymbol m_OutflowID(offset 0x0, size 0x8, align 0x8)
+	CPulse_OutflowConnection m_Connection(offset 0x8, size 0x48, align 0x0)
+		^MFgdFromSchemaCompletelySkipField
+

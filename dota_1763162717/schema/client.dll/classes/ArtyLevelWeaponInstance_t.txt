@@ -1,0 +1,11 @@
+class ArtyLevelWeaponInstance_t(size: 0x10 bytes, project "client", binding @ client.dll + 0x5143ef0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1c283b0"
+^MVDataRoot
+
+-----members of class ArtyLevelWeaponInstance_t-----
+	CUtlString m_szName(offset 0x0, size 0x8, align 0x8)
+		^MPropertyCustomFGDType "vdata_choice:scripts/events/crownfall/artillery_weapons.vdata"
+	uint8_t[4] unaccounted(offset 0x8)
+	int32 m_nReloads(offset 0xc, size 0x4, align 0x4)
+

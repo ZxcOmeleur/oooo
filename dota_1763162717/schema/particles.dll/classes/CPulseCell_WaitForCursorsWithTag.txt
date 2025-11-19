@@ -1,0 +1,69 @@
+class CPulseCell_WaitForCursorsWithTag(size: 0xa0 bytes, project "pulse_runtime_lib", binding @ particles.dll + 0x51c7b0, scope "particles.dll") extends CPulseCell_WaitForCursorsWithTagBase
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: particles.dll + 0x397990"
+^MPropertyFriendlyName "Wait For Cursors With Tag"
+^MPropertyDescription "Causes this execution cursor to wait for the completion of other cursors with the given tag. Can optionally kill the tag while waiting."
+^MPulseEditorHeaderIcon "tools/images/pulse_editor/cursor_tag.png"
+
+	base class CPulseCell_WaitForCursorsWithTagBase(size: 0x98 bytes, project "pulse_runtime_lib", binding @ particles.dll + 0x51cde0, scope "particles.dll") extends CPulseCell_BaseYieldingInflow
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: particles.dll + 0x3976c0"
+	^MPulseEditorCanvasItemSpecKV3 "<unidentified non-null meta: particles.dll + 0x4134f8>"
+	
+		base class CPulseCell_BaseYieldingInflow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ particles.dll + 0x519090, scope "particles.dll") extends CPulseCell_BaseFlow
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: particles.dll + 0x22a60"
+		
+			base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ particles.dll + 0x51a1a0, scope "particles.dll") extends CPulseCell_Base
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: particles.dll + 0x37c6f0"
+			
+				base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ particles.dll + 0x518d30, scope "particles.dll")
+				| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+				| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+				| SCHEMA_CF1_CONSTRUCT_ALLOWED
+				| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+				^MGetKV3ClassDefaults "func: particles.dll + 0x37c4d0"
+				
+				-----members of class CPulseCell_Base-----
+					uint8_t[8] unaccounted(offset 0x0)
+					PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+						^MFgdFromSchemaCompletelySkipField
+					uint8_t[60] unaccounted(offset 0xc)
+				
+			
+			-----members of class CPulseCell_BaseFlow-----
+				<no members>
+			
+		
+		-----members of class CPulseCell_BaseYieldingInflow-----
+			<no members>
+		
+	
+	-----members of class CPulseCell_WaitForCursorsWithTagBase-----
+		int32 m_nCursorsAllowedToWait(offset 0x48, size 0x4, align 0x4)
+			^MPropertyDescription "Any extra waiting cursors will be terminated. -1 for infinite cursors."
+		uint8_t[4] unaccounted(offset 0x4c)
+		CPulse_ResumePoint m_WaitComplete(offset 0x50, size 0x48, align 0x0)
+	
+
+-----members of class CPulseCell_WaitForCursorsWithTag-----
+	bool m_bTagSelfWhenComplete(offset 0x98, size 0x1, align 0x1)
+		^MPropertyDescription "Apply the same tag we're waiting on to the resulting cursor upon wait completion. Can be used to wait on our result cursor with the same tag."
+	uint8_t[3] unaccounted(offset 0x99)
+	PulseCursorCancelPriority_t m_nDesiredKillPriority(offset 0x9c, size 0x4, align 0x4)
+		^MPropertyDescription "When we start waiting, how should we handle existing cursors?"
+

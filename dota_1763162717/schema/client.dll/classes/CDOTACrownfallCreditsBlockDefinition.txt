@@ -1,0 +1,18 @@
+class CDOTACrownfallCreditsBlockDefinition(size: 0xb8 bytes, project "client", binding @ client.dll + 0x5149b50, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1e25cb0"
+
+-----members of class CDOTACrownfallCreditsBlockDefinition-----
+	CUtlVector< CDOTACrownfallCreditsCharacterDefinition > m_vecCharacters(offset 0x0, size 0x18, align 0x8)
+	CDOTACrownfallCreditsMapSceneDefinition m_scene(offset 0x18, size 0x68, align 0x8)
+	CUtlString m_strCustomPanoramaClass(offset 0x80, size 0x8, align 0x8)
+	int32 m_nMarginBottom(offset 0x88, size 0x4, align 0x4)
+	int32 m_nMarginTop(offset 0x8c, size 0x4, align 0x4)
+	bool m_bSpecialThanksBlock(offset 0x90, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x91)
+	CUtlString m_strLocText(offset 0x98, size 0x8, align 0x8)
+	bool m_bJustText(offset 0xa0, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0xa1)
+	int32 m_nStopOffset(offset 0xa4, size 0x4, align 0x4)
+	uint8_t[16] unaccounted(offset 0xa8)
+

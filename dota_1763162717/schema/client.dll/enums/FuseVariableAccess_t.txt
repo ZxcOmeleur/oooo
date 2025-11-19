@@ -1,0 +1,3 @@
+enum FuseVariableAccess_t(size: 1 bytes, 2 values, project "mathlib_extended", binding @ client.dll + 0x51b0450):
+	WRITABLE = 0,
+	READ_ONLY = 1,

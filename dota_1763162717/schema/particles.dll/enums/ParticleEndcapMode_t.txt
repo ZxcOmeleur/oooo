@@ -1,0 +1,7 @@
+enum ParticleEndcapMode_t(size: 4 bytes, 3 values, project "particles", binding @ particles.dll + 0x5245b0):
+	PARTICLE_ENDCAP_ALWAYS_ON = -1,
+		^MPropertyFriendlyName "Always Enabled"
+	PARTICLE_ENDCAP_ENDCAP_OFF = 0,
+		^MPropertyFriendlyName "Disabled During Endcap"
+	PARTICLE_ENDCAP_ENDCAP_ON = 1,
+		^MPropertyFriendlyName "Only Enabled During Endcap"

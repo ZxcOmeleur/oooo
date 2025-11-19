@@ -1,0 +1,71 @@
+class CJumpHelperUpdateNode(size: 0xd8 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7567c0, scope "!GlobalTypes") extends CSequenceUpdateNode
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x1ae8d0"
+
+	base class CSequenceUpdateNode(size: 0xb0 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x76b260, scope "!GlobalTypes") extends CSequenceUpdateNodeBase
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x28bac0"
+	
+		base class CSequenceUpdateNodeBase(size: 0x78 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x76b160, scope "!GlobalTypes") extends CLeafUpdateNode
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+		
+			base class CLeafUpdateNode(size: 0x58 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x768ef0, scope "!GlobalTypes") extends CAnimUpdateNodeBase
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_IS_ABSTRACT
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+			
+				base class CAnimUpdateNodeBase(size: 0x58 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7651c0, scope "!GlobalTypes")
+				| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+				| SCHEMA_CF1_IS_ABSTRACT
+				| SCHEMA_CF1_CONSTRUCT_ALLOWED
+				| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+				^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+				
+				-----members of class CAnimUpdateNodeBase-----
+					uint8_t[24] unaccounted(offset 0x0)
+					CAnimNodePath m_nodePath(offset 0x18, size 0x30, align 0x4)
+					AnimNodeNetworkMode m_networkMode(offset 0x48, size 0x4, align 0x4)
+					uint8_t[4] unaccounted(offset 0x4c)
+					CUtlString m_name(offset 0x50, size 0x8, align 0x8)
+				
+			
+			-----members of class CLeafUpdateNode-----
+				<no members>
+			
+		
+		-----members of class CSequenceUpdateNodeBase-----
+			uint8_t[20] unaccounted(offset 0x58)
+			float32 m_playbackSpeed(offset 0x6c, size 0x4, align 0x4)
+			bool m_bLoop(offset 0x70, size 0x1, align 0x1)
+			uint8_t[7] unaccounted(offset 0x71)
+		
+	
+	-----members of class CSequenceUpdateNode-----
+		HSequence m_hSequence(offset 0x78, size 0x4, align 0x0)
+		float32 m_duration(offset 0x7c, size 0x4, align 0x4)
+		CParamSpanUpdater m_paramSpans(offset 0x80, size 0x18, align 0x8)
+		CUtlVector< TagSpan_t > m_tags(offset 0x98, size 0x18, align 0x8)
+	
+
+-----members of class CJumpHelperUpdateNode-----
+	CAnimParamHandle m_hTargetParam(offset 0xb0, size 0x2, align 0x1)
+	uint8_t[2] unaccounted(offset 0xb2)
+	Vector m_flOriginalJumpMovement(offset 0xb4, size 0xc, align 0x4)
+	float32 m_flOriginalJumpDuration(offset 0xc0, size 0x4, align 0x4)
+	float32 m_flJumpStartCycle(offset 0xc4, size 0x4, align 0x4)
+	float32 m_flJumpEndCycle(offset 0xc8, size 0x4, align 0x4)
+	JumpCorrectionMethod m_eCorrectionMethod(offset 0xcc, size 0x4, align 0x4)
+	bool[3] m_bTranslationAxis(offset 0xd0, size 0x3, align 0x1)
+	bool m_bScaleSpeed(offset 0xd3, size 0x1, align 0x1)
+	uint8_t[4] unaccounted(offset 0xd4)
+

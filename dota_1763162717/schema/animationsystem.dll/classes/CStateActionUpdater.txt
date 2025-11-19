@@ -1,0 +1,9 @@
+class CStateActionUpdater(size: 0x10 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x764d80, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x26a220"
+
+-----members of class CStateActionUpdater-----
+	CSmartPtr< CAnimActionUpdater > m_pAction(offset 0x0, size 0x8, align 0x8)
+	StateActionBehavior m_eBehavior(offset 0x8, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0xc)
+

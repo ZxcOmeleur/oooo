@@ -1,0 +1,5 @@
+enum Bidirectional_Messages(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f6b570):
+	bi_RebroadcastGameEvent = 16,
+	bi_RebroadcastSource = 17,
+	bi_GameEvent = 18,
+	bi_PredictionEvent = 19,

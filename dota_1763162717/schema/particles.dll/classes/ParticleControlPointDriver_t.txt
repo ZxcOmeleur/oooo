@@ -1,0 +1,13 @@
+class ParticleControlPointDriver_t(size: 0x70 bytes, project "particles", binding @ particles.dll + 0x525b70, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0xaa150"
+
+-----members of class ParticleControlPointDriver_t-----
+	ParticleParamID_t m_iControlPoint(offset 0x0, size 0x40, align 0x8)
+	ParticleAttachment_t m_iAttachType(offset 0x40, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x44)
+	CUtlString m_attachmentName(offset 0x48, size 0x8, align 0x8)
+	Vector m_vecOffset(offset 0x50, size 0xc, align 0x4)
+	QAngle m_angOffset(offset 0x5c, size 0xc, align 0x4)
+	CUtlString m_entityName(offset 0x68, size 0x8, align 0x8)
+

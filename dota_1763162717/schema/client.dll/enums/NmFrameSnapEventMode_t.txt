@@ -1,0 +1,3 @@
+enum NmFrameSnapEventMode_t(size: 4 bytes, 2 values, project "animlib", binding @ client.dll + 0x5179fb0):
+	Floor = 0,
+	Round = 1,

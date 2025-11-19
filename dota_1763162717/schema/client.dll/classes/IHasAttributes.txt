@@ -1,0 +1,8 @@
+class IHasAttributes(size: 0x8 bytes, project "client", binding @ client.dll + 0x5174b80, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_IS_ABSTRACT
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class IHasAttributes-----
+	uint8_t[8] unaccounted(offset 0x0)
+

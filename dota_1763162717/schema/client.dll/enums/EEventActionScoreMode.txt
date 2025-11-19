@@ -1,0 +1,3 @@
+enum EEventActionScoreMode(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f6a8a0):
+	k_eEventActionScoreMode_Add = 0,
+	k_eEventActionScoreMode_Min = 1,

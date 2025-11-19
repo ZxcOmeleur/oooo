@@ -1,0 +1,3 @@
+enum EProjectionEvent(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f6afe0):
+	ePE_FirstBlood = 0,
+	ePE_Killstreak_godlike = 1,

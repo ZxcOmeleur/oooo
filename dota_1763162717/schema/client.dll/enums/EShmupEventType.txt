@@ -1,0 +1,5 @@
+enum EShmupEventType(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x515a9d0):
+	k_eShmupEventType_Invalid = -1,
+		^MPropertySuppressEnumerator
+	k_eShmupEventType_SpawnEnemy = 0,
+	k_eShmupEventType_UI = 1,

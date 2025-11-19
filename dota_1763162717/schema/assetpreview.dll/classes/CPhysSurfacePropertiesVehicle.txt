@@ -1,0 +1,11 @@
+class CPhysSurfacePropertiesVehicle(size: 0x8 bytes, project "modellib", binding @ assetpreview.dll + 0xd23d00, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x5561d0"
+
+-----members of class CPhysSurfacePropertiesVehicle-----
+	float32 m_wheelDrag(offset 0x0, size 0x4, align 0x4)
+		^MKV3TransferName "wheeldrag"
+	float32 m_wheelFrictionScale(offset 0x4, size 0x4, align 0x4)
+		^MKV3TransferName "wheelfrictionscale"
+

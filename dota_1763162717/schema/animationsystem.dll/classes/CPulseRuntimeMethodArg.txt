@@ -1,0 +1,10 @@
+class CPulseRuntimeMethodArg(size: 0x80 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a6980, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x516ed0"
+
+-----members of class CPulseRuntimeMethodArg-----
+	CKV3MemberNameWithStorage m_Name(offset 0x0, size 0x38, align 0x8)
+	CUtlString m_Description(offset 0x38, size 0x8, align 0x8)
+	CPulseValueFullType m_Type(offset 0x40, size 0x18, align 0x8)
+	uint8_t[40] unaccounted(offset 0x58)
+

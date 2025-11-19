@@ -1,0 +1,7 @@
+class CFootTrajectories(size: 0x18 bytes, project "modellib", binding @ assetpreview.dll + 0xd26080, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x570850"
+
+-----members of class CFootTrajectories-----
+	CUtlVector< CFootTrajectory > m_trajectories(offset 0x0, size 0x18, align 0x8)
+

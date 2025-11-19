@@ -1,0 +1,8 @@
+class PulseNodeDynamicOutflows_t(size: 0x18 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a8200, scope "animationsystem.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x5265b0"
+
+-----members of class PulseNodeDynamicOutflows_t-----
+	CUtlVector< PulseNodeDynamicOutflows_t::DynamicOutflow_t > m_Outflows(offset 0x0, size 0x18, align 0x8)
+

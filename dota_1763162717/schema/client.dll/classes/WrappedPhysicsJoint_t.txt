@@ -1,0 +1,6 @@
+class WrappedPhysicsJoint_t(size: 0x8 bytes, project "client", binding @ client.dll + 0x4f1b850, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class WrappedPhysicsJoint_t-----
+	uint8_t[8] unaccounted(offset 0x0)
+

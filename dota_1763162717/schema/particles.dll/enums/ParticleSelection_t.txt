@@ -1,0 +1,7 @@
+enum ParticleSelection_t(size: 4 bytes, 3 values, project "particles", binding @ particles.dll + 0x5247a0):
+	PARTICLE_SELECTION_FIRST = 0,
+		^MPropertyFriendlyName "First/Oldest Particle"
+	PARTICLE_SELECTION_LAST = 1,
+		^MPropertyFriendlyName "Last/Newest Particle"
+	PARTICLE_SELECTION_NUMBER = 2,
+		^MPropertyFriendlyName "Specified Particle Number"

@@ -1,0 +1,11 @@
+class CDestructiblePartsSystemData(size: 0x30 bytes, project "client", binding @ client.dll + 0x4f49480, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MModelGameData
+^MGetKV3ClassDefaults "func: client.dll + 0x625300"
+
+-----members of class CDestructiblePartsSystemData-----
+	CUtlOrderedMap< HitGroup_t, CDestructiblePart > m_PartsDataByHitGroup(offset 0x0, size 0x28, align 0x8)
+		^MPropertyDescription "Destructible Parts"
+	CRangeInt m_nMinMaxNumberHitGroupsToDestroyWhenGibbing(offset 0x28, size 0x8, align 0x0)
+		^MPropertyDescription "Min/Max number parts to destroy when gibbing"
+

@@ -1,0 +1,19 @@
+class CSmartPropPulse_SelectionLinearLength::Criteria_t(size: 0x10 bytes, project "smartprops", binding @ assetpreview.dll + 0xd4beb0, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class CSmartPropPulse_SelectionLinearLength::Criteria_t-----
+	float32 m_flLength(offset 0x0, size 0x4, align 0x4)
+		^MPropertyDescription "Specifies the length of the line that will be taken up if this element is selected."
+	bool m_bAllowScale(offset 0x4, size 0x1, align 0x1)
+		^MPropertyDescription "Can this object be scaled. If enabled the minimum and maximum lengths must be set to specify the size range of allowable scale."
+	uint8_t[3] unaccounted(offset 0x5)
+	float32 m_flMinLength(offset 0x8, size 0x4, align 0x4)
+		^MPropertyFriendlyName "Minimum length"
+		^MPropertySuppressExpr "m_bAllowScale == false"
+		^MPropertyDescription "Minimum allowable length for the object. Must be <= length. If length is 100 and minimum length is 20, then the object may be assigned a scale in the rage [ 0.2, 1.0 ]."
+	float32 m_flMaxLength(offset 0xc, size 0x4, align 0x4)
+		^MPropertyFriendlyName "Maximum length"
+		^MPropertySuppressExpr "m_bAllowScale == false"
+		^MPropertyDescription "Maximum allowable length for the object. Must be >= length. If length is 100 and maximum length is 160, then the object may be assigned a scale in the rage [ 1.0, 1.6 ]."
+

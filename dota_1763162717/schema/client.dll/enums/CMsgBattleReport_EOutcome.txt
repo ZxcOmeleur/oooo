@@ -1,0 +1,3 @@
+enum CMsgBattleReport_EOutcome(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f602b0):
+	k_eWin = 0,
+	k_eLoss = 1,

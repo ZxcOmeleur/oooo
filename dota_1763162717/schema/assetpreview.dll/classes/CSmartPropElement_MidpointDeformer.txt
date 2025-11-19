@@ -1,0 +1,95 @@
+class CSmartPropElement_MidpointDeformer(size: 0x2e8 bytes, project "smartprops", binding @ assetpreview.dll + 0xd4a8e0, scope "!GlobalTypes") extends CSmartPropElement_Deformer
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x83fa50"
+^MPropertyFriendlyName "Midpoint Deformer"
+^MPropertyDescription "Soft deform the center of a volume defined by two endpoints."
+
+	base class CSmartPropElement_Deformer(size: 0xa0 bytes, project "smartprops", binding @ assetpreview.dll + 0xd443a0, scope "!GlobalTypes") extends CSmartPropElement_Group
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	
+		base class CSmartPropElement_Group(size: 0xa0 bytes, project "smartprops", binding @ assetpreview.dll + 0xd44320, scope "!GlobalTypes") extends CSmartPropElement
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7ef720"
+		^MPropertyFriendlyName "Group"
+		^MPropertyDescription "A group of elements that will all be evaulated."
+		
+			base class CSmartPropElement(size: 0x88 bytes, project "smartprops", binding @ assetpreview.dll + 0xd43fe0, scope "!GlobalTypes")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7eefa0"
+			^MVDataBase
+			^MVDataNodeType "1"
+			^MVDataAnonymousNode
+			^MPropertyFriendlyName "Smart Prop Element"
+			^MVDataOutlinerLabelExpr "m_sLabel"
+			
+			-----members of class CSmartPropElement-----
+				uint8_t[8] unaccounted(offset 0x0)
+				int32 m_nElementID(offset 0x8, size 0x4, align 0x4)
+					^MPropertySuppressField
+					^MVDataUniqueMonotonicInt "_editor/next_element_id"
+				uint8_t[4] unaccounted(offset 0xc)
+				CSmartPropAttributeBool m_bEnabled(offset 0x10, size 0x40, align 0x8)
+					^MVDataEnableKey
+					^MPropertyDescription "Is this element enabled? If not enabled, this element will not be evaluted and will have no effect on the result."
+					^MPropertySortPriority "10"
+				CUtlString m_sLabel(offset 0x50, size 0x8, align 0x8)
+					^MPropertyFriendlyName "Label"
+					^MPropertyDescription "Optional text that will appear in the outliner to help organize Smart Prop elements and communicate their purpose to other users."
+				CUtlVector< CSmartPropSelectionCriteria* > m_SelectionCriteria(offset 0x58, size 0x18, align 0x8)
+					^MPropertyFriendlyName "Selection Criteria"
+					^MVDataPromoteField "2"
+				CUtlVector< CSmartPropModifier* > m_Modifiers(offset 0x70, size 0x18, align 0x8)
+					^MPropertyFriendlyName "Modifiers"
+					^MVDataPromoteField "2"
+			
+		
+		-----members of class CSmartPropElement_Group-----
+			CUtlVector< CSmartPropElement* > m_Children(offset 0x88, size 0x18, align 0x8)
+				^MPropertyFriendlyName "Children"
+				^MPropertyDescription "List of child elements which will appear if this element appears"
+				^MVDataPromoteField "1"
+		
+	
+	-----members of class CSmartPropElement_Deformer-----
+		<no members>
+	
+
+-----members of class CSmartPropElement_MidpointDeformer-----
+	CSmartPropAttributeBool m_bDeformationEnabled(offset 0xa0, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Deformation Enabled"
+		^MPropertyDescription "Should the deformation be applied. If disabled the children will still be placed, but will not be deformed. Esentially making the element behave as a group."
+	CSmartPropAttributeVector m_vStart(offset 0xe0, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Start Point"
+		^MPropertyDescription "Endpoint of deformation region."
+	CSmartPropAttributeVector m_vEnd(offset 0x120, size 0x40, align 0x8)
+		^MPropertyFriendlyName "End Point"
+		^MPropertyDescription "Endpoint of deformation region."
+	CSmartPropAttributeFloat m_fRadius(offset 0x160, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Effect Size"
+		^MPropertyDescription "The distance from the line formed by the endpoints that encapsulated the deformation region."
+	CSmartPropAttributeBool m_bContinuousSpline(offset 0x1a0, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Continuous Interpolation"
+		^MPropertyDescription "Enables an alternate interpolation method that doesnt deform endpoint tangents."
+	CSmartPropAttributeVector m_vOffset(offset 0x1e0, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Midpoint Offset"
+		^MPropertyDescription "Offsets the center of the deformation region."
+	CSmartPropAttributeAngles m_vAngles(offset 0x220, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Midpoint Rotation"
+		^MPropertyDescription "Rotate the center of the deformation region."
+	CSmartPropAttributeVector2D m_vScale(offset 0x260, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Midpoint Scale"
+		^MPropertyDescription "Scale the center of the deformation region."
+	CSmartPropAttributeFloat m_fFalloff(offset 0x2a0, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Falloff"
+		^MPropertyDescription "Adjust deformation falloff from the center of the region to the endpoints."
+	CUtlString m_OutputVariable(offset 0x2e0, size 0x8, align 0x8)
+		^MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Vector )"
+		^MPropertyDescription "Outputs the absolute position of the midpoint post deformation."
+

@@ -1,0 +1,82 @@
+enum EFightingGameActionID(size: 4 bytes, 41 values, project "client", binding @ client.dll + 0x5106f40):
+	INVALID_ACTION_DEFINITION = -1,
+	IDLE_ACTION_DEFINITION = 0,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3dc0>"
+	BLOCKSTUN_ACTION_DEFINITION = 1,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3e18>"
+	HITSTUN_ACTION_DEFINITION = 2,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3e58>"
+	KNOCKED_DOWN_ACTION_DEFINITION = 3,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3e88>"
+	DASH_ACTION_DEFINITION = 4,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3ec8>"
+	BACKDASH_ACTION_DEFINITION = 5,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3ee8>"
+	GUARDBREAK_ACTION_DEFINITION = 6,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3f08>"
+	VICTORY_ACTION_DEFINITION = 7,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3f18>"
+	DEFEAT_ACTION_DEFINITION = 8,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3f28>"
+	JAB_ACTION_DEFINITION = 9,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3f40>"
+	JAB_2_ACTION_DEFINITION = 10,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3fc0>"
+	JAB_3_ACTION_DEFINITION = 11,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3fe0>"
+	JAB_4_ACTION_DEFINITION = 12,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a3ff8>"
+	CROSS_ACTION_DEFINITION = 13,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4010>"
+	CROSS_2_ACTION_DEFINITION = 14,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4028>"
+	CROSS_3_ACTION_DEFINITION = 15,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4040>"
+	HEAVY_ACTION_DEFINITION = 16,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4058>"
+	SWEEP_ACTION_DEFINITION = 17,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4070>"
+	SWEEP_2_ACTION_DEFINITION = 18,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4088>"
+	KICK_1_ACTION_DEFINITION = 19,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a40a0>"
+	KICK_2_ACTION_DEFINITION = 20,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a40b8>"
+	KICK_3_ACTION_DEFINITION = 21,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4158>"
+	FINISHER_ACTION_DEFINITION = 22,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4178>"
+	FINISHER_2_ACTION_DEFINITION = 23,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4198>"
+	PROJECTILE_ACTION_DEFINITION = 24,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a41a8>"
+	WALRUS_PUNCH_ACTION_DEFINITION = 25,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a41c8>"
+	SWAP_ACTION_DEFINITION = 26,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a41e0>"
+	SWAP_RECOVERY_ACTION_DEFINITION = 27,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4200>"
+	QUILLSPRAY_START_ACTION_DEFINITION = 28,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4230>"
+	QUILLSPRAY_2_ACTION_DEFINITION = 29,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4258>"
+	QUILLSPRAY_3_ACTION_DEFINITION = 30,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4270>"
+	QUILLSPRAY_4_ACTION_DEFINITION = 31,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a42e8>"
+	QUILLSPRAY_FINISH_ACTION_DEFINITION = 32,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4308>"
+	UNLEASH_ACTION_DEFINITION = 33,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4318>"
+	DASH_STRIKE_ACTION_DEFINITION = 34,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4378>"
+	DASH_STRIKE_2_ACTION_DEFINITION = 35,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4398>"
+	STARBREAKER_1_ACTION_DEFINITION = 36,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a43b8>"
+	STARBREAKER_2_ACTION_DEFINITION = 37,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a43d8>"
+	STARBREAKER_3_ACTION_DEFINITION = 38,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a43f8>"
+	LUMINOSITY_ACTION_DEFINITION = 39,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x40a4418>"

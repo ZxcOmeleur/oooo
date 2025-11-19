@@ -1,0 +1,4 @@
+enum ESurvivorsAreaAttackOrigin(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x51640e0):
+	INVALID_ORIGIN = -1,
+	PLAYER_ORIGIN = 0,
+	RANDOM_ENEMY_ORIGIN = 1,

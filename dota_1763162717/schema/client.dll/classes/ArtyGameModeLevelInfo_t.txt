@@ -1,0 +1,10 @@
+class ArtyGameModeLevelInfo_t(size: 0x10 bytes, project "client", binding @ client.dll + 0x5144210, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1c292a0"
+^MVDataRoot
+
+-----members of class ArtyGameModeLevelInfo_t-----
+	CUtlString m_szLevelName(offset 0x0, size 0x8, align 0x8)
+	ArtyLevelID_t m_unLevelID(offset 0x8, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0xc)
+

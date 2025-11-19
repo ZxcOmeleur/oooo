@@ -1,0 +1,4 @@
+enum ETormentorSpawnPhase(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x5093f10):
+	TORMENTOR_SPAWN_PHASE_HAS_NOT_SPAWNED = 0,
+	TORMENTOR_SPAWN_PHASE_ALIVE = 1,
+	TORMENTOR_SPAWN_PHASE_RESPAWNING = 2,

@@ -1,0 +1,6 @@
+enum LuaModifierType(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x4f7ee50):
+	LUA_MODIFIER_MOTION_NONE = 0,
+	LUA_MODIFIER_MOTION_HORIZONTAL = 1,
+	LUA_MODIFIER_MOTION_VERTICAL = 2,
+	LUA_MODIFIER_MOTION_BOTH = 3,
+	LUA_MODIFIER_INVALID = 4,

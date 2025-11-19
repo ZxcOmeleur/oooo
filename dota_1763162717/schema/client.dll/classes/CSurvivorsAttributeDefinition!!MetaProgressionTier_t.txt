@@ -1,0 +1,9 @@
+class CSurvivorsAttributeDefinition::MetaProgressionTier_t(size: 0x58 bytes, project "client", binding @ client.dll + 0x5162fc0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25e61b0"
+
+-----members of class CSurvivorsAttributeDefinition::MetaProgressionTier_t-----
+	CSurvivorsAttributeDefinition::MetaProgressionTierCost_t m_cost(offset 0x0, size 0x50, align 0x8)
+	float32 m_flValue(offset 0x50, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x54)
+

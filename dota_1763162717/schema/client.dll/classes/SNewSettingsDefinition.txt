@@ -1,0 +1,18 @@
+class SNewSettingsDefinition(size: 0x40 bytes, project "client", binding @ client.dll + 0x516dbf0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x293a450"
+^MVDataRoot
+
+-----members of class SNewSettingsDefinition-----
+	NewSettingsID_t nID(offset 0x0, size 0x4, align 0x0)
+		^MPropertyDescription "unique integer ID of this new setting"
+		^MVDataUniqueMonotonicInt "_editor/next_new_setting_id"
+		^MPropertyAttributeEditor "locked_int()"
+	uint8_t[12] unaccounted(offset 0x4)
+	CUtlString m_sTitle(offset 0x10, size 0x8, align 0x8)
+	CUtlString m_sDescription(offset 0x18, size 0x8, align 0x8)
+	CPanoramaImageName sIcon(offset 0x20, size 0x10, align 0x8)
+	CUtlString m_sCreationDate(offset 0x30, size 0x8, align 0x8)
+	uint8_t[4] unaccounted(offset 0x38)
+	ENewSettingsBadge m_eNewSettingsBadge(offset 0x3c, size 0x4, align 0x4)
+

@@ -1,0 +1,6 @@
+class CVectorExponentialMovingAverage(size: 0x2c bytes, project "client", binding @ client.dll + 0x4f4f050, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class CVectorExponentialMovingAverage-----
+	uint8_t[44] unaccounted(offset 0x0)
+

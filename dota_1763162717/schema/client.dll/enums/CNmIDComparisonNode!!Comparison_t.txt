@@ -1,0 +1,3 @@
+enum CNmIDComparisonNode::Comparison_t(size: 1 bytes, 2 values, project "animlib", binding @ client.dll + 0x517c380):
+	Matches = 0,
+	DoesntMatch = 1,

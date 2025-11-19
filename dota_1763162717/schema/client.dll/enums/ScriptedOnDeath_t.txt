@@ -1,0 +1,5 @@
+enum ScriptedOnDeath_t(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f4d900):
+	SS_ONDEATH_NOT_APPLICABLE = -1,
+	SS_ONDEATH_UNDEFINED = 0,
+	SS_ONDEATH_RAGDOLL = 1,
+	SS_ONDEATH_ANIMATED_DEATH = 2,

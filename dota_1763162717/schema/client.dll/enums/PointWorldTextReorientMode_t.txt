@@ -1,0 +1,3 @@
+enum PointWorldTextReorientMode_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x50d9ea0):
+	POINT_WORLD_TEXT_REORIENT_NONE = 0,
+	POINT_WORLD_TEXT_REORIENT_AROUND_UP = 1,

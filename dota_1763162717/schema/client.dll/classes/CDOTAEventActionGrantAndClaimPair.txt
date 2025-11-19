@@ -1,0 +1,9 @@
+class CDOTAEventActionGrantAndClaimPair(size: 0x10 bytes, project "client", binding @ client.dll + 0x510e0c0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x190e7e0"
+^MVDataRoot
+
+-----members of class CDOTAEventActionGrantAndClaimPair-----
+	CUtlString m_sEventActionGrant(offset 0x0, size 0x8, align 0x8)
+	CUtlString m_sEventActionClaim(offset 0x8, size 0x8, align 0x8)
+

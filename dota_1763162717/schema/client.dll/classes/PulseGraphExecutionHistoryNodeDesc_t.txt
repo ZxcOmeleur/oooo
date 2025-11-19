@@ -1,0 +1,8 @@
+class PulseGraphExecutionHistoryNodeDesc_t(size: 0x20 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b9c30, scope "client.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x31a7200"
+
+-----members of class PulseGraphExecutionHistoryNodeDesc_t-----
+	CBufferString strCellDesc(offset 0x0, size 0x10, align 0x8)
+	PulseSymbol_t strBindingName(offset 0x10, size 0x10, align 0x8)
+

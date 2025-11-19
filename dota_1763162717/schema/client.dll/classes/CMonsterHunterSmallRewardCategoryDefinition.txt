@@ -1,0 +1,9 @@
+class CMonsterHunterSmallRewardCategoryDefinition(size: 0x10 bytes, project "client", binding @ client.dll + 0x510acd0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1880cf0"
+
+-----members of class CMonsterHunterSmallRewardCategoryDefinition-----
+	EMonsterHunterSmallRewardCategory m_eCategory(offset 0x0, size 0x4, align 0x4)
+	uint32 m_unActionID(offset 0x4, size 0x4, align 0x4)
+	CUtlString m_strLocName(offset 0x8, size 0x8, align 0x8)
+

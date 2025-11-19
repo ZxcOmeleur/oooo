@@ -1,0 +1,30 @@
+class CSurvivorsSpawnerDefinition(size: 0x148 bytes, project "client", binding @ client.dll + 0x5163350, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: client.dll + 0x25e11a0"
+^MVDataRoot
+
+-----members of class CSurvivorsSpawnerDefinition-----
+	uint8_t[16] unaccounted(offset 0x0)
+	CUtlString m_sEnemyName(offset 0x10, size 0x8, align 0x8)
+	CUtlString m_sEnemyDisplayName(offset 0x18, size 0x8, align 0x8)
+	int32 m_nMinimumEnemyCount(offset 0x20, size 0x4, align 0x4)
+	int32 m_nMaxSpawnCountPerInterval(offset 0x24, size 0x4, align 0x4)
+	int32 m_nOverflowEnemySpawnCount(offset 0x28, size 0x4, align 0x4)
+	float32 m_flSpawnInterval(offset 0x2c, size 0x4, align 0x4)
+	ESurvivorsEnemySpawnBehavior m_eSpawnBehavior(offset 0x30, size 0x4, align 0x4)
+	float32 m_flFixedDirectionSpawnDistanceVariance(offset 0x34, size 0x4, align 0x4)
+	bool m_bIsPersistant(offset 0x38, size 0x1, align 0x1)
+	bool m_bResetSpawnIntervalOnKill(offset 0x39, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x3a)
+	float32 m_flSpawnChance(offset 0x3c, size 0x4, align 0x4)
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sSpawnParticle(offset 0x40, size 0xe0, align 0x8)
+	Vector2D m_flSpawnOvalRadius(offset 0x120, size 0x8, align 0x4)
+	CUtlString m_sSpawnInfoTargetName(offset 0x128, size 0x8, align 0x8)
+	CUtlString m_sMinimapIconClass(offset 0x130, size 0x8, align 0x8)
+	float32 m_flPerpendicularWallSpacing(offset 0x138, size 0x4, align 0x4)
+	bool m_bIgnoreDifficultySpawnMultiplier(offset 0x13c, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x13d)
+	ESurvivorsEnemySpawnPositionsLayer m_eSpawnPositionsLayer(offset 0x144, size 0x4, align 0x4)
+

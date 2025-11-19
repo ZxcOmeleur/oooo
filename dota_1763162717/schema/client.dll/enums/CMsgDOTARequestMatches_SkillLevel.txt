@@ -1,0 +1,5 @@
+enum CMsgDOTARequestMatches_SkillLevel(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f529b0):
+	CMsgDOTARequestMatches_SkillLevel_Any = 0,
+	CMsgDOTARequestMatches_SkillLevel_Normal = 1,
+	CMsgDOTARequestMatches_SkillLevel_High = 2,
+	CMsgDOTARequestMatches_SkillLevel_VeryHigh = 3,

@@ -1,0 +1,8 @@
+enum BeamType_t(size: 4 bytes, 7 values, project "client", binding @ client.dll + 0x4f1b2f0):
+	BEAM_INVALID = 0,
+	BEAM_POINTS = 1,
+	BEAM_ENTPOINT = 2,
+	BEAM_ENTS = 3,
+	BEAM_HOSE = 4,
+	BEAM_SPLINE = 5,
+	BEAM_LASER = 6,

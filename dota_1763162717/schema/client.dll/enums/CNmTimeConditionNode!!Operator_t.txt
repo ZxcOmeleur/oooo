@@ -1,0 +1,5 @@
+enum CNmTimeConditionNode::Operator_t(size: 1 bytes, 4 values, project "animlib", binding @ client.dll + 0x517d2b0):
+	LessThan = 0,
+	LessThanEqual = 1,
+	GreaterThan = 2,
+	GreaterThanEqual = 3,

@@ -1,0 +1,3 @@
+enum EPingMinimapAnimType(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x510dd80):
+	k_ePingMinimapAnimType_None = 0,
+	k_ePingMinimapAnimType_Pulse = 1,

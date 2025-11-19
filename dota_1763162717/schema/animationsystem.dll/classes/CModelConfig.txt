@@ -1,0 +1,11 @@
+class CModelConfig(size: 0x28 bytes, project "modellib", binding @ animationsystem.dll + 0x79f6a0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x4b4590"
+
+-----members of class CModelConfig-----
+	CUtlString m_ConfigName(offset 0x0, size 0x8, align 0x8)
+	CUtlVector< CModelConfigElement* > m_Elements(offset 0x8, size 0x18, align 0x8)
+	bool m_bTopLevel(offset 0x20, size 0x1, align 0x1)
+	bool m_bActiveInEditorByDefault(offset 0x21, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0x22)
+

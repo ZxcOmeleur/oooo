@@ -1,0 +1,3 @@
+enum PointOrientConstraint_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f11300):
+	eNone = 0,
+	ePreserveUpAxis = 1,

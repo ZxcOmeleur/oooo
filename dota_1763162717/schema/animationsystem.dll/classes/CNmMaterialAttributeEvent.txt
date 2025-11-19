@@ -1,0 +1,31 @@
+class CNmMaterialAttributeEvent(size: 0x130 bytes, project "animlib", binding @ animationsystem.dll + 0x794490, scope "!GlobalTypes") extends CNmEvent
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3ddfc0"
+
+	base class CNmEvent(size: 0x20 bytes, project "animlib", binding @ animationsystem.dll + 0x78e080, scope "!GlobalTypes")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+	
+	-----members of class CNmEvent-----
+		uint8_t[8] unaccounted(offset 0x0)
+		float32 m_flStartTimeSeconds(offset 0x8, size 0x4, align 0x4)
+		float32 m_flDurationSeconds(offset 0xc, size 0x4, align 0x4)
+		CGlobalSymbol m_syncID(offset 0x10, size 0x8, align 0x8)
+		bool m_bClientOnly(offset 0x18, size 0x1, align 0x1)
+		uint8_t[7] unaccounted(offset 0x19)
+	
+
+-----members of class CNmMaterialAttributeEvent-----
+	CUtlString m_attributeName(offset 0x20, size 0x8, align 0x8)
+	CUtlStringToken m_attributeNameToken(offset 0x28, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x2c)
+	CPiecewiseCurve m_x(offset 0x30, size 0x40, align 0x8)
+	CPiecewiseCurve m_y(offset 0x70, size 0x40, align 0x8)
+	CPiecewiseCurve m_z(offset 0xb0, size 0x40, align 0x8)
+	CPiecewiseCurve m_w(offset 0xf0, size 0x40, align 0x8)
+

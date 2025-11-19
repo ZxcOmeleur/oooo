@@ -1,0 +1,8 @@
+class CDOTAMinesweeperStageProgressionChoice(size: 0x8 bytes, project "client", binding @ client.dll + 0x5157850, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x246dbf0"
+^MVDataRoot
+
+-----members of class CDOTAMinesweeperStageProgressionChoice-----
+	CUtlString m_strLocText(offset 0x0, size 0x8, align 0x8)
+

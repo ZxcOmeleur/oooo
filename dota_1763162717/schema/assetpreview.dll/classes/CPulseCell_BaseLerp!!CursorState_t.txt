@@ -1,0 +1,10 @@
+class CPulseCell_BaseLerp::CursorState_t(size: 0x8 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd3cf10, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7965e0"
+
+-----members of class CPulseCell_BaseLerp::CursorState_t-----
+	GameTime_t m_StartTime(offset 0x0, size 0x4, align 0x0)
+	GameTime_t m_EndTime(offset 0x4, size 0x4, align 0x0)
+

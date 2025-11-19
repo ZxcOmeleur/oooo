@@ -1,0 +1,32 @@
+class CDestructiblePart(size: 0x50 bytes, project "client", binding @ client.dll + 0x4f48e40, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x624780"
+^MModelGameData
+^MFgdHelper "<unidentified non-null meta: client.dll + 0x33d3140>"
+
+-----members of class CDestructiblePart-----
+	CGlobalSymbol m_DebugName(offset 0x0, size 0x8, align 0x8)
+		^MPropertySuppressField
+	HitGroup_t m_nHitGroup(offset 0x8, size 0x4, align 0x4)
+		^MPropertyStartGroup "+Hitgroup"
+		^MPropertyDescription "The hitgroup this is related to."
+	bool m_bDisableHitGroupWhenDestroyed(offset 0xc, size 0x1, align 0x1)
+		^MPropertyDescription "Do we disable the hitgroup and physics bodies tagged with said hitgroup when all damage levels are destroyed?"
+		^MPropertyFriendlyName "Disable Hit Group & Remove Tagged Physics Bodies When Destroyed"
+	uint8_t[3] unaccounted(offset 0xd)
+	CUtlVector< HitGroup_t > m_nOtherHitgroupsToDestroyWhenFullyDestructed(offset 0x10, size 0x18, align 0x8)
+		^MPropertyDescription "Other hitgroups to destroy when this one is fully destroyed.  Useful for chaining destructibles like blowing up the lower arm when the upper arm dies."
+	bool m_bOnlyDestroyWhenGibbing(offset 0x28, size 0x1, align 0x1)
+		^MPropertyStartGroup "+Gibbing"
+		^MPropertyDescription "Only allow this part to be destroyed when gibbing.  Useful for special case gibbing breakables like torsos."
+	uint8_t[7] unaccounted(offset 0x29)
+	CGlobalSymbol m_sBodyGroupName(offset 0x30, size 0x8, align 0x8)
+		^MPropertyStartGroup "+Model Setup/+Body Group"
+		^MPropertyDescription "Body group to set when this damage level is broken."
+		^MPropertyAttributeEditor "ModelDocPicker( MODELDOC_PICK_TYPE_BODY_GROUP )"
+	CUtlVector< CDestructiblePart_DamageLevel > m_DamageLevels(offset 0x38, size 0x18, align 0x8)
+		^MPropertyStartGroup
+		^MPropertyDescription "The various damage levels for this hitgroup."
+		^MPropertyFriendlyName "Damage Levels"
+		^MPropertyAutoExpandSelf
+

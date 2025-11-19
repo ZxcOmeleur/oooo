@@ -1,0 +1,12 @@
+class CSurvivorsUpgradeDefinition(size: 0x40 bytes, project "client", binding @ client.dll + 0x5163420, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25dd020"
+^MVDataRoot
+
+-----members of class CSurvivorsUpgradeDefinition-----
+	ESurvivorsUpgradeRarity m_unRarity(offset 0x0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlVector< CSurvivorsAttributeValue > m_vecUpgradeAttributes(offset 0x8, size 0x18, align 0x8)
+	CUtlVector< CSurvivorsAttributeValue > m_vecGlobalUpgradeAttributes(offset 0x20, size 0x18, align 0x8)
+	uint8_t[8] unaccounted(offset 0x38)
+

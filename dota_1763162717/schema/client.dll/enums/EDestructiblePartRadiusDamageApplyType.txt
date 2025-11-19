@@ -1,0 +1,5 @@
+enum EDestructiblePartRadiusDamageApplyType(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f49680):
+	ScaleByExplosionRadius = 0,
+		^MPropertyDescription "Damage is scaled proportionally based on distance from the epicenter."
+	PrioritizeClosestPart = 1,
+		^MPropertyDescription "Damage is dumped to the closest alive part, and the remainder is scaled as in ScaleByExplosionRadius algorithm."

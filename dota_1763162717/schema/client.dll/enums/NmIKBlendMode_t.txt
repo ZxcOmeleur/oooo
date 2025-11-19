@@ -1,0 +1,3 @@
+enum NmIKBlendMode_t(size: 1 bytes, 2 values, project "animlib", binding @ client.dll + 0x517dc80):
+	Effector = 0,
+	Pose = 1,

@@ -1,0 +1,7 @@
+enum ESurvivorsAttackTargeting(size: 4 bytes, 6 values, project "client", binding @ client.dll + 0x5164090):
+	INVALID_TARGET = -1,
+	CLOSEST_TARGET = 0,
+	RANDOM_TARGET_IN_RANGE = 1,
+	STRONGEST_TARGET_IN_RANGE = 2,
+	RANDOM_TARGET_AT_RANGE = 3,
+	PLAYER_FACING = 4,

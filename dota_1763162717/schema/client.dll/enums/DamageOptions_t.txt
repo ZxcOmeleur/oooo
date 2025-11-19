@@ -1,0 +1,4 @@
+enum DamageOptions_t(size: 1 bytes, 3 values, project "client", binding @ client.dll + 0x4f4ada0):
+	DAMAGE_NO = 0,
+	DAMAGE_EVENTS_ONLY = 1,
+	DAMAGE_YES = 2,

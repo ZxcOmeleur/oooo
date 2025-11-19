@@ -1,0 +1,11 @@
+class CrownfallSurvivorsLightingOverride_t(size: 0x30 bytes, project "client", binding @ client.dll + 0x5160610, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25e3400"
+
+-----members of class CrownfallSurvivorsLightingOverride_t-----
+	float32 flTimeRemaining(offset 0x0, size 0x4, align 0x4)
+	bool bOverrideBackToDefault(offset 0x4, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x5)
+	CrownfallSurvivorsLightingEnvironment_t Lighting(offset 0x8, size 0x28, align 0x4)
+

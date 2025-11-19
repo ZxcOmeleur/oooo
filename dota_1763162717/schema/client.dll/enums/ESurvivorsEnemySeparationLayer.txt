@@ -1,0 +1,5 @@
+enum ESurvivorsEnemySeparationLayer(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x51642c0):
+	OFF = -1,
+	SMALL = 1,
+	LARGE = 2,
+	ELITE = 3,

@@ -1,0 +1,9 @@
+class CLightRigGrid(size: 0x5 bytes, project "toolscene", binding @ assetpreview.dll + 0xd2da60, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x648ca0"
+
+-----members of class CLightRigGrid-----
+	bool m_bEnabled(offset 0x0, size 0x1, align 0x1)
+	Color m_Color(offset 0x1, size 0x4, align 0x1)
+

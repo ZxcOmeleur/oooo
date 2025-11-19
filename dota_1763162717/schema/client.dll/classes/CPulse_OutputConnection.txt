@@ -1,0 +1,11 @@
+class CPulse_OutputConnection(size: 0x40 bytes, project "pulse_runtime_lib", binding @ client.dll + 0x51b9660, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x3187c20"
+
+-----members of class CPulse_OutputConnection-----
+	PulseSymbol_t m_SourceOutput(offset 0x0, size 0x10, align 0x8)
+	PulseSymbol_t m_TargetEntity(offset 0x10, size 0x10, align 0x8)
+	PulseSymbol_t m_TargetInput(offset 0x20, size 0x10, align 0x8)
+	PulseSymbol_t m_Param(offset 0x30, size 0x10, align 0x8)
+

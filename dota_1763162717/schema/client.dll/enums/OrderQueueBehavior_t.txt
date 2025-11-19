@@ -1,0 +1,4 @@
+enum OrderQueueBehavior_t(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x50ed490):
+	DOTA_ORDER_QUEUE_DEFAULT = 0,
+	DOTA_ORDER_QUEUE_NEVER = 1,
+	DOTA_ORDER_QUEUE_ALWAYS = 2,

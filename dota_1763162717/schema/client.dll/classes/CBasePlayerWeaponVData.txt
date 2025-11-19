@@ -1,0 +1,92 @@
+class CBasePlayerWeaponVData(size: 0x430 bytes, project "client", binding @ client.dll + 0x50c1f60, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: client.dll + 0x13ff9a0"
+
+-----members of class CBasePlayerWeaponVData-----
+	uint8_t[16] unaccounted(offset 0x0)
+	CUtlString m_szClassName(offset 0x10, size 0x8, align 0x8)
+		^MPropertyDescription "The name of the weapon entity to spawn for this NPC weapon."
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_szWorldModel(offset 0x18, size 0xe0, align 0x8)
+		^MPropertyStartGroup "Visuals"
+		^MPropertyDescription "Model used on the ground or held by an entity"
+		^MPropertyProvidesEditContextString "<unidentified non-null meta: client.dll + 0x3f66158>"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName(offset 0xf8, size 0xe0, align 0x8)
+		^MPropertyDescription "Model used by the tools only to populate comboboxes for things like animgraph parameter pickers"
+	bool m_bBuiltRightHanded(offset 0x1d8, size 0x1, align 0x1)
+		^MPropertyDescription "Was the weapon was built right-handed?"
+	bool m_bAllowFlipping(offset 0x1d9, size 0x1, align 0x1)
+		^MPropertyDescription "Allows flipping the model, regardless of whether it is built left or right handed"
+	uint8_t[6] unaccounted(offset 0x1da)
+	CAttachmentNameSymbolWithStorage m_sMuzzleAttachment(offset 0x1e0, size 0x20, align 0x8)
+		^MPropertyDescription "Attachment to fire bullets from"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szMuzzleFlashParticle(offset 0x200, size 0xe0, align 0x8)
+		^MPropertyDescription "Effect when firing this weapon"
+	CUtlString m_szMuzzleFlashParticleConfig(offset 0x2e0, size 0x8, align 0x8)
+		^MPropertyDescription "Effect Config for Muzzle Flash - if set, will use this config specified in the particle effect, using whatever CP configuration is specified there, vdata muzzleflash attachment will be ignored"
+		^MPropertyAttributeEditor "ParticleConfigName()"
+		^MPropertyEditContextOverrideKey "<unidentified non-null meta: client.dll + 0x3f66398>"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szBarrelSmokeParticle(offset 0x2e8, size 0xe0, align 0x8)
+		^MPropertyDescription "Barrel smoke after firing this weapon"
+	uint8 m_nMuzzleSmokeShotThreshold(offset 0x3c8, size 0x1, align 0x1)
+		^MPropertyDescription "Barrel smoke shot threshold to create smoke"
+	uint8_t[3] unaccounted(offset 0x3c9)
+	float32 m_flMuzzleSmokeTimeout(offset 0x3cc, size 0x4, align 0x4)
+		^MPropertyDescription "Barrel smoke shot timeout"
+	float32 m_flMuzzleSmokeDecrementRate(offset 0x3d0, size 0x4, align 0x4)
+		^MPropertyDescription "Barrel smoke decrement rate when not firing"
+	bool m_bLinkedCooldowns(offset 0x3d4, size 0x1, align 0x1)
+		^MPropertyStartGroup "Behavior"
+		^MPropertyDescription "Should both primary and secondary attacks be cooled down together (so cooling down primary attack would cooldown both primary + secondary attacks)?"
+	ItemFlagTypes_t m_iFlags(offset 0x3d5, size 0x1, align 0x1)
+	AmmoIndex_t m_nPrimaryAmmoType(offset 0x3d6, size 0x1, align 0x0)
+		^MPropertyStartGroup "Ammo"
+		^MPropertyAttributeEditor "VDataChoice( scripts/ammo.vdata )"
+		^MPropertyCustomFGDType "string"
+	AmmoIndex_t m_nSecondaryAmmoType(offset 0x3d7, size 0x1, align 0x0)
+		^MPropertyAttributeEditor "VDataChoice( scripts/ammo.vdata )"
+		^MPropertyCustomFGDType "string"
+	int32 m_iMaxClip1(offset 0x3d8, size 0x4, align 0x4)
+		^MPropertyFriendlyName "Primary Clip Size"
+		^MPropertyDescription "How many bullets this gun can fire before it reloads (0 if no clip)"
+		^MPropertyAttributeRange "0 255"
+	int32 m_iMaxClip2(offset 0x3dc, size 0x4, align 0x4)
+		^MPropertyFriendlyName "Secondary Clip Size"
+		^MPropertyDescription "How many secondary bullets this gun can fire before it reloads (0 if no clip)"
+		^MPropertyAttributeRange "0 255"
+	int32 m_iDefaultClip1(offset 0x3e0, size 0x4, align 0x4)
+		^MPropertyDescription "Primary Initial Clip (-1 means use clip size)"
+		^MPropertyAttributeRange "-1 255"
+	int32 m_iDefaultClip2(offset 0x3e4, size 0x4, align 0x4)
+		^MPropertyDescription "Secondary Initial Clip (-1 means use clip size)"
+		^MPropertyAttributeRange "-1 255"
+	bool m_bReserveAmmoAsClips(offset 0x3e8, size 0x1, align 0x1)
+		^MPropertyDescription "Indicates whether to treat reserve ammo as clips (reloads) instead of raw bullets"
+	bool m_bTreatAsSingleClip(offset 0x3e9, size 0x1, align 0x1)
+		^MPropertyDescription "Regardless of ammo position, we'll always use clip1 as where our bullets come from"
+	bool m_bKeepLoadedAmmo(offset 0x3ea, size 0x1, align 0x1)
+		^MPropertyDescription "Indicates whether to keep any loaded ammo in the weapon on reload"
+	uint8_t[1] unaccounted(offset 0x3eb)
+	int32 m_iWeight(offset 0x3ec, size 0x4, align 0x4)
+		^MPropertyStartGroup "UI"
+		^MPropertyDescription "This value used to determine this weapon's importance in autoselection"
+	bool m_bAutoSwitchTo(offset 0x3f0, size 0x1, align 0x1)
+		^MPropertyFriendlyName "Safe To Auto-Switch To"
+		^MPropertyDescription "Whether this weapon is safe to automatically switch to (should be false for eg. explosives that can the player may accidentally hurt themselves with)"
+	bool m_bAutoSwitchFrom(offset 0x3f1, size 0x1, align 0x1)
+		^MPropertyFriendlyName "Safe To Auto-Switch Away From"
+	uint8_t[2] unaccounted(offset 0x3f2)
+	RumbleEffect_t m_iRumbleEffect(offset 0x3f4, size 0x4, align 0x4)
+	float32 m_flDropSpeed(offset 0x3f8, size 0x4, align 0x4)
+	int32 m_iSlot(offset 0x3fc, size 0x4, align 0x4)
+		^MPropertyFriendlyName "HUD Bucket"
+		^MPropertyDescription "Which 'column' to display this weapon in the HUD"
+	int32 m_iPosition(offset 0x400, size 0x4, align 0x4)
+		^MPropertyFriendlyName "HUD Bucket Position"
+		^MPropertyDescription "Which 'row' to display this weapon in the HUD"
+	uint8_t[4] unaccounted(offset 0x404)
+	CUtlOrderedMap< WeaponSound_t, CSoundEventName > m_aShootSounds(offset 0x408, size 0x28, align 0x8)
+		^MPropertyStartGroup "Sounds"
+

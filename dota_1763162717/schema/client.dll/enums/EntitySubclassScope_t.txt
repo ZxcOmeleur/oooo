@@ -1,0 +1,3 @@
+enum EntitySubclassScope_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f1dbf0):
+	SUBCLASS_SCOPE_NONE = -1,
+	SUBCLASS_SCOPE_COUNT = 0,

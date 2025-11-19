@@ -1,0 +1,9 @@
+class ParticleControlPointConfiguration_t(size: 0x80 bytes, project "particles", binding @ particles.dll + 0x525ff0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0xaaf50"
+
+-----members of class ParticleControlPointConfiguration_t-----
+	CUtlString m_name(offset 0x0, size 0x8, align 0x8)
+	CUtlLeanVector< ParticleControlPointDriver_t > m_drivers(offset 0x8, size 0x10, align 0x8)
+	ParticlePreviewState_t m_previewState(offset 0x18, size 0x68, align 0x8)
+

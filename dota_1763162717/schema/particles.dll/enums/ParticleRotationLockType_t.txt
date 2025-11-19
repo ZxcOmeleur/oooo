@@ -1,0 +1,7 @@
+enum ParticleRotationLockType_t(size: 4 bytes, 3 values, project "particles", binding @ particles.dll + 0x5251b0):
+	PARTICLE_ROTATION_LOCK_NONE = 0,
+		^MPropertyFriendlyName "Don't Set"
+	PARTICLE_ROTATION_LOCK_ROTATIONS = 1,
+		^MPropertyFriendlyName "Set Rotations"
+	PARTICLE_ROTATION_LOCK_NORMAL = 2,
+		^MPropertyFriendlyName "Set Normal"

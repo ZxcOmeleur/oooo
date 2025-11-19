@@ -1,0 +1,7 @@
+class CHitBoxSetList(size: 0x18 bytes, project "modellib", binding @ physicsbuilder.dll + 0xac76c0, scope "physicsbuilder.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x468620"
+
+-----members of class CHitBoxSetList-----
+	CUtlVector< CHitBoxSet > m_HitBoxSets(offset 0x0, size 0x18, align 0x8)
+

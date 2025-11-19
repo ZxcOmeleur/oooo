@@ -1,0 +1,9 @@
+enum NmTransitionRuleCondition_t(size: 1 bytes, 4 values, project "animlib", binding @ animationsystem.dll + 0x78eb70):
+	AnyAllowed = 0,
+		^MPropertyFriendlyName "Any Allowed"
+	FullyAllowed = 1,
+		^MPropertyFriendlyName "Fully Allowed"
+	ConditionallyAllowed = 2,
+		^MPropertyFriendlyName "Conditionally Allowed"
+	Blocked = 3,
+		^MPropertyFriendlyName "Blocked"

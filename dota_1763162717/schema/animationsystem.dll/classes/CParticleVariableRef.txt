@@ -1,0 +1,11 @@
+class CParticleVariableRef(size: 0x50 bytes, project "particleslib", binding @ animationsystem.dll + 0x7a59e0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x4f52b0"
+^MPropertyCustomEditor "ParticleVariableRef()"
+
+-----members of class CParticleVariableRef-----
+	CKV3MemberNameWithStorage m_variableName(offset 0x0, size 0x38, align 0x8)
+		^MFgdFromSchemaCompletelySkipField
+	CPulseValueFullType m_variableType(offset 0x38, size 0x18, align 0x8)
+		^MFgdFromSchemaCompletelySkipField
+

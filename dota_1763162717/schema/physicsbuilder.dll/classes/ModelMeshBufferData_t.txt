@@ -1,0 +1,18 @@
+class ModelMeshBufferData_t(size: 0x30 bytes, project "modellib", binding @ physicsbuilder.dll + 0xaca720, scope "physicsbuilder.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x494830"
+
+-----members of class ModelMeshBufferData_t-----
+	int32 m_nBlockIndex(offset 0x0, size 0x4, align 0x4)
+	uint32 m_nElementCount(offset 0x4, size 0x4, align 0x4)
+	uint32 m_nElementSizeInBytes(offset 0x8, size 0x4, align 0x4)
+	bool m_bMeshoptCompressed(offset 0xc, size 0x1, align 0x1)
+	bool m_bMeshoptIndexSequence(offset 0xd, size 0x1, align 0x1)
+	bool m_bCompressedZSTD(offset 0xe, size 0x1, align 0x1)
+	bool m_bCreateBufferSRV(offset 0xf, size 0x1, align 0x1)
+	bool m_bCreateBufferUAV(offset 0x10, size 0x1, align 0x1)
+	bool m_bCreateRawBuffer(offset 0x11, size 0x1, align 0x1)
+	bool m_bCreatePooledBuffer(offset 0x12, size 0x1, align 0x1)
+	uint8_t[5] unaccounted(offset 0x13)
+	CUtlVector< RenderInputLayoutField_t > m_inputLayoutFields(offset 0x18, size 0x18, align 0x8)
+

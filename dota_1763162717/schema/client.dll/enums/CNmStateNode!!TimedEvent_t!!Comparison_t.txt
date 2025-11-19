@@ -1,0 +1,3 @@
+enum CNmStateNode::TimedEvent_t::Comparison_t(size: 1 bytes, 2 values, project "animlib", binding @ client.dll + 0x517cce0):
+	LessThanEqual = 0,
+	GreaterThanEqual = 1,

@@ -1,0 +1,13 @@
+class TrackedStatNetworkData_t(size: 0x38 bytes, project "client", binding @ client.dll + 0x511bcc0, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MNetworkVarNames "unStatID TrackedStatID_t"
+^MNetworkVarNames "unStatValue TrackedStatValue_t"
+
+-----members of class TrackedStatNetworkData_t-----
+	uint8_t[48] unaccounted(offset 0x0)
+	TrackedStatID_t unStatID(offset 0x30, size 0x4, align 0x0)
+		^MNetworkEnable
+	TrackedStatValue_t unStatValue(offset 0x34, size 0x4, align 0x0)
+		^MNetworkEnable
+

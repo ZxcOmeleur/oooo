@@ -1,0 +1,38 @@
+class QuickBuySlot_t(size: 0x58 bytes, project "client", binding @ client.dll + 0x5095af0, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MNetworkNoBase
+^MNetworkVarNames "m_nAbilityID AbilityID_t"
+^MNetworkVarNames "m_nTopLevelItem int"
+^MNetworkVarNames "m_nTopLevelItemAbilityID AbilityID_t"
+^MNetworkVarNames "m_ePurchasableState QuickBuyPurchasable_t"
+^MNetworkVarNames "m_ePurchasableAccumState QuickBuyPurchasable_t"
+^MNetworkVarNames "m_bMarkedForBuy bool"
+^MNetworkVarNames "m_nParity int"
+
+-----members of class QuickBuySlot_t-----
+	uint8_t[48] unaccounted(offset 0x0)
+	AbilityID_t m_nAbilityID(offset 0x30, size 0x4, align 0x0)
+		^MNetworkEnable
+	int32 m_nTopLevelItem(offset 0x34, size 0x4, align 0x4)
+		^MNetworkEnable
+	AbilityID_t m_nTopLevelItemAbilityID(offset 0x38, size 0x4, align 0x0)
+		^MNetworkEnable
+	QuickBuyPurchasable_t m_ePurchasableState(offset 0x3c, size 0x4, align 0x4)
+		^MNetworkEnable
+		^MNetworkChangeCallback "OnQuickBuySlotPurchasableChanged"
+	QuickBuyPurchasable_t m_ePurchasableAccumState(offset 0x40, size 0x4, align 0x4)
+		^MNetworkEnable
+	bool m_bMarkedForBuy(offset 0x44, size 0x1, align 0x1)
+		^MNetworkEnable
+	uint8_t[3] unaccounted(offset 0x45)
+	int32 m_nParity(offset 0x48, size 0x4, align 0x4)
+		^MNetworkEnable
+		^MNetworkChangeCallback "OnQuickBuySlotParityChanged"
+	bool m_bSticky(offset 0x4c, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x4d)
+	QuickBuyPurchasable_t m_ePrevPurchasableState(offset 0x50, size 0x4, align 0x4)
+	bool m_bNewlyActionable(offset 0x54, size 0x1, align 0x1)
+	bool m_bPurchaseInFlight(offset 0x55, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x56)
+

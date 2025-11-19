@@ -1,0 +1,3 @@
+enum StanceOverrideMode(size: 4 bytes, 2 values, project "animgraphlib", binding @ animationsystem.dll + 0x757900):
+	Sequence = 0,
+	Node = 1,

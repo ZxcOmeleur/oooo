@@ -1,0 +1,46 @@
+class CNmParameterizedClipSelectorNode::CDefinition(size: 0x40 bytes, project "animlib", binding @ animationsystem.dll + 0x796a90, scope "!GlobalTypes") extends CNmClipReferenceNode::CDefinition
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3f8030"
+
+	base class CNmClipReferenceNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x795390, scope "!GlobalTypes") extends CNmPoseNode::CDefinition
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+	
+		base class CNmPoseNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x797530, scope "!GlobalTypes") extends CNmGraphNode::CDefinition
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		
+			base class CNmGraphNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x7974b0, scope "!GlobalTypes")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_IS_ABSTRACT
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+			
+			-----members of class CNmGraphNode::CDefinition-----
+				uint8_t[8] unaccounted(offset 0x0)
+				int16 m_nNodeIdx(offset 0x8, size 0x2, align 0x2)
+				uint8_t[6] unaccounted(offset 0xa)
+			
+		
+		-----members of class CNmPoseNode::CDefinition-----
+			<no members>
+		
+	
+	-----members of class CNmClipReferenceNode::CDefinition-----
+		<no members>
+	
+
+-----members of class CNmParameterizedClipSelectorNode::CDefinition-----
+	CUtlLeanVectorFixedGrowable< int16, 5 > m_optionNodeIndices(offset 0x10, size 0x18, align 0x8)
+	CUtlLeanVectorFixedGrowable< uint8, 5 > m_optionWeights(offset 0x28, size 0x10, align 0x8)
+	int16 m_parameterNodeIdx(offset 0x38, size 0x2, align 0x2)
+	bool m_bIgnoreInvalidOptions(offset 0x3a, size 0x1, align 0x1)
+	bool m_bHasWeightsSet(offset 0x3b, size 0x1, align 0x1)
+	uint8_t[4] unaccounted(offset 0x3c)
+

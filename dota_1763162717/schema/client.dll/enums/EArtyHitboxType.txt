@@ -1,0 +1,5 @@
+enum EArtyHitboxType(size: 1 bytes, 4 values, project "client", binding @ client.dll + 0x5144310):
+	k_eAABB = 0,
+	k_eCircle = 1,
+	k_eLine = 2,
+	k_eRay = 3,

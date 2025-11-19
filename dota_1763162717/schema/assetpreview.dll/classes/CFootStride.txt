@@ -1,0 +1,9 @@
+class CFootStride(size: 0x58 bytes, project "modellib", binding @ assetpreview.dll + 0xd26130, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x570b20"
+
+-----members of class CFootStride-----
+	CFootCycleDefinition m_definition(offset 0x0, size 0x3c, align 0x4)
+	uint8_t[4] unaccounted(offset 0x3c)
+	CFootTrajectories m_trajectories(offset 0x40, size 0x18, align 0x8)
+

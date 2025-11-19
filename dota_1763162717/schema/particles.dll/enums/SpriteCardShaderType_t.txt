@@ -1,0 +1,5 @@
+enum SpriteCardShaderType_t(size: 4 bytes, 2 values, project "particles", binding @ particles.dll + 0x526830):
+	SPRITECARD_SHADER_BASE = 0,
+		^MPropertyFriendlyName "Default"
+	SPRITECARD_SHADER_CUSTOM = 1,
+		^MPropertyFriendlyName "Custom"

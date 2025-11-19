@@ -1,0 +1,7 @@
+class PARTICLE_EHANDLE__(size: 0x4 bytes, project "particleslib", binding @ particles.dll + 0x50ca60, scope "particles.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class PARTICLE_EHANDLE__-----
+	int32 unused(offset 0x0, size 0x4, align 0x4)
+

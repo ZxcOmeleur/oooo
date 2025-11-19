@@ -1,0 +1,8 @@
+class PulseRuntimeRegisterIndex_t(size: 0x2 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x184600, scope "pulse_system.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_GLOBAL_TYPE_SCOPE
+^MIsBoxedIntegerType
+
+-----members of class PulseRuntimeRegisterIndex_t-----
+	int16 m_Value(offset 0x0, size 0x2, align 0x2)
+

@@ -1,0 +1,10 @@
+class CFlexOp(size: 0x8 bytes, project "modellib", binding @ assetpreview.dll + 0xd22cf0, scope "assetpreview.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_CONSTRUCTOR
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x54d6f0"
+
+-----members of class CFlexOp-----
+	FlexOpCode_t m_OpCode(offset 0x0, size 0x4, align 0x4)
+	int32 m_Data(offset 0x4, size 0x4, align 0x4)
+

@@ -1,0 +1,7 @@
+class SZooSetAnnotation_t(size: 0x8 bytes, project "client", binding @ client.dll + 0x514e110, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x20b4dc0"
+
+-----members of class SZooSetAnnotation_t-----
+	CUtlString m_strSetTag(offset 0x0, size 0x8, align 0x8)
+

@@ -1,0 +1,6 @@
+enum PointOrientGoalDirectionType_t(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x4f11350):
+	eAbsOrigin = 0,
+	eCenter = 1,
+	eHead = 2,
+	eForward = 3,
+	eEyesForward = 4,

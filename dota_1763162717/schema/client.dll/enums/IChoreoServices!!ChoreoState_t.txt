@@ -1,0 +1,8 @@
+enum IChoreoServices::ChoreoState_t(size: 4 bytes, 7 values, project "client", binding @ client.dll + 0x4f4d9a0):
+	STATE_PRE_SCRIPT = 0,
+	STATE_WAIT_FOR_SCRIPT = 1,
+	STATE_WALK_TO_MARK = 2,
+	STATE_SYNCHRONIZE_SCRIPT = 3,
+	STATE_PLAY_SCRIPT = 4,
+	STATE_PLAY_SCRIPT_POST_IDLE = 5,
+	STATE_PLAY_SCRIPT_POST_IDLE_DONE = 6,

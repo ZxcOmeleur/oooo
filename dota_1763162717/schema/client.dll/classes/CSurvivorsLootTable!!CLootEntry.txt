@@ -1,0 +1,10 @@
+class CSurvivorsLootTable::CLootEntry(size: 0xc bytes, project "client", binding @ client.dll + 0x515f410, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25df260"
+
+-----members of class CSurvivorsLootTable::CLootEntry-----
+	SurvivorsPickupID_t m_unPickupID(offset 0x0, size 0x4, align 0x0)
+	int32 m_nMinAmount(offset 0x4, size 0x4, align 0x4)
+	int32 m_nMaxAmount(offset 0x8, size 0x4, align 0x4)
+

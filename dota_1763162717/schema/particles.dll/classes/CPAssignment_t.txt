@@ -1,0 +1,14 @@
+class CPAssignment_t(size: 0x6c8 bytes, project "particles", binding @ particles.dll + 0x54f640, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0x2bb010"
+
+-----members of class CPAssignment_t-----
+	int32 m_nCPNumber(offset 0x0, size 0x4, align 0x4)
+		^MPropertyFriendlyName "Control Point Number"
+	uint8_t[4] unaccounted(offset 0x4)
+	CPerParticleVecInput m_Pos(offset 0x8, size 0x6b8, align 0x8)
+		^MPropertyFriendlyName "CP Position"
+	ParticleOrientationSetMode_t m_nOrientationMode(offset 0x6c0, size 0x4, align 0x4)
+		^MPropertyFriendlyName "CP Orientation Type"
+	uint8_t[4] unaccounted(offset 0x6c4)
+

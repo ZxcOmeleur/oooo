@@ -1,0 +1,7 @@
+class CSmartPropAttributeChoiceSelectionMode(size: 0x40 bytes, project "smartprops", binding @ assetpreview.dll + 0xd43c80, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+^MPropertyCustomEditor "SmartPropAttributeEditor(enum:SmartPropChoiceSelectionMode_t)"
+
+-----members of class CSmartPropAttributeChoiceSelectionMode-----
+	uint8_t[64] unaccounted(offset 0x0)
+

@@ -1,0 +1,5 @@
+enum EMonsterHunterMaterialTradeConversion(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x510e430):
+	k_eMonsterHunterMaterialTradeConversion_Invalid = 0,
+	k_eMonsterHunterMaterialTradeConversion_SameRarity = 1,
+	k_eMonsterHunterMaterialTradeConversion_HigherRarity = 2,
+	k_eMonsterHunterMaterialTradeConversion_StickerScrap = 3,

@@ -1,0 +1,3 @@
+enum DOTASelectionPriorityRules(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f6c0b0):
+	k_DOTASelectionPriorityRules_Manual = 0,
+	k_DOTASelectionPriorityRules_Automatic = 1,

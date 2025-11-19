@@ -1,0 +1,40 @@
+class CSmartPropPulse_CreateRotator(size: 0x50 bytes, project "smartprops", binding @ assetpreview.dll + 0xd4d2d0, scope "assetpreview.dll") extends CPulseCell_BaseFlow
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x859f70"
+^MPropertyFriendlyName "Create Rotator"
+^MPropertyDescription "Create a rotator that will be displayed at the current location, allowing the user to manipulate a rotation around an axis. The rotation value can be applied to the current transform as well as saved to a variable."
+^MVDataClassGroup "Manipulators"
+
+	base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd3ded0, scope "assetpreview.dll") extends CPulseCell_Base
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7953d0"
+	
+		base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd3ca60, scope "assetpreview.dll")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7951b0"
+		
+		-----members of class CPulseCell_Base-----
+			uint8_t[8] unaccounted(offset 0x0)
+			PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+				^MFgdFromSchemaCompletelySkipField
+			uint8_t[60] unaccounted(offset 0xc)
+		
+	
+	-----members of class CPulseCell_BaseFlow-----
+		<no members>
+	
+
+-----members of class CSmartPropPulse_CreateRotator-----
+	CUtlString m_Name(offset 0x48, size 0x8, align 0x8)
+		^MPropertyFriendlyName "Name"
+		^MPropertyDescription "Name used to identify the rotator. Must be unique within the parent element."
+

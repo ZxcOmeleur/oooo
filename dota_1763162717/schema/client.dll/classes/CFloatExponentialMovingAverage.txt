@@ -1,0 +1,6 @@
+class CFloatExponentialMovingAverage(size: 0x14 bytes, project "client", binding @ client.dll + 0x4f4efe0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+
+-----members of class CFloatExponentialMovingAverage-----
+	uint8_t[20] unaccounted(offset 0x0)
+

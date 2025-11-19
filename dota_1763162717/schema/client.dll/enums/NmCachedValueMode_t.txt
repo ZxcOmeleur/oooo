@@ -1,0 +1,3 @@
+enum NmCachedValueMode_t(size: 4 bytes, 2 values, project "animlib", binding @ client.dll + 0x517a830):
+	OnEntry = 0,
+	OnExit = 1,

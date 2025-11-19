@@ -1,0 +1,5 @@
+class CFloatMovingAverage(size: 0x20 bytes, project "client", binding @ client.dll + 0x4f4f0c0, scope "!GlobalTypes")
+
+-----members of class CFloatMovingAverage-----
+	uint8_t[32] unaccounted(offset 0x0)
+

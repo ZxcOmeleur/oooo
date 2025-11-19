@@ -1,0 +1,11 @@
+class CDOTABattleReportHeroTrackedStatList(size: 0x20 bytes, project "client", binding @ client.dll + 0x509aa20, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1267770"
+^MVDataRoot
+
+-----members of class CDOTABattleReportHeroTrackedStatList-----
+	HeroID_t m_nHeroID(offset 0x0, size 0x4, align 0x0)
+		^MPropertySuppressExpr "true"
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlVector< CUtlString > m_vecTrackedStatNames(offset 0x8, size 0x18, align 0x8)
+

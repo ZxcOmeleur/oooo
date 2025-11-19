@@ -1,0 +1,3 @@
+enum CNmSyncEventIndexConditionNode::TriggerMode_t(size: 1 bytes, 2 values, project "animlib", binding @ client.dll + 0x517ac90):
+	ExactlyAtEventIndex = 0,
+	GreaterThanEqualToEventIndex = 1,

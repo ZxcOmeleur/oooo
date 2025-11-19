@@ -1,0 +1,22 @@
+class CMonsterHunterEconItemDefinition(size: 0x48 bytes, project "client", binding @ client.dll + 0x510a840, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1886d00"
+
+-----members of class CMonsterHunterEconItemDefinition-----
+	MonsterHunterEconItemID_t m_unEconItemID(offset 0x0, size 0x1, align 0x0)
+		^MVDataUniqueMonotonicInt "_editor/next_id_econ_item"
+		^MPropertyAttributeEditor "locked_int()"
+	uint8_t[7] unaccounted(offset 0x1)
+	CUtlString m_strEconItemNavigationName(offset 0x8, size 0x8, align 0x8)
+	CUtlString m_strCustomClass(offset 0x10, size 0x8, align 0x8)
+		^MPropertyDescription "Custom panorama classes associated with relevant dashboard elements."
+	item_definition_index_t m_unPreviewItemIndex(offset 0x18, size 0x4, align 0x0)
+		^MPropertyDescription "Optional item used for preview purposes. If left empty, will use the first slot."
+	int32 m_nPreviewPremiumCosmeticGroupIndex(offset 0x1c, size 0x4, align 0x4)
+	CUtlVector< CMonsterHunterCosmeticSkinGroup > m_vecCosmeticSkinGroups(offset 0x20, size 0x18, align 0x8)
+	float32 m_flPreviewModelRotation(offset 0x38, size 0x4, align 0x4)
+	float32 m_flPreviewModelZoom(offset 0x3c, size 0x4, align 0x4)
+	bool m_bHasDetailedView(offset 0x40, size 0x1, align 0x1)
+	bool m_bCosmeticGroupsNeedToBeCraftedInOrder(offset 0x41, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0x42)
+

@@ -1,0 +1,9 @@
+enum ScriptedMoveTo_t(size: 4 bytes, 6 values, project "modellib", binding @ assetpreview.dll + 0xd20350):
+	eWait = 0,
+	eMoveWithGait = 3,
+	eTeleport = 4,
+	eWaitFacing = 5,
+	eObsoleteBackCompat1 = 1,
+		^MPropertySuppressEnumerator
+	eObsoleteBackCompat2 = 2,
+		^MPropertySuppressEnumerator

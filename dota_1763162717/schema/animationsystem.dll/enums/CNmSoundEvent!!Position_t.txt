@@ -1,0 +1,6 @@
+enum CNmSoundEvent::Position_t(size: 4 bytes, 5 values, project "animlib", binding @ animationsystem.dll + 0x78e940):
+	None = 0,
+	World = 1,
+	EntityPos = 2,
+	EntityEyePos = 3,
+	EntityAttachment = 4,

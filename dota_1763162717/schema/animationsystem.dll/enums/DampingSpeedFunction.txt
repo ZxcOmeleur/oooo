@@ -1,0 +1,5 @@
+enum DampingSpeedFunction(size: 4 bytes, 4 values, project "animgraphlib", binding @ animationsystem.dll + 0x752480):
+	NoDamping = 0,
+	Constant = 1,
+	Spring = 2,
+	AsymmetricSpring = 3,

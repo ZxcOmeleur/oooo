@@ -1,0 +1,3 @@
+enum EStickerQualityTableType_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x5170fb0):
+	Default = 0,
+	MonsterHunter = 1,

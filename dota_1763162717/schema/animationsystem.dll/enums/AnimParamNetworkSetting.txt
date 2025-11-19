@@ -1,0 +1,7 @@
+enum AnimParamNetworkSetting(size: 4 bytes, 3 values, project "animgraphlib", binding @ animationsystem.dll + 0x7525f0):
+	Auto = 0,
+		^MPropertyFriendlyName "Auto"
+	AlwaysNetwork = 1,
+		^MPropertyFriendlyName "Always Network"
+	NeverNetwork = 2,
+		^MPropertyFriendlyName "Never Network"

@@ -1,0 +1,51 @@
+class CPulseCell_Inflow_Wait(size: 0x90 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b21d0, scope "animationsystem.dll") extends CPulseCell_BaseYieldingInflow
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x540500"
+^MPropertyFriendlyName "Wait"
+^MPropertyDescription "Causes each execution cursor to pause at this node for a fixed period of time. Each cursor will wake up and resume execution when the time expires, unless aborted or early-woken."
+^MPulseEditorHeaderIcon "tools/images/pulse_editor/inflow_wait.png"
+^MPulseEditorCanvasItemSpecKV3 "<unidentified non-null meta: animationsystem.dll + 0x691990>"
+
+	base class CPulseCell_BaseYieldingInflow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b1c60, scope "animationsystem.dll") extends CPulseCell_BaseFlow
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+	
+		base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b2d70, scope "animationsystem.dll") extends CPulseCell_Base
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: animationsystem.dll + 0x53ec90"
+		
+			base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7b1900, scope "animationsystem.dll")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: animationsystem.dll + 0x53ea70"
+			
+			-----members of class CPulseCell_Base-----
+				uint8_t[8] unaccounted(offset 0x0)
+				PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+					^MFgdFromSchemaCompletelySkipField
+				uint8_t[60] unaccounted(offset 0xc)
+			
+		
+		-----members of class CPulseCell_BaseFlow-----
+			<no members>
+		
+	
+	-----members of class CPulseCell_BaseYieldingInflow-----
+		<no members>
+	
+
+-----members of class CPulseCell_Inflow_Wait-----
+	CPulse_ResumePoint m_WakeResume(offset 0x48, size 0x48, align 0x0)
+

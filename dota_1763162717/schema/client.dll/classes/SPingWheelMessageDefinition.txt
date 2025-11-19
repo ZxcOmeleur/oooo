@@ -1,0 +1,51 @@
+class SPingWheelMessageDefinition(size: 0x278 bytes, project "client", binding @ client.dll + 0x510c740, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1911200"
+^MVDataRoot
+
+-----members of class SPingWheelMessageDefinition-----
+	uint8_t[12] unaccounted(offset 0x0)
+	PingWheelMessageID_t nID(offset 0xc, size 0x4, align 0x0)
+		^MPropertyDescription "unique integer ID of this ping wheel message"
+		^MVDataUniqueMonotonicInt "_editor/next_ping_wheel_id"
+		^MPropertyAttributeEditor "locked_int()"
+	PingWheelMessageID_t nAssociatedID(offset 0x10, size 0x4, align 0x0)
+		^MPropertyDescription "optional ID of associated message, like enemy/friendly wards"
+	uint8_t[4] unaccounted(offset 0x14)
+	CUtlString sLocName(offset 0x18, size 0x8, align 0x8)
+		^MPropertyDescription "localization string ID for name of ping"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > sParticle(offset 0x20, size 0xe0, align 0x8)
+		^MPropertyDescription "Particle system of ping effect"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > sParticleTarget(offset 0x100, size 0xe0, align 0x8)
+		^MPropertyDescription "Particle system of ping effect when targetting an npc (optional)"
+	Color color(offset 0x1e0, size 0x4, align 0x1)
+		^MPropertyDescription "Color of ping effect. Leave default to use pinging player color."
+		^MPropertyColorPlusAlpha
+	uint8_t[4] unaccounted(offset 0x1e4)
+	CPanoramaImageName sImage(offset 0x1e8, size 0x10, align 0x8)
+		^MPropertyDescription "Image shown while customizing ping wheel"
+	CUtlString sSound(offset 0x1f8, size 0x8, align 0x8)
+		^MPropertyDescription "Sound played when pinging"
+		^MPropertyCustomFGDType "sound"
+	CUtlString sChat(offset 0x200, size 0x8, align 0x8)
+		^MPropertyDescription "localization string ID for chat message when pinging"
+	CUtlString sChatWithTarget(offset 0x208, size 0x8, align 0x8)
+		^MPropertyDescription "localization string ID for chat message when pinging a target entity"
+	EEvent eUnlockEvent(offset 0x210, size 0x4, align 0x4)
+		^MPropertyDescription "Event for tracking expiration. See EEvent enum"
+	uint32 nUnlockEventActionID(offset 0x214, size 0x4, align 0x4)
+		^MPropertyDescription "Action of the unlock event which awards this ping wheel"
+	float32 m_flMinimapDuration(offset 0x218, size 0x4, align 0x4)
+		^MPropertyDescription "Duration to show a ping on the the minimap."
+	bool m_bFlashTargetIcon(offset 0x21c, size 0x1, align 0x1)
+		^MPropertyDescription "Whether or not to flash the pinged unit's icon."
+	uint8_t[3] unaccounted(offset 0x21d)
+	PingMinimapIconInfo_t m_minimapIconInfo(offset 0x220, size 0x24, align 0x4)
+	uint8_t[4] unaccounted(offset 0x244)
+	CUtlVector< PingMinimapIconLayerInfo_t > m_vecAdditionalMinimapLayers(offset 0x248, size 0x18, align 0x8)
+		^MPropertyDescription "Optional additional layers."
+	PingParticleInfo_t m_particleInfo(offset 0x260, size 0x14, align 0x4)
+	bool m_bRequiresDotaPlus(offset 0x274, size 0x1, align 0x1)
+	bool m_bIsBindable(offset 0x275, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x276)
+

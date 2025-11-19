@@ -1,0 +1,2 @@
+enum RagdollPoseControl(size: 4 bytes, 1 values, project "animgraphlib", binding @ animationsystem.dll + 0x752850):
+	Absolute = 0,

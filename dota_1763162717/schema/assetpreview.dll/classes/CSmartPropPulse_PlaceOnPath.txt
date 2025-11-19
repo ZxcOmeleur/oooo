@@ -1,0 +1,52 @@
+class CSmartPropPulse_PlaceOnPath(size: 0x68 bytes, project "smartprops", binding @ assetpreview.dll + 0xd50cd0, scope "assetpreview.dll") extends CSmartPropPulse_BaseQueryableFlow
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x863e70"
+^MPropertyFriendlyName "Place On Path"
+^MPulseEditorHeaderIcon "tools/images/pulse_editor/requirements.png"
+^MPulseEditorCanvasItemSpecKV3 "<unidentified non-null meta: assetpreview.dll + 0xb167e0>"
+
+	base class CSmartPropPulse_BaseQueryableFlow(size: 0x48 bytes, project "smartprops", binding @ assetpreview.dll + 0xd51730, scope "assetpreview.dll") extends CPulseCell_BaseFlow
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: assetpreview.dll + 0x867840"
+	^MPulseFunctionHiddenInTool
+	
+		base class CPulseCell_BaseFlow(size: 0x48 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd3ded0, scope "assetpreview.dll") extends CPulseCell_Base
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7953d0"
+		
+			base class CPulseCell_Base(size: 0x48 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd3ca60, scope "assetpreview.dll")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7951b0"
+			
+			-----members of class CPulseCell_Base-----
+				uint8_t[8] unaccounted(offset 0x0)
+				PulseDocNodeID_t m_nEditorNodeID(offset 0x8, size 0x4, align 0x0)
+					^MFgdFromSchemaCompletelySkipField
+				uint8_t[60] unaccounted(offset 0xc)
+			
+		
+		-----members of class CPulseCell_BaseFlow-----
+			<no members>
+		
+	
+	-----members of class CSmartPropPulse_BaseQueryableFlow-----
+		<no members>
+	
+
+-----members of class CSmartPropPulse_PlaceOnPath-----
+	PulseSelectorOutflowList_t m_OutflowList(offset 0x48, size 0x18, align 0x8)
+	CUtlString m_PathName(offset 0x60, size 0x8, align 0x8)
+		^MPropertyDescription "Name of the path to use. This path name will show up in the property editor when selecting a placement of this smart prop in Hammer, allowing selection of a path object in the map to use."
+

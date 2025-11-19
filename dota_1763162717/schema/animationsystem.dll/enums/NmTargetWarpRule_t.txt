@@ -1,0 +1,5 @@
+enum NmTargetWarpRule_t(size: 1 bytes, 4 values, project "animlib", binding @ animationsystem.dll + 0x78ec80):
+	WarpXY = 0,
+	WarpZ = 1,
+	WarpXYZ = 2,
+	RotationOnly = 3,

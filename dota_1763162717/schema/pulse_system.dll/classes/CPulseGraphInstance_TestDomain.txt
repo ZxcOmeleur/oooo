@@ -1,0 +1,27 @@
+class CPulseGraphInstance_TestDomain(size: 0x160 bytes, project "pulse_system", binding @ pulse_system.dll + 0x1988b0, scope "pulse_system.dll") extends CBasePulseGraphInstance
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+	base class CBasePulseGraphInstance(size: 0x118 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x187770, scope "pulse_system.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	
+	-----members of class CBasePulseGraphInstance-----
+		uint8_t[280] unaccounted(offset 0x0)
+	
+
+-----members of class CPulseGraphInstance_TestDomain-----
+	uint8_t[24] unaccounted(offset 0x118)
+	bool m_bIsRunningUnitTests(offset 0x130, size 0x1, align 0x1)
+	bool m_bExplicitTimeStepping(offset 0x131, size 0x1, align 0x1)
+	bool m_bExpectingToDestroyWithYieldedCursors(offset 0x132, size 0x1, align 0x1)
+	bool m_bQuietTracepoints(offset 0x133, size 0x1, align 0x1)
+	bool m_bExpectingCursorTerminatedDueToMaxInstructions(offset 0x134, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x135)
+	int32 m_nCursorsTerminatedDueToMaxInstructions(offset 0x138, size 0x4, align 0x4)
+	int32 m_nNextValidateIndex(offset 0x13c, size 0x4, align 0x4)
+	CUtlVector< CUtlString > m_Tracepoints(offset 0x140, size 0x18, align 0x8)
+	bool m_bTestYesOrNoPath(offset 0x158, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x159)
+

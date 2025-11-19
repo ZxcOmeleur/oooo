@@ -1,0 +1,4 @@
+enum EItemSuggestPreference(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x4f6a9e0):
+	k_EItemSuggestPreference_None = 0,
+	k_EItemSuggestPreference_Liked = 1,
+	k_EItemSuggestPreference_Disliked = 2,

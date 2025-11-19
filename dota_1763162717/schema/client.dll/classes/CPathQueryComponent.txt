@@ -1,0 +1,29 @@
+class CPathQueryComponent(size: 0xa0 bytes, project "client", binding @ client.dll + 0x4f4e5d0, scope "client.dll") extends CEntityComponent, CPathQueryUtil(MI offset 0x10)
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+	base class CEntityComponent(size: 0x8 bytes, project "entity2", binding @ client.dll + 0x5187f30, scope "client.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	
+	-----members of class CEntityComponent-----
+		uint8_t[8] unaccounted(offset 0x0)
+	
+
+	base class CPathQueryUtil(size: 0x80 bytes, project "client", binding @ client.dll + 0x4f4e510, MI offset 0x10, scope "!GlobalTypes")
+	
+	-----members of class CPathQueryUtil-----
+		uint8_t[16] unaccounted(offset 0x10)
+		CTransform m_PathToEntityTransform(offset 0x20, size 0x20, align 0x10)
+		CUtlVector< Vector > m_vecPathSamplePositions(offset 0x40, size 0x18, align 0x8)
+		CUtlVector< float32 > m_vecPathSampleParameters(offset 0x58, size 0x18, align 0x8)
+		CUtlVector< float32 > m_vecPathSampleDistances(offset 0x70, size 0x18, align 0x8)
+		bool m_bIsClosedLoop(offset 0x88, size 0x1, align 0x1)
+		uint8_t[7] unaccounted(offset 0x89)
+	
+
+-----members of class CPathQueryComponent-----
+	uint8_t[16] unaccounted(offset 0x90)
+

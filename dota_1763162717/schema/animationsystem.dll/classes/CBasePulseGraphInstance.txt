@@ -1,0 +1,8 @@
+class CBasePulseGraphInstance(size: 0x118 bytes, project "pulse_runtime_lib", binding @ animationsystem.dll + 0x7a5ff0, scope "animationsystem.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_IS_ABSTRACT
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class CBasePulseGraphInstance-----
+	uint8_t[280] unaccounted(offset 0x0)
+

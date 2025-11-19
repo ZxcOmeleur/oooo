@@ -1,0 +1,15 @@
+class CParticleMassCalculationParameters(size: 0x458 bytes, project "particles", binding @ particles.dll + 0x542580, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0x1b5fa0"
+
+-----members of class CParticleMassCalculationParameters-----
+	ParticleMassMode_t m_nMassMode(offset 0x0, size 0x4, align 0x4)
+		^MPropertyFriendlyName "Radius calculation mode"
+	uint8_t[4] unaccounted(offset 0x4)
+	CPerParticleFloatInput m_flRadius(offset 0x8, size 0x170, align 0x8)
+		^MPropertyFriendlyName "Radius input"
+	CPerParticleFloatInput m_flNominalRadius(offset 0x178, size 0x170, align 0x8)
+		^MPropertyFriendlyName "Nominal radius value"
+	CPerParticleFloatInput m_flScale(offset 0x2e8, size 0x170, align 0x8)
+		^MPropertyFriendlyName "Scale to apply to result"
+

@@ -1,0 +1,9 @@
+class CPulseCell_Outflow_CycleOrdered::InstanceState_t(size: 0x4 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x185ff0, scope "pulse_system.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: pulse_system.dll + 0x73900"
+
+-----members of class CPulseCell_Outflow_CycleOrdered::InstanceState_t-----
+	int32 m_nNextIndex(offset 0x0, size 0x4, align 0x4)
+

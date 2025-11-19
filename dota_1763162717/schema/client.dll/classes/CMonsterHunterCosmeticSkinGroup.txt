@@ -1,0 +1,17 @@
+class CMonsterHunterCosmeticSkinGroup(size: 0x68 bytes, project "client", binding @ client.dll + 0x510bf20, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x18865b0"
+
+-----members of class CMonsterHunterCosmeticSkinGroup-----
+	CUtlString m_strSetName(offset 0x0, size 0x8, align 0x8)
+	CUtlVector< uint32 > m_vecActionIDSlots(offset 0x8, size 0x18, align 0x8)
+	bool m_bRequiresPremium(offset 0x20, size 0x1, align 0x1)
+	bool m_bShowPremiumPurchaseAsCrafting(offset 0x21, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0x22)
+	CUtlString m_strCustomClass(offset 0x28, size 0x8, align 0x8)
+	CUtlString m_strCustomStyleSelectAnimation(offset 0x30, size 0x8, align 0x8)
+	float32 m_flAnimationFreezeTime(offset 0x38, size 0x4, align 0x4)
+	float32 m_flCustomStyleSelectRotation(offset 0x3c, size 0x4, align 0x4)
+	item_definition_index_t m_unPreviewItemIndex(offset 0x40, size 0x4, align 0x0)
+	uint8_t[36] unaccounted(offset 0x44)
+

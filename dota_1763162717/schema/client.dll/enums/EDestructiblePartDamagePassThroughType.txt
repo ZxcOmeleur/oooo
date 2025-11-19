@@ -1,0 +1,9 @@
+enum EDestructiblePartDamagePassThroughType(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f496f0):
+	Normal = 0,
+		^MPropertyDescription "Damage reduces the part's health pool and the owner entity equally."
+	Absorb = 1,
+		^MPropertyDescription "Damage reduces the part's health pool but not the owner entity until destroyed. (i.e., limited armour)"
+	InvincibleAbsorb = 2,
+		^MPropertyDescription "Damage is completely ignored - i.e., this part ignores the health value and does not send damage to the owner entity."
+	InvinciblePassthrough = 3,
+		^MPropertyDescription "Damage reduces the owner entity but not the part (health is ignored): part can only be destroyed by gibbing or procedurally."

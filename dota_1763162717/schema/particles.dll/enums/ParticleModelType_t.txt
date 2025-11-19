@@ -1,0 +1,6 @@
+enum ParticleModelType_t(size: 4 bytes, 5 values, project "particleslib", binding @ particles.dll + 0x50c7b0):
+	PM_TYPE_INVALID = 0,
+	PM_TYPE_NAMED_VALUE_MODEL = 1,
+	PM_TYPE_NAMED_VALUE_EHANDLE = 2,
+	PM_TYPE_CONTROL_POINT = 3,
+	PM_TYPE_COUNT = 4,

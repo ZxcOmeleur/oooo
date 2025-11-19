@@ -1,0 +1,7 @@
+class CSurvivorsLootTable(size: 0x18 bytes, project "client", binding @ client.dll + 0x51644a0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25deea0"
+
+-----members of class CSurvivorsLootTable-----
+	CUtlVector< CSurvivorsLootTable::CLootEntryCollection > m_vecLootEntryCollections(offset 0x0, size 0x18, align 0x8)
+

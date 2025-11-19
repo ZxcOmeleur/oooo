@@ -1,0 +1,3 @@
+enum DOTACustomHeroPickRulesPhase_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x507d960):
+	PHASE_Ban = 0,
+	PHASE_Pick = 1,

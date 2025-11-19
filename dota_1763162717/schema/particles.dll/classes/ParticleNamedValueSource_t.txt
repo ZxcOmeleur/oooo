@@ -1,0 +1,13 @@
+class ParticleNamedValueSource_t(size: 0x60 bytes, project "particleslib", binding @ particles.dll + 0x50c430, scope "particles.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: particles.dll + 0x340030"
+
+-----members of class ParticleNamedValueSource_t-----
+	CUtlString m_Name(offset 0x0, size 0x8, align 0x8)
+	bool m_IsPublic(offset 0x8, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x9)
+	CPulseValueFullType m_ValueType(offset 0x10, size 0x18, align 0x8)
+		^MFgdFromSchemaCompletelySkipField
+	ParticleNamedValueConfiguration_t m_DefaultConfig(offset 0x28, size 0x38, align 0x8)
+		^MFgdFromSchemaCompletelySkipField
+

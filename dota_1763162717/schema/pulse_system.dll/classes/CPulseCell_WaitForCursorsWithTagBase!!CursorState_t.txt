@@ -1,0 +1,7 @@
+class CPulseCell_WaitForCursorsWithTagBase::CursorState_t(size: 0x30 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x192ed0, scope "pulse_system.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class CPulseCell_WaitForCursorsWithTagBase::CursorState_t-----
+	PulseSymbol_t m_TagName(offset 0x0, size 0x10, align 0x8)
+	uint8_t[32] unaccounted(offset 0x10)
+

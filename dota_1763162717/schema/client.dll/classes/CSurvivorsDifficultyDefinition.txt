@@ -1,0 +1,28 @@
+class CSurvivorsDifficultyDefinition(size: 0xb0 bytes, project "client", binding @ client.dll + 0x515f930, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25e3120"
+^MVDataRoot
+
+-----members of class CSurvivorsDifficultyDefinition-----
+	CUtlString m_sLocDifficultyName(offset 0x0, size 0x8, align 0x8)
+	CUtlString m_sLocDifficultyDescription(offset 0x8, size 0x8, align 0x8)
+	CUtlString m_sLocDifficultyUpgradeText(offset 0x10, size 0x8, align 0x8)
+	uint8_t[8] unaccounted(offset 0x18)
+	float32 m_flPlayerMaxHPMultiplier(offset 0x20, size 0x4, align 0x4)
+	float32 m_flPlayerHPRegenerationMultiplier(offset 0x24, size 0x4, align 0x4)
+	float32 m_flEnemyHealthMultiplier(offset 0x28, size 0x4, align 0x4)
+	float32 m_flEnemyDamageMultiplier(offset 0x2c, size 0x4, align 0x4)
+	float32 m_flEnemyMovementSpeedMultiplier(offset 0x30, size 0x4, align 0x4)
+	float32 m_flEnemyTurnRateMultiplier(offset 0x34, size 0x4, align 0x4)
+	float32 m_flEnemySpawnCountMuliplier(offset 0x38, size 0x4, align 0x4)
+	float32 m_flEnemyTouchMovementSlowDuration(offset 0x3c, size 0x4, align 0x4)
+	float32 m_flXPDropChanceMultiplier(offset 0x40, size 0x4, align 0x4)
+	float32 m_flXPLevelUpRequirementMultiplier(offset 0x44, size 0x4, align 0x4)
+	float32 m_flAdditionalFirstFloorTime(offset 0x48, size 0x4, align 0x4)
+	bool m_bEnableMeteorModifier(offset 0x4c, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x4d)
+	CUtlVector< CSurvivorsSpawnerDefinition > m_vecAdditionalEnemySpawners(offset 0x50, size 0x18, align 0x8)
+	CUtlVector< CSurvivorsEnemyEventDefinition > m_vecAdditionalEnemyEvents(offset 0x68, size 0x18, align 0x8)
+	CUtlVector< SurvivorsPowerUpID_t > m_vecAdditionalStartingPowerUps(offset 0x80, size 0x18, align 0x8)
+	CUtlVector< float32 > m_vecOverrideImperiaEnrageHealthThresholds(offset 0x98, size 0x18, align 0x8)
+

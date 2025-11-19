@@ -1,0 +1,7 @@
+enum ParticleDepthFeatheringMode_t(size: 4 bytes, 3 values, project "particles", binding @ particles.dll + 0x550670):
+	PARTICLE_DEPTH_FEATHERING_OFF = 0,
+		^MPropertyFriendlyName "Off"
+	PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL = 1,
+		^MPropertyFriendlyName "On (If Possible)"
+	PARTICLE_DEPTH_FEATHERING_ON_REQUIRED = 2,
+		^MPropertyFriendlyName "On (Required)"

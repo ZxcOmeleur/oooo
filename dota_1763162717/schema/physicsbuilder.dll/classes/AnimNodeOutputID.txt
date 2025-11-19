@@ -1,0 +1,8 @@
+class AnimNodeOutputID(size: 0x4 bytes, project "modellib", binding @ physicsbuilder.dll + 0xac4b20, scope "physicsbuilder.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x43e440"
+
+-----members of class AnimNodeOutputID-----
+	uint32 m_id(offset 0x0, size 0x4, align 0x4)
+

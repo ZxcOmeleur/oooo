@@ -1,0 +1,7 @@
+enum ParticleLiquidContents_t(size: 4 bytes, 3 values, project "particles", binding @ particles.dll + 0x550580):
+	PARTICLE_LIQUID_NONE = 0,
+		^MPropertyFriendlyName "None"
+	PARTICLE_LIQUID_OIL = 1,
+		^MPropertyFriendlyName "Oil"
+	PARTICLE_LIQUID_WATER = 2,
+		^MPropertyFriendlyName "Water"

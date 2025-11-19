@@ -1,0 +1,7 @@
+class CFlexDesc(size: 0x8 bytes, project "modellib", binding @ physicsbuilder.dll + 0xacac00, scope "physicsbuilder.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x496d80"
+
+-----members of class CFlexDesc-----
+	CUtlString m_szFacs(offset 0x0, size 0x8, align 0x8)
+

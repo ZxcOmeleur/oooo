@@ -1,0 +1,4 @@
+enum SurvivorsAttackIndicatorShape_t(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x5165330):
+	k_eSurvivorsShape_Undefined = 0,
+	k_eSurvivorsShape_Circle = 1,
+	k_eSurvivorsShape_Rectangle = 2,

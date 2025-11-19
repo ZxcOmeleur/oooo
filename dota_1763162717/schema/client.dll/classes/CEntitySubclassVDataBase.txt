@@ -1,0 +1,13 @@
+class CEntitySubclassVDataBase(size: 0x28 bytes, project "client", binding @ client.dll + 0x4f1e5b0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: client.dll + 0x52bcf0"
+^MVDataRoot
+^MVDataNodeType "1"
+^MVDataOverlayType "1"
+^MVDataUseLinkedEntityClasses
+
+-----members of class CEntitySubclassVDataBase-----
+	uint8_t[40] unaccounted(offset 0x0)
+

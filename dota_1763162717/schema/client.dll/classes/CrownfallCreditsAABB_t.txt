@@ -1,0 +1,11 @@
+class CrownfallCreditsAABB_t(size: 0x10 bytes, project "client", binding @ client.dll + 0x51493d0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1e25130"
+
+-----members of class CrownfallCreditsAABB_t-----
+	int32 x(offset 0x0, size 0x4, align 0x4)
+	int32 y(offset 0x4, size 0x4, align 0x4)
+	int32 w(offset 0x8, size 0x4, align 0x4)
+	int32 h(offset 0xc, size 0x4, align 0x4)
+

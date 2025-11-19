@@ -1,0 +1,19 @@
+class CScriptComponent(size: 0x38 bytes, project "entity2", binding @ engine2.dll + 0x5edf80, scope "engine2.dll") extends CEntityComponent
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MClassHasEntityLimitedDataDesc
+
+	base class CEntityComponent(size: 0x8 bytes, project "entity2", binding @ engine2.dll + 0x5edd50, scope "engine2.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	
+	-----members of class CEntityComponent-----
+		uint8_t[8] unaccounted(offset 0x0)
+	
+
+-----members of class CScriptComponent-----
+	uint8_t[40] unaccounted(offset 0x8)
+	CUtlSymbolLarge m_scriptClassName(offset 0x30, size 0x8, align 0x8)
+

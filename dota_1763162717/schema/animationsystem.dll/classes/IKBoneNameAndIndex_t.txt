@@ -1,0 +1,7 @@
+class IKBoneNameAndIndex_t(size: 0x10 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x76d920, scope "!GlobalTypes")
+
+-----members of class IKBoneNameAndIndex_t-----
+	CUtlString m_Name(offset 0x0, size 0x8, align 0x8)
+		^MPropertyAttributeChoiceName "Bone"
+	uint8_t[8] unaccounted(offset 0x8)
+

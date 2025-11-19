@@ -1,0 +1,5 @@
+enum ECraftworksAuditAction(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x4f60470):
+	k_eInvalid = 0,
+	k_eRecipeCrafted = 1,
+	k_eMatchRewards = 2,
+	k_eMatchRewardsTurbo = 3,

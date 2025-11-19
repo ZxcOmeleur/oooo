@@ -1,0 +1,15 @@
+class CDestructiblePartsComponent(size: 0x68 bytes, project "client", binding @ client.dll + 0x4f49590, scope "client.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MNetworkVarNames "m_hOwner CHandle< CBaseModelEntity >"
+^MNetworkVarNames "m_nLastHitDamageLevel int"
+
+-----members of class CDestructiblePartsComponent-----
+	CNetworkVarChainer __m_pChainEntity(offset 0x0, size 0x28, align 0x0)
+	uint8_t[32] unaccounted(offset 0x28)
+	CUtlVector< uint16 > m_vecDamageTakenByHitGroup(offset 0x48, size 0x18, align 0x8)
+	CHandle< C_BaseModelEntity > m_hOwner(offset 0x60, size 0x4, align 0x4)
+		^MNetworkEnable
+	int32 m_nLastHitDamageLevel(offset 0x64, size 0x4, align 0x4)
+		^MNetworkEnable
+

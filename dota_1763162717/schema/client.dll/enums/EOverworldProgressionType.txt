@@ -1,0 +1,3 @@
+enum EOverworldProgressionType(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x510cfc0):
+	k_eOverworldProgressionType_NodesAndPaths = 0,
+	k_eOverworldProgressionType_NodesPathsAndRooms = 1,

@@ -1,0 +1,8 @@
+class PulseSelectorOutflowList_t(size: 0x18 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd333e0, scope "assetpreview.dll")
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x7761d0"
+
+-----members of class PulseSelectorOutflowList_t-----
+	CUtlVector< OutflowWithRequirements_t > m_Outflows(offset 0x0, size 0x18, align 0x8)
+

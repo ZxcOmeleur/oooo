@@ -1,0 +1,13 @@
+class DynamicMeshDeformParams_t(size: 0xc bytes, project "modellib", binding @ physicsbuilder.dll + 0xac77d0, scope "physicsbuilder.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x468730"
+
+-----members of class DynamicMeshDeformParams_t-----
+	float32 m_flTensionCompressScale(offset 0x0, size 0x4, align 0x4)
+	float32 m_flTensionStretchScale(offset 0x4, size 0x4, align 0x4)
+	bool m_bRecomputeSmoothNormalsAfterAnimation(offset 0x8, size 0x1, align 0x1)
+	bool m_bComputeDynamicMeshTensionAfterAnimation(offset 0x9, size 0x1, align 0x1)
+	bool m_bSmoothNormalsAcrossUvSeams(offset 0xa, size 0x1, align 0x1)
+	uint8_t[1] unaccounted(offset 0xb)
+

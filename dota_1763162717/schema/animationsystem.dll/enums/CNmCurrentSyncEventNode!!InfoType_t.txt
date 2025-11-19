@@ -1,0 +1,4 @@
+enum CNmCurrentSyncEventNode::InfoType_t(size: 1 bytes, 3 values, project "animlib", binding @ animationsystem.dll + 0x78f310):
+	IndexAndPercentage = 0,
+	IndexOnly = 1,
+	PercentageOnly = 2,

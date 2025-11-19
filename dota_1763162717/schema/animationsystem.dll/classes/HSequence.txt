@@ -1,0 +1,8 @@
+class HSequence(size: 0x4 bytes, project "animationsystem", binding @ animationsystem.dll + 0x7bc6d0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_GLOBAL_TYPE_SCOPE
+^MIsBoxedIntegerType
+
+-----members of class HSequence-----
+	int32 m_Value(offset 0x0, size 0x4, align 0x4)
+

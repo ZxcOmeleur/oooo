@@ -1,0 +1,4 @@
+enum EconEntityParticleDisableMode_t(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x5172c20):
+	ECON_ENTITY_PARTICLES_ENABLED = 0,
+	ECON_ENTITY_PARTICLES_DISABLED = 1,
+	ECON_ENTITY_PARTICLES_DISABLED_BUT_PLAY_ENDCAPS_TO_STOP = 2,

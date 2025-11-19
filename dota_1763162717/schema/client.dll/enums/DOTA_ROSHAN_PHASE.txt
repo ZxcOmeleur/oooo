@@ -1,0 +1,4 @@
+enum DOTA_ROSHAN_PHASE(size: 4 bytes, 3 values, project "client", binding @ client.dll + 0x4f6adb0):
+	k_SRSP_ROSHAN_ALIVE = 0,
+	k_SRSP_ROSHAN_BASE_TIMER = 1,
+	k_SRSP_ROSHAN_VISIBLE_TIMER = 2,

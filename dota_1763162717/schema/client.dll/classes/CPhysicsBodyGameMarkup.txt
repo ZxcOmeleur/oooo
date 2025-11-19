@@ -1,0 +1,10 @@
+class CPhysicsBodyGameMarkup(size: 0x10 bytes, project "client", binding @ client.dll + 0x4f466b0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x614c80"
+
+-----members of class CPhysicsBodyGameMarkup-----
+	CUtlString m_TargetBody(offset 0x0, size 0x8, align 0x8)
+		^MPropertyDescription "The name for the body (bone) that we're targeting."
+	CGlobalSymbol m_Tag(offset 0x8, size 0x8, align 0x8)
+		^MPropertyDescription "An identifier for this physics body."
+

@@ -1,0 +1,7 @@
+enum ParticleParentSetMode_t(size: 4 bytes, 3 values, project "particles", binding @ particles.dll + 0x525110):
+	PARTICLE_SET_PARENT_NO = 0,
+		^MPropertyFriendlyName "Set Self and Children"
+	PARTICLE_SET_PARENT_IMMEDIATE = 1,
+		^MPropertyFriendlyName "Set Immediate Parent, Self, and Children"
+	PARTICLE_SET_PARENT_ROOT = 2,
+		^MPropertyFriendlyName "Set Root of Particle System Downward"

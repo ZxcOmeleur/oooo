@@ -1,0 +1,11 @@
+class CMonsterHunterCraftableRewardDefinition(size: 0x70 bytes, project "client", binding @ client.dll + 0x510bd80, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1883a00"
+
+-----members of class CMonsterHunterCraftableRewardDefinition-----
+	uint32 m_unActionID(offset 0x0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlOrderedMap< CUtlString, int32 > m_mapRequiredMaterials(offset 0x8, size 0x28, align 0x8)
+	bool m_bPremium(offset 0x30, size 0x1, align 0x1)
+	uint8_t[63] unaccounted(offset 0x31)
+

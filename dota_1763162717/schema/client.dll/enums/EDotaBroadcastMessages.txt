@@ -1,0 +1,3 @@
+enum EDotaBroadcastMessages(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f52730):
+	DOTA_BM_LANLobbyRequest = 1,
+	DOTA_BM_LANLobbyReply = 2,

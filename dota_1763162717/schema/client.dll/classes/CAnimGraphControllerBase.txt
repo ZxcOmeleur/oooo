@@ -1,0 +1,8 @@
+class CAnimGraphControllerBase(size: 0x80 bytes, project "client", binding @ client.dll + 0x4f45070, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_IS_ABSTRACT
+
+-----members of class CAnimGraphControllerBase-----
+	uint8_t[40] unaccounted(offset 0x0)
+	CUtlVectorFixedGrowable< CGlobalSymbol, 8 > m_vecParamsToResetInPostGraphUpdate(offset 0x28, size 0x58, align 0x8)
+

@@ -1,0 +1,3 @@
+enum ENewSettingsBadge(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x516dec0):
+	eNewSettingsBadge_New = 0,
+	eNewSettingsBadge_Updated = 1,

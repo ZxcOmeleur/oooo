@@ -1,0 +1,11 @@
+enum PulseTestEnumColor_t(size: 4 bytes, 5 values, project "pulse_system", binding @ pulse_system.dll + 0x198990):
+	BLACK = 0,
+		^MPropertyFriendlyName "Black"
+	WHITE = 1,
+		^MPropertyFriendlyName "White"
+	RED = 2,
+		^MPropertyFriendlyName "Red"
+	GREEN = 3,
+		^MPropertyFriendlyName "Green"
+	BLUE = 4,
+		^MPropertyFriendlyName "Blue"

@@ -1,0 +1,41 @@
+class CNmVectorCreateNode::CDefinition(size: 0x18 bytes, project "animlib", binding @ animationsystem.dll + 0x792100, scope "!GlobalTypes") extends CNmVectorValueNode::CDefinition
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3c7e80"
+
+	base class CNmVectorValueNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x7977b0, scope "!GlobalTypes") extends CNmValueNode::CDefinition
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	
+		base class CNmValueNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x7975b0, scope "!GlobalTypes") extends CNmGraphNode::CDefinition
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		
+			base class CNmGraphNode::CDefinition(size: 0x10 bytes, project "animlib", binding @ animationsystem.dll + 0x7974b0, scope "!GlobalTypes")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			| SCHEMA_CF1_IS_ABSTRACT
+			| SCHEMA_CF1_CONSTRUCT_ALLOWED
+			| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+			^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+			
+			-----members of class CNmGraphNode::CDefinition-----
+				uint8_t[8] unaccounted(offset 0x0)
+				int16 m_nNodeIdx(offset 0x8, size 0x2, align 0x2)
+				uint8_t[6] unaccounted(offset 0xa)
+			
+		
+		-----members of class CNmValueNode::CDefinition-----
+			<no members>
+		
+	
+	-----members of class CNmVectorValueNode::CDefinition-----
+		<no members>
+	
+
+-----members of class CNmVectorCreateNode::CDefinition-----
+	int16 m_inputVectorValueNodeIdx(offset 0x10, size 0x2, align 0x2)
+	int16 m_inputValueXNodeIdx(offset 0x12, size 0x2, align 0x2)
+	int16 m_inputValueYNodeIdx(offset 0x14, size 0x2, align 0x2)
+	int16 m_inputValueZNodeIdx(offset 0x16, size 0x2, align 0x2)
+

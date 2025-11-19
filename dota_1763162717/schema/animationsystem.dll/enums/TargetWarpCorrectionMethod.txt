@@ -1,0 +1,5 @@
+enum TargetWarpCorrectionMethod(size: 4 bytes, 2 values, project "animgraphlib", binding @ animationsystem.dll + 0x758650):
+	ScaleMotion = 0,
+		^MPropertyFriendlyName "Scale Animation Motion"
+	AddCorrectionDelta = 1,
+		^MPropertyFriendlyName "Add Correction Delta"

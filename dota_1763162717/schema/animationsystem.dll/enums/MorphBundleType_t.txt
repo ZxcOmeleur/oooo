@@ -1,0 +1,5 @@
+enum MorphBundleType_t(size: 4 bytes, 4 values, project "modellib", binding @ animationsystem.dll + 0x79f820):
+	MORPH_BUNDLE_TYPE_NONE = 0,
+	MORPH_BUNDLE_TYPE_POSITION_SPEED = 1,
+	MORPH_BUNDLE_TYPE_NORMAL_WRINKLE = 2,
+	MORPH_BUNDLE_TYPE_COUNT = 3,

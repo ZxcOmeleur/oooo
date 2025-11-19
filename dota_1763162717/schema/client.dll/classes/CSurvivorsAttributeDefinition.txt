@@ -1,0 +1,18 @@
+class CSurvivorsAttributeDefinition(size: 0x58 bytes, project "client", binding @ client.dll + 0x5162b60, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25e59c0"
+^MVDataRoot
+
+-----members of class CSurvivorsAttributeDefinition-----
+	CUtlString m_sLocName(offset 0x0, size 0x8, align 0x8)
+	CUtlString m_sLocTooltip(offset 0x8, size 0x8, align 0x8)
+	CUtlString m_sLocDescription(offset 0x10, size 0x8, align 0x8)
+	CUtlString m_sLocMetaUpgradesTooltip(offset 0x18, size 0x8, align 0x8)
+	CPanoramaImageName m_sImage(offset 0x20, size 0x10, align 0x8)
+	bool m_bPrimary(offset 0x30, size 0x1, align 0x1)
+	bool m_bPercentage(offset 0x31, size 0x1, align 0x1)
+	bool m_bShouldUpgradeProgressionText(offset 0x32, size 0x1, align 0x1)
+	uint8_t[5] unaccounted(offset 0x33)
+	CUtlVector< CSurvivorsAttributeDefinition::MetaProgressionTier_t > m_vecMetaProgressionTiers(offset 0x38, size 0x18, align 0x8)
+	uint8_t[8] unaccounted(offset 0x50)
+

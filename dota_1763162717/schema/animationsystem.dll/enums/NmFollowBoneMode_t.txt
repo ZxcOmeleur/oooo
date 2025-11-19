@@ -1,0 +1,4 @@
+enum NmFollowBoneMode_t(size: 1 bytes, 3 values, project "animlib", binding @ animationsystem.dll + 0x78e360):
+	RotationAndTranslation = 0,
+	RotationOnly = 1,
+	TranslationOnly = 2,

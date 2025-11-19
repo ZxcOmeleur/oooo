@@ -1,0 +1,18 @@
+class InventoryQuickBuyState_t(size: 0xd8 bytes, project "client", binding @ client.dll + 0x5095be0, scope "client.dll")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+| SCHEMA_CF1_INFO_TAG_MNetworkNoBase
+^MNetworkVarNames "m_vecItemSlots QuickBuySlot_t"
+^MNetworkVarNames "m_nTotalSlotCountIncludingOverflow int"
+
+-----members of class InventoryQuickBuyState_t-----
+	uint8_t[8] unaccounted(offset 0x0)
+	C_UtlVectorEmbeddedNetworkVar< QuickBuySlot_t > m_vecItemSlots(offset 0x8, size 0x68, align 0x8)
+		^MNetworkEnable
+	int32 m_nTotalSlotCountIncludingOverflow(offset 0x70, size 0x4, align 0x4)
+		^MNetworkEnable
+	uint8_t[4] unaccounted(offset 0x74)
+	QuickBuySlot_t m_stickyItemSlot(offset 0x78, size 0x58, align 0x0)
+	int32 m_nPrevPurchasable(offset 0xd0, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0xd4)
+

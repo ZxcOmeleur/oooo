@@ -1,0 +1,3 @@
+enum ESpecialPingValue(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x4f60680):
+	k_ESpecialPingValue_NoData = 16382,
+	k_ESpecialPingValue_Failed = 16383,

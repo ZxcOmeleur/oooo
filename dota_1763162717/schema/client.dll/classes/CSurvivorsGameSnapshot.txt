@@ -1,0 +1,14 @@
+class CSurvivorsGameSnapshot(size: 0x78 bytes, project "client", binding @ client.dll + 0x515b2c0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x24fc9c0"
+^MVDataRoot
+
+-----members of class CSurvivorsGameSnapshot-----
+	SurvivorsGameModeID_t m_gameModeID(offset 0x0, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x4)
+	CSurvivorsPlayerSnapshot m_playerSnapshot(offset 0x8, size 0x38, align 0x8)
+	CUtlVector< CSurvivorsEnemySnapshot > m_enemiesSnapshot(offset 0x40, size 0x18, align 0x8)
+	CUtlVector< CSurvivorsPickupSnapshot > m_pickupsSnapshot(offset 0x58, size 0x18, align 0x8)
+	float32 m_flGameTime(offset 0x70, size 0x4, align 0x4)
+	int32 m_nCurrentLevelEvent(offset 0x74, size 0x4, align 0x4)
+

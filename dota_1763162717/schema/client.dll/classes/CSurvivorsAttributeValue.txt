@@ -1,0 +1,10 @@
+class CSurvivorsAttributeValue(size: 0x8 bytes, project "client", binding @ client.dll + 0x51649f0, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x26341f0"
+^MVDataRoot
+
+-----members of class CSurvivorsAttributeValue-----
+	SurvivorsAttributeType_t m_eType(offset 0x0, size 0x4, align 0x4)
+	float32 m_flValue(offset 0x4, size 0x4, align 0x4)
+

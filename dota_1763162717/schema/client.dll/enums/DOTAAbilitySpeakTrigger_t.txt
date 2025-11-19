@@ -1,0 +1,3 @@
+enum DOTAAbilitySpeakTrigger_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x507d840):
+	DOTA_ABILITY_SPEAK_START_ACTION_PHASE = 0,
+	DOTA_ABILITY_SPEAK_CAST = 1,

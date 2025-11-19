@@ -1,0 +1,9 @@
+class PermModelDataAnimatedMaterialAttribute_t(size: 0x10 bytes, project "modellib", binding @ assetpreview.dll + 0xd223e0, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x542fb0"
+
+-----members of class PermModelDataAnimatedMaterialAttribute_t-----
+	CUtlString m_AttributeName(offset 0x0, size 0x8, align 0x8)
+	int32 m_nNumChannels(offset 0x8, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0xc)
+

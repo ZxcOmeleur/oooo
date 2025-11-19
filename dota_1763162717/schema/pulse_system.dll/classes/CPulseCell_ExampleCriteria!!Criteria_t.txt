@@ -1,0 +1,10 @@
+class CPulseCell_ExampleCriteria::Criteria_t(size: 0xc bytes, project "pulse_system", binding @ pulse_system.dll + 0x199fd0, scope "pulse_system.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+-----members of class CPulseCell_ExampleCriteria::Criteria_t-----
+	float32 m_flFloatValue1(offset 0x0, size 0x4, align 0x4)
+	float32 m_flFloatValue2(offset 0x4, size 0x4, align 0x4)
+	bool m_bMyBool(offset 0x8, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0x9)
+

@@ -1,0 +1,9 @@
+class CFootStride(size: 0x58 bytes, project "modellib", binding @ physicsbuilder.dll + 0xacca50, scope "physicsbuilder.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: physicsbuilder.dll + 0x4a5890"
+
+-----members of class CFootStride-----
+	CFootCycleDefinition m_definition(offset 0x0, size 0x3c, align 0x4)
+	uint8_t[4] unaccounted(offset 0x3c)
+	CFootTrajectories m_trajectories(offset 0x40, size 0x18, align 0x8)
+

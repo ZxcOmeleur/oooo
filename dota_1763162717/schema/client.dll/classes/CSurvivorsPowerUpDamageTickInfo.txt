@@ -1,0 +1,11 @@
+class CSurvivorsPowerUpDamageTickInfo(size: 0x40 bytes, project "client", binding @ client.dll + 0x515e420, scope "!GlobalTypes")
+
+-----members of class CSurvivorsPowerUpDamageTickInfo-----
+	Vector vOrigin(offset 0x0, size 0xc, align 0x4)
+	Vector vFacing(offset 0xc, size 0xc, align 0x4)
+	float32 flTimeLeft(offset 0x18, size 0x4, align 0x4)
+	float32 flMagicalDamage(offset 0x1c, size 0x4, align 0x4)
+	float32 flPhysicalDamage(offset 0x20, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x24)
+	CUtlVector< Vector > vDirections(offset 0x28, size 0x18, align 0x8)
+

@@ -1,0 +1,5 @@
+enum MoodType_t(size: 4 bytes, 2 values, project "animationsystem", binding @ animationsystem.dll + 0x7bc160):
+	eMoodType_Head = 0,
+		^MPropertyFriendlyName "Head"
+	eMoodType_Body = 1,
+		^MPropertyFriendlyName "Body"

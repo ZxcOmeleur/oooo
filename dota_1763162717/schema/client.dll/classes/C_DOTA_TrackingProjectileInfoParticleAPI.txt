@@ -1,0 +1,8 @@
+class C_DOTA_TrackingProjectileInfoParticleAPI(size: 0x8 bytes, project "client", binding @ client.dll + 0x50ed600, scope "client.dll")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+^MCustomFGDMetadata "{ particle_domain_ui_name = 'Tracking Projectile' particle_domain_internal_name = 'C_DOTA_TrackingProjectileInfoParticleAPI'  }"
+
+-----members of class C_DOTA_TrackingProjectileInfoParticleAPI-----
+	uint8_t[8] unaccounted(offset 0x0)
+

@@ -1,0 +1,139 @@
+class CDOTA_Modifier_DataDriven(size: 0x4938 bytes, project "client", binding @ client.dll + 0x4f7e6d0, scope "client.dll") extends CDOTA_Buff
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+	base class CDOTA_Buff(size: 0x1878 bytes, project "client", binding @ client.dll + 0x50740f0, scope "!GlobalTypes") extends C_HorizontalMotionController, C_VerticalMotionController(MI offset 0x10)
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	
+		base class C_HorizontalMotionController(size: 0x10 bytes, project "client", binding @ client.dll + 0x5078cc0, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+		
+		-----members of class C_HorizontalMotionController-----
+			uint8_t[16] unaccounted(offset 0x0)
+		
+	
+		base class C_VerticalMotionController(size: 0x10 bytes, project "client", binding @ client.dll + 0x5078da0, MI offset 0x10, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+		
+		-----members of class C_VerticalMotionController-----
+			uint8_t[16] unaccounted(offset 0x10)
+		
+	
+	-----members of class CDOTA_Buff-----
+		uint8_t[8] unaccounted(offset 0x20)
+		CUtlSymbolLarge m_name(offset 0x28, size 0x8, align 0x8)
+		uint8_t[8] unaccounted(offset 0x30)
+		CUtlSymbolLarge m_iszModifierAura(offset 0x38, size 0x8, align 0x8)
+		uint8_t[8] unaccounted(offset 0x40)
+		int32 m_iSerialNumber(offset 0x48, size 0x4, align 0x4)
+		int32 m_iPaddingToMakeSchemaHappy(offset 0x4c, size 0x4, align 0x4)
+			^MFieldVerificationName "m_iStringIndex"
+		int32 m_iIndex(offset 0x50, size 0x4, align 0x4)
+		GameTime_t m_flCreationTime(offset 0x54, size 0x4, align 0x0)
+		int32 m_iCreationFrame(offset 0x58, size 0x4, align 0x4)
+		GameTime_t m_flLastAppliedTime(offset 0x5c, size 0x4, align 0x0)
+		float32 m_flDuration(offset 0x60, size 0x4, align 0x4)
+		GameTime_t m_flDieTime(offset 0x64, size 0x4, align 0x0)
+		CHandle< C_BaseEntity > m_hCaster(offset 0x68, size 0x4, align 0x4)
+		CHandle< C_BaseEntity > m_hAbility(offset 0x6c, size 0x4, align 0x4)
+		CHandle< C_BaseEntity > m_hParent(offset 0x70, size 0x4, align 0x4)
+		CHandle< C_BaseEntity > m_hAuraOwner(offset 0x74, size 0x4, align 0x4)
+		int32 m_iStackCount(offset 0x78, size 0x4, align 0x4)
+		int16 m_iAuraSearchTeam(offset 0x7c, size 0x2, align 0x2)
+		int16 m_iAuraSearchType(offset 0x7e, size 0x2, align 0x2)
+		int32 m_iAuraSearchFlags(offset 0x80, size 0x4, align 0x4)
+		float32 m_flAuraRadius(offset 0x84, size 0x4, align 0x4)
+		int32 m_iTeam(offset 0x88, size 0x4, align 0x4)
+		int32 m_iAttributes(offset 0x8c, size 0x4, align 0x4)
+		int16 m_iTooltipParity(offset 0x90, size 0x2, align 0x2)
+			^MFieldVerificationName "m_iTooltipParity"
+		bitfield {
+			uint8_t m_bIsAura : 1(offset 0x92, mask = 0x1)
+			uint8_t m_bIsAuraActiveOnDeath : 1(offset 0x92, mask = 0x2)
+			uint8_t m_bMarkedForDeletion : 1(offset 0x92, mask = 0x4)
+			uint8_t m_bAuraIsHeal : 1(offset 0x92, mask = 0x8)
+			uint8_t m_bProvidedByAura : 1(offset 0x92, mask = 0x10)
+			uint8_t m_bCurrentlyInAuraRange : 1(offset 0x92, mask = 0x20)
+		}
+		bool m_bPurgedDestroy(offset 0x93, size 0x1, align 0x1)
+		GameTime_t m_flPreviousTick(offset 0x94, size 0x4, align 0x0)
+		float32 m_flThinkInterval(offset 0x98, size 0x4, align 0x4)
+		float32 m_flThinkTimeAccumulator(offset 0x9c, size 0x4, align 0x4)
+		CUtlVector< CDOTA_BuffParticle > m_iParticles(offset 0xa0, size 0x18, align 0x8)
+		CUtlVector< CHandle< C_BaseEntity > > m_hAuraUnits(offset 0xb8, size 0x18, align 0x8)
+		uint8_t[6048] unaccounted(offset 0xd0)
+		HSCRIPT m_hScriptScope(offset 0x1870, size 0x8, align 0x8)
+	
+
+-----members of class CDOTA_Modifier_DataDriven-----
+	AbilityID_t m_nAbilityID(offset 0x1878, size 0x4, align 0x0)
+	int32 m_nIndexInAbility(offset 0x187c, size 0x4, align 0x4)
+	bool m_bIsHidden(offset 0x1880, size 0x1, align 0x1)
+	bool m_bIsDebuff(offset 0x1881, size 0x1, align 0x1)
+	bool m_bIsPurgable(offset 0x1882, size 0x1, align 0x1)
+	bool m_bIsStunDebuff(offset 0x1883, size 0x1, align 0x1)
+	bool m_bAllowIllusionDuplicate(offset 0x1884, size 0x1, align 0x1)
+	bool m_bRemoveOnDeath(offset 0x1885, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x1886)
+	char* m_pszAuraModifier(offset 0x1888, size 0x8, align 0x8)
+	int32 m_nAuraModifierIndex(offset 0x1890, size 0x4, align 0x4)
+	int32 m_nAuraRadius(offset 0x1894, size 0x4, align 0x4)
+	int32 m_nAuraSearchTeam(offset 0x1898, size 0x4, align 0x4)
+	int32 m_nAuraSearchType(offset 0x189c, size 0x4, align 0x4)
+	int32 m_nAuraSearchFlags(offset 0x18a0, size 0x4, align 0x4)
+	bool m_bAuraApplyToCaster(offset 0x18a4, size 0x1, align 0x1)
+	bool m_bAuraApplyToParent(offset 0x18a5, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x18a6)
+	int32 m_nAttributes(offset 0x18a8, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0x18ac)
+	char* m_pszEffectName(offset 0x18b0, size 0x8, align 0x8)
+	int32 m_nEffectAttachType(offset 0x18b8, size 0x4, align 0x4)
+	int32 m_nModifierPriority(offset 0x18bc, size 0x4, align 0x4)
+	char* m_pszStatusEffectName(offset 0x18c0, size 0x8, align 0x8)
+	int32 m_nStatusEffectPriority(offset 0x18c8, size 0x4, align 0x4)
+	int32 m_nOverrideAnimation(offset 0x18cc, size 0x4, align 0x4)
+	int32 m_nOrbPriority(offset 0x18d0, size 0x4, align 0x4)
+	int32 m_nOrbLabel(offset 0x18d4, size 0x4, align 0x4)
+	bool m_bOrbIsCastAttack(offset 0x18d8, size 0x1, align 0x1)
+	bool m_bNeedsReParseIfRefreshed(offset 0x18d9, size 0x1, align 0x1)
+	uint8_t[6] unaccounted(offset 0x18da)
+	char* m_pszModelName(offset 0x18e0, size 0x8, align 0x8)
+	char* m_pszOrbProjectileName(offset 0x18e8, size 0x8, align 0x8)
+	uint8_t[12096] unaccounted(offset 0x18f0)
+	uint64 m_nModifierStatesEnabled(offset 0x4830, size 0x8, align 0x8)
+	uint64 m_nModifierStatesDisabled(offset 0x4838, size 0x8, align 0x8)
+	KeyValues* m_pOnCreated(offset 0x4840, size 0x8, align 0x8)
+	KeyValues* m_pOnIntervalThink(offset 0x4848, size 0x8, align 0x8)
+	KeyValues* m_pOnDestroy(offset 0x4850, size 0x8, align 0x8)
+	KeyValues* m_pOnAttackStart(offset 0x4858, size 0x8, align 0x8)
+	KeyValues* m_pOnAttack(offset 0x4860, size 0x8, align 0x8)
+	KeyValues* m_pOnAttackLanded(offset 0x4868, size 0x8, align 0x8)
+	KeyValues* m_pOnAttackFailed(offset 0x4870, size 0x8, align 0x8)
+	KeyValues* m_pOnAttackAllied(offset 0x4878, size 0x8, align 0x8)
+	KeyValues* m_pOnProjectileDodge(offset 0x4880, size 0x8, align 0x8)
+	KeyValues* m_pOnOrder(offset 0x4888, size 0x8, align 0x8)
+	KeyValues* m_pOnUnitMoved(offset 0x4890, size 0x8, align 0x8)
+	KeyValues* m_pOnAbilityStart(offset 0x4898, size 0x8, align 0x8)
+	KeyValues* m_pOnAbilityExecuted(offset 0x48a0, size 0x8, align 0x8)
+	KeyValues* m_pOnBreakInvisibility(offset 0x48a8, size 0x8, align 0x8)
+	KeyValues* m_pOnAbilityEndChannel(offset 0x48b0, size 0x8, align 0x8)
+	KeyValues* m_pOnTakeDamage(offset 0x48b8, size 0x8, align 0x8)
+	KeyValues* m_pOnDealDamage(offset 0x48c0, size 0x8, align 0x8)
+	KeyValues* m_pOnStateChanged(offset 0x48c8, size 0x8, align 0x8)
+	KeyValues* m_pOnAttacked(offset 0x48d0, size 0x8, align 0x8)
+	KeyValues* m_pOnDeath(offset 0x48d8, size 0x8, align 0x8)
+	KeyValues* m_pOnKill(offset 0x48e0, size 0x8, align 0x8)
+	KeyValues* m_pOnRespawn(offset 0x48e8, size 0x8, align 0x8)
+	KeyValues* m_pOnSpentMana(offset 0x48f0, size 0x8, align 0x8)
+	KeyValues* m_pOnTeleporting(offset 0x48f8, size 0x8, align 0x8)
+	KeyValues* m_pOnTeleported(offset 0x4900, size 0x8, align 0x8)
+	KeyValues* m_pOnHealthGained(offset 0x4908, size 0x8, align 0x8)
+	KeyValues* m_pOnManaGained(offset 0x4910, size 0x8, align 0x8)
+	KeyValues* m_pOnHeroKilled(offset 0x4918, size 0x8, align 0x8)
+	KeyValues* m_pOnHealReceived(offset 0x4920, size 0x8, align 0x8)
+	KeyValues* m_pOnAttackFinished(offset 0x4928, size 0x8, align 0x8)
+	KeyValues* m_pOnAttackCancelled(offset 0x4930, size 0x8, align 0x8)
+

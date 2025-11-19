@@ -1,0 +1,5 @@
+enum AnimNodeNetworkMode(size: 4 bytes, 2 values, project "animgraphlib", binding @ animationsystem.dll + 0x7524e0):
+	ServerAuthoritative = 0,
+		^MPropertyFriendlyName "Server Authoritative"
+	ClientSimulate = 1,
+		^MPropertyFriendlyName "Client Simulate"

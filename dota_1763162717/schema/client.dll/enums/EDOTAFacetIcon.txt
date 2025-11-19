@@ -1,0 +1,181 @@
+enum EDOTAFacetIcon(size: 1 bytes, 91 values, project "client", binding @ client.dll + 0x5097580):
+	FACET_ICON_AGHANIMS_SCEPTER = 0,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0938>"
+	FACET_ICON_AGILITY = 1,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0950>"
+	FACET_ICON_AREA_OF_EFFECT = 2,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0960>"
+	FACET_ICON_ARC_WARDEN = 3,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0980>"
+	FACET_ICON_ARC_WARDEN_ALT = 4,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb09a0>"
+	FACET_ICON_ARMOR = 5,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb09b0>"
+	FACET_ICON_ARMOR_BROKEN = 6,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb09d0>"
+	FACET_ICON_BARRIER = 7,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb09e0>"
+	FACET_ICON_BROKEN_CHAIN = 8,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0a00>"
+	FACET_ICON_BRUSH = 9,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0a18>"
+	FACET_ICON_BUBBLES = 10,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0a30>"
+	FACET_ICON_CHEN = 11,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0a48>"
+	FACET_ICON_CHICKEN = 12,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0a58>"
+	FACET_ICON_CHRONO_CUBE = 13,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0a78>"
+	FACET_ICON_COOLDOWN = 14,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0a98>"
+	FACET_ICON_CREEP = 15,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ab0>"
+	FACET_ICON_CURVE_BALL = 16,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ad0>"
+	FACET_ICON_DAMAGE = 17,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ae0>"
+	FACET_ICON_DAWNBREAKER_HAMMER = 18,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0b08>"
+	FACET_ICON_DEATH_WARD = 19,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0b28>"
+	FACET_ICON_DEBUFF = 20,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0b40>"
+	FACET_ICON_DOUBLE_BOUNCE = 21,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0b60>"
+	FACET_ICON_DRAGON_FIRE = 22,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0b80>"
+	FACET_ICON_DRAGON_FROST = 23,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ba0>"
+	FACET_ICON_DRAGON_POISON = 24,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0bc0>"
+	FACET_ICON_EMPOWER = 25,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0bd8>"
+	FACET_ICON_EXECUTE = 26,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0bf0>"
+	FACET_ICON_FENCE = 27,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0c08>"
+	FACET_ICON_FULL_HEART = 28,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0c28>"
+	FACET_ICON_FIST = 29,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0c40>"
+	FACET_ICON_FOCUS_FIRE = 30,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0c60>"
+	FACET_ICON_GOLD = 31,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0c78>"
+	FACET_ICON_HEALING = 32,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0c90>"
+	FACET_ICON_ILLUSION = 33,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ca0>"
+	FACET_ICON_INTELLIGENCE = 34,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0cc0>"
+	FACET_ICON_INVOKER_QUAS = 35,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0cd0>"
+	FACET_ICON_INVOKER_WEX = 36,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ce0>"
+	FACET_ICON_INVOKER_EXORT = 37,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0cf0>"
+	FACET_ICON_INVOKER_ACTIVE = 38,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0d10>"
+	FACET_ICON_INVOKER_PASSIVE = 39,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0d30>"
+	FACET_ICON_ITEM = 40,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0d40>"
+	FACET_ICON_KEZ = 41,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0d58>"
+	FACET_ICON_KEZ_FLUTTER = 42,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0d78>"
+	FACET_ICON_KEZ_SHADOWHAWK = 43,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0d98>"
+	FACET_ICON_LIFESTEALER_RAGE = 44,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0dc0>"
+	FACET_ICON_MANA = 45,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0dd0>"
+	FACET_ICON_MOON = 46,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0de8>"
+	FACET_ICON_MEAT = 47,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0e00>"
+	FACET_ICON_MOVEMENT = 48,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0e20>"
+	FACET_ICON_MULTI_ARROW = 49,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0e40>"
+	FACET_ICON_NO_VISION = 50,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0e60>"
+	FACET_ICON_NUKE = 51,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0e78>"
+	FACET_ICON_OGRE = 52,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0e90>"
+	FACET_ICON_OVERSHADOW = 53,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0eb0>"
+	FACET_ICON_PHANTOM_ASS_DAGGER = 54,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ed8>"
+	FACET_ICON_PHANTOM_LANCE = 55,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ef8>"
+	FACET_ICON_PIE = 56,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0f10>"
+	FACET_ICON_PUDGE_HOOK = 57,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0f30>"
+	FACET_ICON_RANGE = 58,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0f40>"
+	FACET_ICON_RICOCHET = 59,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0f60>"
+	FACET_ICON_RNG = 60,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0f78>"
+	FACET_ICON_RUNE = 61,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0f90>"
+	FACET_ICON_SIEGE = 62,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0fa8>"
+	FACET_ICON_SILENCER = 63,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0fc8>"
+	FACET_ICON_SKULL = 64,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0fe0>"
+	FACET_ICON_SLOW = 65,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb0ff0>"
+	FACET_ICON_SNAKE = 66,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1008>"
+	FACET_ICON_SNOT = 67,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1020>"
+	FACET_ICON_SNOWFLAKE = 68,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1040>"
+	FACET_ICON_SPECTRE = 69,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1058>"
+	FACET_ICON_SPEED = 70,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1068>"
+	FACET_ICON_SPINNING = 71,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1088>"
+	FACET_ICON_SPIRIT = 72,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb10a0>"
+	FACET_ICON_STRENGTH = 73,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb10b0>"
+	FACET_ICON_SUMMONS = 74,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb10c0>"
+	FACET_ICON_SUN = 75,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb10d8>"
+	FACET_ICON_TELEPORT = 76,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb10e8>"
+	FACET_ICON_TREE = 77,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb10f8>"
+	FACET_ICON_TOWER = 78,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1110>"
+	FACET_ICON_TWIN_HEARTS = 79,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1130>"
+	FACET_ICON_UNIQUE = 80,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1148>"
+	FACET_ICON_VISION = 81,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1160>"
+	FACET_ICON_VORTEX_IN = 82,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1180>"
+	FACET_ICON_VORTEX_OUT = 83,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb11a0>"
+	FACET_ICON_WEB = 84,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb11b0>"
+	FACET_ICON_WHOOPEE_CUSHION = 85,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb11d0>"
+	FACET_ICON_WOLF = 86,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb11e8>"
+	FACET_ICON_XP = 87,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1200>"
+	FACET_ICON_NONE = 88,
+		^MAlternateSemanticName "<unidentified non-null meta: client.dll + 0x3eb1220>"
+	FACET_ICON_COUNT = 89,
+	FACET_ICON_INVALID = 90,

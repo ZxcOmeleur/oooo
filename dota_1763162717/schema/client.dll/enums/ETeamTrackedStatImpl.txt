@@ -1,0 +1,5 @@
+enum ETeamTrackedStatImpl(size: 4 bytes, 4 values, project "client", binding @ client.dll + 0x51294c0):
+	k_eTeamTrackedStatImpl_Invalid = 0,
+	k_eTeamTrackedStatImpl_Direct = 1,
+	k_eTeamTrackedStatImpl_Expression = 2,
+	k_eTeamTrackedStatImpl_PlayerAggregate = 3,

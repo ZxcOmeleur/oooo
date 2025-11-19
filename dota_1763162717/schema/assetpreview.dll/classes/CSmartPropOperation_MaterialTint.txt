@@ -1,0 +1,57 @@
+class CSmartPropOperation_MaterialTint(size: 0x168 bytes, project "smartprops", binding @ assetpreview.dll + 0xd480b0, scope "!GlobalTypes") extends CSmartPropOperation
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x813c80"
+^MPropertyFriendlyName "Material Color Tint"
+^MPropertyDescription "Set a color tint to apply to a specific material."
+^MVDataClassGroup "Color"
+
+	base class CSmartPropOperation(size: 0x50 bytes, project "smartprops", binding @ assetpreview.dll + 0xd43750, scope "!GlobalTypes") extends CSmartPropModifier
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: assetpreview.dll + 0x1b960"
+	
+		base class CSmartPropModifier(size: 0x50 bytes, project "smartprops", binding @ assetpreview.dll + 0xd436d0, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: assetpreview.dll + 0x1b960"
+		^MVDataBase
+		^MVDataNodeType "1"
+		^MVDataAnonymousNode
+		
+		-----members of class CSmartPropModifier-----
+			uint8_t[8] unaccounted(offset 0x0)
+			CSmartPropAttributeBool m_bEnabled(offset 0x8, size 0x40, align 0x8)
+				^MVDataEnableKey
+			uint8_t[8] unaccounted(offset 0x48)
+		
+	
+	-----members of class CSmartPropOperation-----
+		<no members>
+	
+
+-----members of class CSmartPropOperation_MaterialTint-----
+	CSmartPropAttributeMaterialName m_Material(offset 0x50, size 0x40, align 0x8)
+		^MPropertyAttributeEditor "SmartPropAttributeEditor(MaterialInSmartProp)"
+		^MPropertyFriendlyName "Material"
+		^MPropertyDescription "Material to which color tint is to be applied."
+	CSmartPropAttributeColorSelectionMode m_SelectionMode(offset 0x90, size 0x40, align 0x0)
+		^MPropertyFriendlyName "Selection Mode"
+		^MPropertyDescription "Specifies how the color is to be specified."
+	CSmartPropAttributeColor m_Color(offset 0xd0, size 0x40, align 0x8)
+		^MPropertyDescription "Color to be applied if this choice is selected."
+		^MPropertySuppressExpr "m_SelectionMode != SPECIFIC_COLOR"
+	CColorGradient m_Gradient(offset 0x110, size 0x18, align 0x8)
+		^MPropertyFriendlyName "Color Gradient"
+		^MPropertyDescription "Defines a color gradient from which a color can be selected based on the selection mode."
+		^MPropertySuppressExpr "m_SelectionMode == SPECIFIC_COLOR"
+	CSmartPropAttributeFloat m_ColorPosition(offset 0x128, size 0x40, align 0x8)
+		^MPropertyFriendlyName "Color Position"
+		^MPropertyDescription "[ 0, 1 ] Value specifying the location on the gradient to pick the color from."
+		^MPropertySuppressExpr "m_SelectionMode != GRADIENT_LOCATION"
+

@@ -1,0 +1,15 @@
+enum EIKEndEffectorRotationFixUpMode(size: 4 bytes, 5 values, project "animgraphlib", binding @ animationsystem.dll + 0x759b50):
+	None = 0,
+		^MPropertyFriendlyName "None"
+		^MPropertyDescription "However the end effector ends up after the solve, it's rotation will remain unchanged."
+	MatchTargetOrientation = 1,
+		^MPropertyFriendlyName "Match Target Orientation"
+		^MPropertyDescription "The targets orientation will be stamped onto the end effector."
+	LookAtTargetForward = 2,
+		^MPropertyFriendlyName "Look At Target Forward"
+		^MPropertyDescription "The targets forward vector will be used to build a look orientation while preserving the rotation of the end effector after the solve as much as possible."
+	MaintainParentOrientation = 3,
+		^MPropertyFriendlyName "Maintain Parent Orientation"
+		^MPropertyDescription "Use the parent bone's orientation as the end effector's orientation."
+	Count = 4,
+		^MPropertySuppressEnumerator

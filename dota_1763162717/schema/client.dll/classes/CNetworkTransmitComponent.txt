@@ -1,0 +1,8 @@
+class CNetworkTransmitComponent(size: 0x1c8 bytes, project "client", binding @ client.dll + 0x4f02a00, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+
+-----members of class CNetworkTransmitComponent-----
+	uint8_t[388] unaccounted(offset 0x0)
+	uint8 m_nTransmitStateOwnedCounter(offset 0x184, size 0x1, align 0x1)
+	uint8_t[67] unaccounted(offset 0x185)
+

@@ -1,0 +1,5 @@
+class CVectorMovingAverage(size: 0x20 bytes, project "client", binding @ client.dll + 0x4f4f130, scope "!GlobalTypes")
+
+-----members of class CVectorMovingAverage-----
+	uint8_t[32] unaccounted(offset 0x0)
+

@@ -1,0 +1,8 @@
+class PulseRegisterMap_t(size: 0x30 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x184c70, scope "pulse_system.dll")
+| SCHEMA_CF1_GLOBAL_TYPE_SCOPE
+
+-----members of class PulseRegisterMap_t-----
+	KeyValues3 m_Inparams(offset 0x0, size 0x10, align 0x8)
+	CKV3MemberNameSet m_InparamsWhichCanBeMoved(offset 0x10, size 0x10, align 0x8)
+	KeyValues3 m_Outparams(offset 0x20, size 0x10, align 0x8)
+

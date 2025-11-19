@@ -1,0 +1,11 @@
+enum SmartPropDeformableOrientMode_t(size: 4 bytes, 5 values, project "smartprops", binding @ assetpreview.dll + 0xd49930):
+	NONE = 0,
+		^MPropertyFriendlyName "None"
+	FORWARD_NORMAL = 1,
+		^MPropertyFriendlyName "Align Forward with Normal"
+	UP_NORMAL = 2,
+		^MPropertyFriendlyName "Align Up With Normal"
+	BACKWARD_NORMAL = 3,
+		^MPropertyFriendlyName "Align Backward with Normal"
+	MAINTAIN_OFFSET = 4,
+		^MPropertyFriendlyName "Maintain Closest Triangle Offset"

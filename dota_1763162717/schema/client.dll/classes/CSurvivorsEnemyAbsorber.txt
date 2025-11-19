@@ -1,0 +1,87 @@
+class CSurvivorsEnemyAbsorber(size: 0x438 bytes, project "client", binding @ client.dll + 0x515df30, scope "!GlobalTypes") extends CSurvivorsEnemy
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+
+	base class CSurvivorsEnemy(size: 0x338 bytes, project "client", binding @ client.dll + 0x515bb00, scope "!GlobalTypes") extends CSurvivorsUnit
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	
+		base class CSurvivorsUnit(size: 0x180 bytes, project "client", binding @ client.dll + 0x5165010, scope "!GlobalTypes") extends CSurvivorsEntity
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		
+			base class CSurvivorsEntity(size: 0x28 bytes, project "client", binding @ client.dll + 0x515e240, scope "!GlobalTypes")
+			| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+			
+			-----members of class CSurvivorsEntity-----
+				uint8_t[16] unaccounted(offset 0x0)
+				SurvivorsPhysicsBodyID_t m_unPhysicsBodyID(offset 0x10, size 0x4, align 0x0)
+				uint8_t[20] unaccounted(offset 0x14)
+			
+		
+		-----members of class CSurvivorsUnit-----
+			SurvivorsUnitID_t m_id(offset 0x28, size 0x4, align 0x0)
+			float32 m_flHealth(offset 0x2c, size 0x4, align 0x4)
+			float32 m_flMaxHealth(offset 0x30, size 0x4, align 0x4)
+			bool m_bInvulnerable(offset 0x34, size 0x1, align 0x1)
+			uint8_t[3] unaccounted(offset 0x35)
+			Vector2D m_vFacing(offset 0x38, size 0x8, align 0x4)
+			float32 m_flMovementSpeed(offset 0x40, size 0x4, align 0x4)
+			float32 m_flMass(offset 0x44, size 0x4, align 0x4)
+			float32 m_flKnockbackResistance(offset 0x48, size 0x4, align 0x4)
+			float32 m_flStatusResistance(offset 0x4c, size 0x4, align 0x4)
+			float32 m_flBodyRadius(offset 0x50, size 0x4, align 0x4)
+			uint8_t[76] unaccounted(offset 0x54)
+			CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_playingStatusParticle(offset 0xa0, size 0xe0, align 0x8)
+		
+	
+	-----members of class CSurvivorsEnemy-----
+		GameActivity_t m_activity(offset 0x180, size 0x4, align 0x4)
+		uint8_t[4] unaccounted(offset 0x184)
+		CSurvivorsSpawner* m_pSpawner(offset 0x188, size 0x8, align 0x8)
+		SurvivorsEnemyID_t m_enemyID(offset 0x190, size 0x4, align 0x0)
+		bool m_bIsDying(offset 0x194, size 0x1, align 0x1)
+		uint8_t[3] unaccounted(offset 0x195)
+		CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sDeathEffectParticle(offset 0x198, size 0xe0, align 0x8)
+		bool m_bSpawnPickupsOnDeath(offset 0x278, size 0x1, align 0x1)
+		uint8_t[3] unaccounted(offset 0x279)
+		float32 m_flRunPlaybackRate(offset 0x27c, size 0x4, align 0x4)
+		float32 m_flIdlePlaybackRate(offset 0x280, size 0x4, align 0x4)
+		float32 m_flTurnRate(offset 0x284, size 0x4, align 0x4)
+		float32 m_flCollisionRadius(offset 0x288, size 0x4, align 0x4)
+		int32 m_nSeperationTickCounter(offset 0x28c, size 0x4, align 0x4)
+		uint8_t[48] unaccounted(offset 0x290)
+		int32 m_nCurrentAttackIndex(offset 0x2c0, size 0x4, align 0x4)
+		float32 m_flTouchDamage(offset 0x2c4, size 0x4, align 0x4)
+		float32 m_flTouchTimeout(offset 0x2c8, size 0x4, align 0x4)
+		float32 m_flTouchCooldown(offset 0x2cc, size 0x4, align 0x4)
+		bool m_bDieOnTouch(offset 0x2d0, size 0x1, align 0x1)
+		uint8_t[3] unaccounted(offset 0x2d1)
+		float32 m_flDespawnTimer(offset 0x2d4, size 0x4, align 0x4)
+		bool m_bTryDespawn(offset 0x2d8, size 0x1, align 0x1)
+		uint8_t[3] unaccounted(offset 0x2d9)
+		ESurvivorsEnemyMovementBehavior m_eMovementBehavior(offset 0x2dc, size 0x4, align 0x4)
+		ESurvivorsEnemyMovementCapability m_eMovementCapability(offset 0x2e0, size 0x4, align 0x4)
+		Vector2D m_vOriginalFacing(offset 0x2e4, size 0x8, align 0x4)
+		float32 m_flSinTurnTimer(offset 0x2ec, size 0x4, align 0x4)
+		float32 m_flDeathEffectTimer(offset 0x2f0, size 0x4, align 0x4)
+		Vector m_vDeathAnimationDirection(offset 0x2f4, size 0xc, align 0x4)
+		uint8_t[8] unaccounted(offset 0x300)
+		Vector m_vCurrentSeparationVelocity(offset 0x308, size 0xc, align 0x4)
+		uint8_t[12] unaccounted(offset 0x314)
+		bool m_bCenterRooted(offset 0x320, size 0x1, align 0x1)
+		bool m_bRotates(offset 0x321, size 0x1, align 0x1)
+		bool m_bIsElite(offset 0x322, size 0x1, align 0x1)
+		bool m_bIsMiniboss(offset 0x323, size 0x1, align 0x1)
+		float32 m_flSpawnerExpirationTime(offset 0x324, size 0x4, align 0x4)
+		float32 m_flOverrideDespawnRadiusBuffer(offset 0x328, size 0x4, align 0x4)
+		Vector m_vSeparationVector(offset 0x32c, size 0xc, align 0x4)
+	
+
+-----members of class CSurvivorsEnemyAbsorber-----
+	float32 m_flPercentHealthAbsorbed(offset 0x338, size 0x4, align 0x4)
+	float32 m_flBaseModelScale(offset 0x33c, size 0x4, align 0x4)
+	float32 m_flModelScaleIncreasePerAbsorb(offset 0x340, size 0x4, align 0x4)
+	float32 m_flMaxModelScale(offset 0x344, size 0x4, align 0x4)
+	float32 m_flAbsorbRadius(offset 0x348, size 0x4, align 0x4)
+	float32 m_flCurrentModelScale(offset 0x34c, size 0x4, align 0x4)
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sAbsorbParticleName(offset 0x350, size 0xe0, align 0x8)
+	uint8_t[8] unaccounted(offset 0x430)
+

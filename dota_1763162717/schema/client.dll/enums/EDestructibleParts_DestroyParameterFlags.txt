@@ -1,0 +1,11 @@
+enum EDestructibleParts_DestroyParameterFlags(size: 4 bytes, 8 values, project "client", binding @ client.dll + 0x4f4ae20):
+	None = 0,
+		^MEnumeratorIsNotAFlag
+	GenerateBreakpieces = 1,
+	SetBodyGroupAndCollisionState = 2,
+	EnableFlinches = 4,
+	ForceDamageApply = 8,
+	IgnoreKillEntityFlag = 16,
+	IgnoreHealthCheck = 32,
+	Default = 7,
+		^MEnumeratorIsNotAFlag

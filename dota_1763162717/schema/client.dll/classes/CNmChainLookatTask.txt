@@ -1,0 +1,26 @@
+class CNmChainLookatTask(size: 0x90 bytes, project "animlib", binding @ client.dll + 0x517f2f0, scope "client.dll") extends CNmPoseTask
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+
+	base class CNmPoseTask(size: 0x58 bytes, project "animlib", binding @ client.dll + 0x517f9c0, scope "client.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_IS_ABSTRACT
+	
+	-----members of class CNmPoseTask-----
+		uint8_t[88] unaccounted(offset 0x0)
+	
+
+-----members of class CNmChainLookatTask-----
+	int32 m_nChainEndBoneIdx(offset 0x58, size 0x4, align 0x4)
+	int32 m_nNumBonesInChain(offset 0x5c, size 0x4, align 0x4)
+	Vector m_chainForwardDir(offset 0x60, size 0xc, align 0x4)
+	float32 m_flBlendWeight(offset 0x6c, size 0x4, align 0x4)
+	float32 m_flHorizontalAngleLimitDegrees(offset 0x70, size 0x4, align 0x4)
+	float32 m_flVerticalAngleLimitDegrees(offset 0x74, size 0x4, align 0x4)
+	Vector m_lookatTarget(offset 0x78, size 0xc, align 0x4)
+	bool m_bIsTargetInWorldSpace(offset 0x84, size 0x1, align 0x1)
+	bool m_bIsRunningFromDeserializedData(offset 0x85, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x86)
+	float32 m_flHorizontalAngleDegrees(offset 0x88, size 0x4, align 0x4)
+	float32 m_flVerticalAngleDegrees(offset 0x8c, size 0x4, align 0x4)
+

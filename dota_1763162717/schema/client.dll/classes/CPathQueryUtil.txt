@@ -1,0 +1,11 @@
+class CPathQueryUtil(size: 0x80 bytes, project "client", binding @ client.dll + 0x4f4e510, scope "!GlobalTypes")
+
+-----members of class CPathQueryUtil-----
+	uint8_t[16] unaccounted(offset 0x0)
+	CTransform m_PathToEntityTransform(offset 0x10, size 0x20, align 0x10)
+	CUtlVector< Vector > m_vecPathSamplePositions(offset 0x30, size 0x18, align 0x8)
+	CUtlVector< float32 > m_vecPathSampleParameters(offset 0x48, size 0x18, align 0x8)
+	CUtlVector< float32 > m_vecPathSampleDistances(offset 0x60, size 0x18, align 0x8)
+	bool m_bIsClosedLoop(offset 0x78, size 0x1, align 0x1)
+	uint8_t[7] unaccounted(offset 0x79)
+

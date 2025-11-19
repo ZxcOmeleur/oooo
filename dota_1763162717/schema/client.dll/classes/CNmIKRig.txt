@@ -1,0 +1,9 @@
+class CNmIKRig(size: 0x38 bytes, project "animlib", binding @ client.dll + 0x51839d0, scope "client.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x2d52d60"
+
+-----members of class CNmIKRig-----
+	CStrongHandle< InfoForResourceTypeCNmSkeleton > m_skeleton(offset 0x0, size 0x8, align 0x8)
+	CUtlVector< CNmIKBody > m_vecBodies(offset 0x8, size 0x18, align 0x8)
+	CUtlVector< CNmIKJoint > m_vecJoints(offset 0x20, size 0x18, align 0x8)
+

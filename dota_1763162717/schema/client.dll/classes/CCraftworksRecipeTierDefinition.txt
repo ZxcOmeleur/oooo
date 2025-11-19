@@ -1,0 +1,15 @@
+class CCraftworksRecipeTierDefinition(size: 0x50 bytes, project "client", binding @ client.dll + 0x5100080, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x1739ed0"
+
+-----members of class CCraftworksRecipeTierDefinition-----
+	CraftworksRecipeTierID_t m_unRecipeTierID(offset 0x0, size 0x1, align 0x0)
+	uint8_t[7] unaccounted(offset 0x1)
+	CUtlString m_strLocName(offset 0x8, size 0x8, align 0x8)
+	uint8_t[24] unaccounted(offset 0x10)
+	CUtlString m_strUnlockAction(offset 0x28, size 0x8, align 0x8)
+	CUtlString m_strUnlockLocDesc(offset 0x30, size 0x8, align 0x8)
+	CUtlString m_strUnlockLocProgress(offset 0x38, size 0x8, align 0x8)
+	CUtlString m_strCraftAction(offset 0x40, size 0x8, align 0x8)
+	CUtlString m_strTierClass(offset 0x48, size 0x8, align 0x8)
+

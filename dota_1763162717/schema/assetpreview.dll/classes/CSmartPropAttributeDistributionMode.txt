@@ -1,0 +1,7 @@
+class CSmartPropAttributeDistributionMode(size: 0x40 bytes, project "smartprops", binding @ assetpreview.dll + 0xd43a20, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+^MPropertyCustomEditor "SmartPropAttributeEditor(enum:SmartPropDistributionMode_t)"
+
+-----members of class CSmartPropAttributeDistributionMode-----
+	uint8_t[64] unaccounted(offset 0x0)
+

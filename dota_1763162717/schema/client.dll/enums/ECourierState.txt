@@ -1,0 +1,6 @@
+enum ECourierState(size: 4 bytes, 5 values, project "client", binding @ client.dll + 0x5082750):
+	k_eIdle = 0,
+	k_eAtShop = 1,
+	k_eGoToShop = 2,
+	k_eGoToUnit = 3,
+	k_eManual = 4,

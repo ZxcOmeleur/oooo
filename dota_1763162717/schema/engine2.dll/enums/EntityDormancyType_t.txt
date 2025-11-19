@@ -1,0 +1,4 @@
+enum EntityDormancyType_t(size: 4 bytes, 3 values, project "entity2", binding @ engine2.dll + 0x5edb40):
+	ENTITY_NOT_DORMANT = 0,
+	ENTITY_DORMANT = 1,
+	ENTITY_SUSPENDED = 2,

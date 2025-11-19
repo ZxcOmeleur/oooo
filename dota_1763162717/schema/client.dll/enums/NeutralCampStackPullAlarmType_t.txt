@@ -1,0 +1,3 @@
+enum NeutralCampStackPullAlarmType_t(size: 4 bytes, 2 values, project "client", binding @ client.dll + 0x50ed4e0):
+	DOTA_NEUTRAL_CAMP_STACK_PULL_ALARM_TYPE_STACK = 1,
+	DOTA_NEUTRAL_CAMP_STACK_PULL_ALARM_TYPE_PULL = 2,

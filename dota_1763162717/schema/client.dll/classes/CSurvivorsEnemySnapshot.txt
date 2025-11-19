@@ -1,0 +1,11 @@
+class CSurvivorsEnemySnapshot(size: 0x14 bytes, project "client", binding @ client.dll + 0x515af40, scope "!GlobalTypes")
+| SCHEMA_CF1_HAS_TRIVIAL_DESTRUCTOR
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x24fc450"
+^MVDataRoot
+
+-----members of class CSurvivorsEnemySnapshot-----
+	SurvivorsEnemyID_t m_enemyID(offset 0x0, size 0x4, align 0x0)
+	float32 m_flHealth(offset 0x4, size 0x4, align 0x4)
+	Vector m_vOrigin(offset 0x8, size 0xc, align 0x4)
+

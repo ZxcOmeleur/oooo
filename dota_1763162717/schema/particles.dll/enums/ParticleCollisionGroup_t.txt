@@ -1,0 +1,15 @@
+enum ParticleCollisionGroup_t(size: 4 bytes, 7 values, project "particles", binding @ particles.dll + 0x5246e0):
+	PARTICLE_COLLISION_GROUP_DEFAULT = 4,
+		^MPropertyFriendlyName "Default"
+	PARTICLE_COLLISION_GROUP_DEBRIS = 5,
+		^MPropertyFriendlyName "Debris"
+	PARTICLE_COLLISION_GROUP_INTERACTIVE = 7,
+		^MPropertyFriendlyName "Interactive"
+	PARTICLE_COLLISION_GROUP_PLAYER = 8,
+		^MPropertyFriendlyName "Player"
+	PARTICLE_COLLISION_GROUP_VEHICLE = 10,
+		^MPropertyFriendlyName "Vehicle"
+	PARTICLE_COLLISION_GROUP_NPC = 12,
+		^MPropertyFriendlyName "NPC"
+	PARTICLE_COLLISION_GROUP_PROPS = 24,
+		^MPropertyFriendlyName "Props"

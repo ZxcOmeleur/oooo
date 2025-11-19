@@ -1,0 +1,14 @@
+class CSurvivorsLevelDefinition(size: 0x50 bytes, project "client", binding @ client.dll + 0x5164510, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: client.dll + 0x25e2920"
+^MVDataRoot
+
+-----members of class CSurvivorsLevelDefinition-----
+	SurvivorsLevelID_t m_unLevelID(offset 0x0, size 0x4, align 0x0)
+	uint8_t[4] unaccounted(offset 0x4)
+	CUtlVector< CSurvivorsEnemyEventDefinition > m_vecEvents(offset 0x8, size 0x18, align 0x8)
+	CUtlVector< CSurvivorsEnemyEventDefinition > m_vecBossEvents(offset 0x20, size 0x18, align 0x8)
+	Vector2D m_vMapBounds(offset 0x38, size 0x8, align 0x4)
+	Vector2D m_vEntityBounds(offset 0x40, size 0x8, align 0x4)
+	uint8_t[8] unaccounted(offset 0x48)
+

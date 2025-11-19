@@ -1,0 +1,7 @@
+enum EFlappySkywrathInputAction(size: 4 bytes, 6 values, project "client", binding @ client.dll + 0x5105f40):
+	Jump = 0,
+	Dash = 1,
+	Dive = 2,
+	Glide = 3,
+	COUNT = 4,
+	None = -1,

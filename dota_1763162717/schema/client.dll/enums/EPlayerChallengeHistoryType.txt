@@ -1,0 +1,7 @@
+enum EPlayerChallengeHistoryType(size: 4 bytes, 6 values, project "client", binding @ client.dll + 0x4f6a8f0):
+	k_EPlayerChallengeHistoryType_Invalid = 0,
+	k_EPlayerChallengeHistoryType_KillEater = 1,
+	k_EPlayerChallengeHistoryType_DotaPlusRelic = 2,
+	k_EPlayerChallengeHistoryType_DotaPlusHeroPlayerChallenge = 3,
+	k_EPlayerChallengeHistoryType_InGameEventChallenge = 4,
+	k_EPlayerChallengeHistoryType_GuildContract = 5,

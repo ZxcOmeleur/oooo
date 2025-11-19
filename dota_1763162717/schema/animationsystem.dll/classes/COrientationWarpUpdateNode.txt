@@ -1,0 +1,52 @@
+class COrientationWarpUpdateNode(size: 0xc0 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x757180, scope "!GlobalTypes") extends CUnaryUpdateNode
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x1b07c0"
+
+	base class CUnaryUpdateNode(size: 0x70 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x76cec0, scope "!GlobalTypes") extends CAnimUpdateNodeBase
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_CONSTRUCT_ALLOWED
+	| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+	^MGetKV3ClassDefaults "func: animationsystem.dll + 0x293b70"
+	
+		base class CAnimUpdateNodeBase(size: 0x58 bytes, project "animgraphlib", binding @ animationsystem.dll + 0x7651c0, scope "!GlobalTypes")
+		| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+		| SCHEMA_CF1_IS_ABSTRACT
+		| SCHEMA_CF1_CONSTRUCT_ALLOWED
+		| SCHEMA_CF1_INFO_TAG_MHasKV3TransferPolymorphicClassname
+		^MGetKV3ClassDefaults "func: animationsystem.dll + 0x3e0b0"
+		
+		-----members of class CAnimUpdateNodeBase-----
+			uint8_t[24] unaccounted(offset 0x0)
+			CAnimNodePath m_nodePath(offset 0x18, size 0x30, align 0x4)
+			AnimNodeNetworkMode m_networkMode(offset 0x48, size 0x4, align 0x4)
+			uint8_t[4] unaccounted(offset 0x4c)
+			CUtlString m_name(offset 0x50, size 0x8, align 0x8)
+		
+	
+	-----members of class CUnaryUpdateNode-----
+		uint8_t[8] unaccounted(offset 0x58)
+		CAnimUpdateNodeRef m_pChildNode(offset 0x60, size 0x10, align 0x8)
+	
+
+-----members of class COrientationWarpUpdateNode-----
+	uint8_t[4] unaccounted(offset 0x70)
+	OrientationWarpMode_t m_eMode(offset 0x74, size 0x4, align 0x4)
+	CAnimParamHandle m_hTargetParam(offset 0x78, size 0x2, align 0x1)
+	CAnimParamHandle m_hTargetPositionParam(offset 0x7a, size 0x2, align 0x1)
+	CAnimParamHandle m_hFallbackTargetPositionParam(offset 0x7c, size 0x2, align 0x1)
+	uint8_t[2] unaccounted(offset 0x7e)
+	OrientationWarpTargetOffsetMode_t m_eTargetOffsetMode(offset 0x80, size 0x4, align 0x4)
+	float32 m_flTargetOffset(offset 0x84, size 0x4, align 0x4)
+	CAnimParamHandle m_hTargetOffsetParam(offset 0x88, size 0x2, align 0x1)
+	uint8_t[6] unaccounted(offset 0x8a)
+	CAnimInputDamping m_damping(offset 0x90, size 0x18, align 0x8)
+	OrientationWarpRootMotionSource_t m_eRootMotionSource(offset 0xa8, size 0x4, align 0x4)
+	float32 m_flMaxRootMotionScale(offset 0xac, size 0x4, align 0x4)
+	bool m_bEnablePreferredRotationDirection(offset 0xb0, size 0x1, align 0x1)
+	uint8_t[3] unaccounted(offset 0xb1)
+	AnimValueSource m_ePreferredRotationDirection(offset 0xb4, size 0x4, align 0x4)
+	float32 m_flPreferredRotationThreshold(offset 0xb8, size 0x4, align 0x4)
+	uint8_t[4] unaccounted(offset 0xbc)
+

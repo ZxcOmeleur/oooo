@@ -1,0 +1,16 @@
+class CPulse_Variable(size: 0x50 bytes, project "pulse_runtime_lib", binding @ assetpreview.dll + 0xd33b50, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x77c0b0"
+
+-----members of class CPulse_Variable-----
+	PulseSymbol_t m_Name(offset 0x0, size 0x10, align 0x8)
+	CUtlString m_Description(offset 0x10, size 0x8, align 0x8)
+	CPulseValueFullType m_Type(offset 0x18, size 0x18, align 0x8)
+	KeyValues3 m_DefaultValue(offset 0x30, size 0x10, align 0x8)
+	uint8_t[4] unaccounted(offset 0x40)
+	PulseVariableKeysSource_t m_nKeysSource(offset 0x44, size 0x4, align 0x4)
+	bool m_bIsPublicBlackboardVariable(offset 0x48, size 0x1, align 0x1)
+	bool m_bIsObservable(offset 0x49, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x4a)
+	PulseDocNodeID_t m_nEditorNodeID(offset 0x4c, size 0x4, align 0x0)
+

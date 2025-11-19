@@ -1,0 +1,9 @@
+enum ESurvivorsEnemySpawnBehavior(size: 4 bytes, 8 values, project "client", binding @ client.dll + 0x5164270):
+	INVALID_SPAWN_BEHAVIOR = -1,
+	FIXED_DIRECTION = 0,
+	FIXED_DIRECTION_PERPENDICULAR_WALL = 1,
+	OVAL_AROUND_PLAYER = 2,
+	STATIC_IN_MAP = 3,
+	STATIC_IN_MAP_IGNORE_PLAYER_RADIUS = 4,
+	RANDOM_DIRECTION = 5,
+	SPAWNER_ORIGIN_RADIUS = 6,

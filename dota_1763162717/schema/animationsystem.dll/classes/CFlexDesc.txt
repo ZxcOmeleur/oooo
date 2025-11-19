@@ -1,0 +1,7 @@
+class CFlexDesc(size: 0x8 bytes, project "modellib", binding @ animationsystem.dll + 0x79f9f0, scope "!GlobalTypes")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: animationsystem.dll + 0x4bc670"
+
+-----members of class CFlexDesc-----
+	CUtlString m_szFacs(offset 0x0, size 0x8, align 0x8)
+

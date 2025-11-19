@@ -1,0 +1,28 @@
+class CMaterialDrawDescriptor(size: 0x108 bytes, project "modellib", binding @ assetpreview.dll + 0xd24760, scope "assetpreview.dll")
+| SCHEMA_CF1_CONSTRUCT_ALLOWED
+^MGetKV3ClassDefaults "func: assetpreview.dll + 0x559cd0"
+
+-----members of class CMaterialDrawDescriptor-----
+	float32 m_flUvDensity(offset 0x0, size 0x4, align 0x4)
+	Vector m_vTintColor(offset 0x4, size 0xc, align 0x4)
+	float32 m_flAlpha(offset 0x10, size 0x4, align 0x4)
+	uint8_t[2] unaccounted(offset 0x14)
+	uint16 m_nNumMeshlets(offset 0x16, size 0x2, align 0x2)
+	uint8_t[4] unaccounted(offset 0x18)
+	uint32 m_nFirstMeshlet(offset 0x1c, size 0x4, align 0x4)
+	uint32 m_nAppliedIndexOffset(offset 0x20, size 0x4, align 0x4)
+	uint8 m_nDepthVertexBufferIndex(offset 0x24, size 0x1, align 0x1)
+	uint8 m_nMeshletPackedIVBIndex(offset 0x25, size 0x1, align 0x1)
+	uint8_t[2] unaccounted(offset 0x26)
+	CUtlLeanVector< CMaterialDrawDescriptor::RigidMeshPart_t > m_rigidMeshParts(offset 0x28, size 0x10, align 0x8)
+	RenderPrimitiveType_t m_nPrimitiveType(offset 0x38, size 0x4, align 0x4)
+	int32 m_nBaseVertex(offset 0x3c, size 0x4, align 0x4)
+	int32 m_nVertexCount(offset 0x40, size 0x4, align 0x4)
+	int32 m_nStartIndex(offset 0x44, size 0x4, align 0x4)
+	int32 m_nIndexCount(offset 0x48, size 0x4, align 0x4)
+	uint8_t[100] unaccounted(offset 0x4c)
+	CRenderBufferBinding m_indexBuffer(offset 0xb0, size 0x20, align 0x8)
+	CRenderBufferBinding m_meshletPackedIVB(offset 0xd0, size 0x20, align 0x8)
+	uint8_t[16] unaccounted(offset 0xf0)
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_material(offset 0x100, size 0x8, align 0x8)
+

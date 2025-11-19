@@ -1,0 +1,16 @@
+class CTestDomainDerived_Cursor(size: 0xd8 bytes, project "pulse_system", binding @ pulse_system.dll + 0x198bf0, scope "pulse_system.dll") extends CPulseExecCursor
+| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+
+	base class CPulseExecCursor(size: 0xd0 bytes, project "pulse_runtime_lib", binding @ pulse_system.dll + 0x187700, scope "pulse_system.dll")
+	| SCHEMA_CF1_HAS_VIRTUAL_MEMBERS
+	| SCHEMA_CF1_MODULE_LOCAL_TYPE_SCOPE
+	
+	-----members of class CPulseExecCursor-----
+		uint8_t[208] unaccounted(offset 0x0)
+	
+
+-----members of class CTestDomainDerived_Cursor-----
+	int32 m_nCursorValueA(offset 0xd0, size 0x4, align 0x4)
+	int32 m_nCursorValueB(offset 0xd4, size 0x4, align 0x4)
+
